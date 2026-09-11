@@ -1434,16 +1434,26 @@ each one pulls in a TerriaJS upgrade.</p>
 </tbody>
 </table>
 <h2 id="what-this-means-for-users">What this means for users<a class="headerlink" href="#what-this-means-for-users" title="Permanent link">¶</a></h2>
-<p>The changes that are visible while using the portal:</p>
+<p>The changes that are visible while using the portal (confirmed against the live
+v2 deployment):</p>
 <ul>
+<li><strong>Sign-in is now required.</strong> The portal is access-controlled — you sign in
+  through IWMI's central service before the map loads. See
+  <a href="../../guide/getting-started/#signing-in">Getting Started</a>.</li>
 <li><strong>The interface was redesigned.</strong> TerriaMap <code>0.4.0</code> brought "a new look UI
-  with changes to workbench and other panels". The
-  <a href="../../guide/workbench/">Workbench</a> and surrounding panels do not look the
-  same as in v1.</li>
-<li><strong>Basemap choices changed.</strong> The Carto basemaps — <em>positron</em>, <em>dark matter</em>
-  and <em>black marble</em> — were removed from the defaults, because they now
-  require a commercial Carto licence. <strong>OpenStreetMap</strong> was added as a default
-  basemap in their place.</li>
+  with changes to workbench and other panels", and the workbench now carries
+  the IWMI / LIMCOM / CGIAR Digital Transformation branding.</li>
+<li><strong>The catalogue grew from five categories to eleven.</strong> New categories:
+  <strong>Flood Monitoring &amp; Early Warning</strong>, <strong>Drought Monitoring &amp; Risk
+  Assessment</strong>, <strong>Citizen Science</strong>, <strong>Water Use Monitoring and Analysis</strong>, and
+  <strong>Data Sources &amp; Providers</strong>. See <a href="../../guide/datasets/">Dataset Themes</a>.</li>
+<li><strong>Two new tools.</strong> A <strong>Water Copilot</strong> AI chatbot and a <strong>SWAT Extraction
+  Tool</strong> (query modelled flows for a channel over a date range) — see
+  <a href="../../guide/map-tools/">Map Tools</a>.</li>
+<li><strong>More basemaps.</strong> The Map Settings basemap set now includes
+  <strong>OpenStreetMap</strong>, <strong>Esri World Imagery</strong>, <strong>Esri Topographic</strong>,
+  <strong>OpenTopoMap</strong>, <strong>Natural Earth II</strong>, the Bing family, plus <strong>Dark Matter</strong>
+  and <strong>Positron (Light)</strong>.</li>
 <li><strong>More data formats can be added.</strong> The catalogue gained support for
   <strong>I3S</strong> (indexed 3D scene layers) and <strong>COG</strong> (cloud-optimised GeoTIFF), so
   more external services can be brought in via

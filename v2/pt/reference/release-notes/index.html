@@ -1434,16 +1434,27 @@ cada uma incorpora uma atualização do TerriaJS.</p>
 </tbody>
 </table>
 <h2 id="o-que-isto-significa-para-os-utilizadores">O que isto significa para os utilizadores<a class="headerlink" href="#o-que-isto-significa-para-os-utilizadores" title="Permanent link">¶</a></h2>
-<p>As alterações visíveis durante a utilização do portal:</p>
+<p>As alterações visíveis durante a utilização do portal (confirmadas na
+instalação v2 em produção):</p>
 <ul>
+<li><strong>O início de sessão passou a ser obrigatório.</strong> O portal tem acesso
+  controlado — inicia sessão através do serviço central do IWMI antes de o mapa
+  carregar. Ver <a href="../../guide/getting-started/#iniciar-sessao">Primeiros Passos</a>.</li>
 <li><strong>A interface foi redesenhada.</strong> O TerriaMap <code>0.4.0</code> trouxe "um novo aspeto
-  da interface, com alterações à área de trabalho e a outros painéis". A
-  <a href="../../guide/workbench/">Área de Trabalho</a> e os painéis em seu redor já não
-  têm o aspeto apresentado na v1.</li>
-<li><strong>As opções de mapa de base mudaram.</strong> Os mapas de base da Carto —
-  <em>positron</em>, <em>dark matter</em> e <em>black marble</em> — foram removidos das predefinições
-  por passarem a exigir uma licença comercial da Carto. Em sua substituição, o
-  <strong>OpenStreetMap</strong> passou a ser um mapa de base predefinido.</li>
+  da interface, com alterações à área de trabalho e a outros painéis", e a área
+  de trabalho passou a exibir a marca IWMI / LIMCOM / CGIAR Digital
+  Transformation.</li>
+<li><strong>O catálogo passou de cinco para onze categorias.</strong> Novas categorias:
+  <strong>Flood Monitoring &amp; Early Warning</strong>, <strong>Drought Monitoring &amp; Risk
+  Assessment</strong>, <strong>Citizen Science</strong>, <strong>Water Use Monitoring and Analysis</strong> e
+  <strong>Data Sources &amp; Providers</strong>. Ver <a href="../../guide/datasets/">Temas dos Dados</a>.</li>
+<li><strong>Duas novas ferramentas.</strong> Um assistente de IA <strong>Water Copilot</strong> e uma
+  <strong>SWAT Extraction Tool</strong> (consulta caudais modelados para um canal num
+  intervalo de datas) — ver <a href="../../guide/map-tools/">Ferramentas do Mapa</a>.</li>
+<li><strong>Mais mapas de base.</strong> O conjunto de mapas de base inclui agora
+  <strong>OpenStreetMap</strong>, <strong>Esri World Imagery</strong>, <strong>Esri Topographic</strong>,
+  <strong>OpenTopoMap</strong>, <strong>Natural Earth II</strong>, a família Bing, além de <strong>Dark Matter</strong>
+  e <strong>Positron (Light)</strong>.</li>
 <li><strong>Mais formatos de dados podem ser adicionados.</strong> O catálogo passou a
   suportar <strong>I3S</strong> (camadas de cena 3D indexadas) e <strong>COG</strong> (GeoTIFF otimizado
   para a nuvem), pelo que mais serviços externos podem ser integrados através de
