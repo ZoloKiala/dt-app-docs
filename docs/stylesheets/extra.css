@@ -1,0 +1,52 @@
+/* Screenshot framing: the guide is image-heavy, so give every figure a
+   consistent border and caption treatment in both colour schemes. */
+.md-typeset figure img,
+.md-typeset .image-pair img,
+.md-typeset p > a.glightbox > img {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.md-typeset figure {
+  margin: 1.5em auto;
+}
+
+/* markdown="span" turns the newline before the caption into a <br>, which
+   opens a gap between the screenshot and its caption. */
+.md-typeset figure br {
+  display: none;
+}
+
+.md-typeset figcaption {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-top: 0.5em;
+  max-width: 46rem;
+}
+
+/* Side-by-side screenshot pairs. Markdown wraps the two images in a <p>,
+   so the flex container has to be that paragraph, not the wrapper div. */
+.md-typeset .image-pair p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: flex-start;
+  margin: 1em 0 0.5em;
+}
+
+.md-typeset .image-pair p > a,
+.md-typeset .image-pair p > img {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+
+.md-typeset .image-pair img {
+  width: 100%;
+}
+
+/* Slightly wider content column: the source screenshots are 6.3in wide. */
+.md-grid {
+  max-width: 66rem;
+}
