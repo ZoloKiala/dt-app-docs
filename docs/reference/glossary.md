@@ -56,7 +56,7 @@ Terms and acronyms used across this documentation.
 
 **Split Screen Mode**
 : The compare view that places two datasets side by side.
-  See [Compare feature](../guide/map-tools.md#compare-feature).
+  See [Compare feature](../guide/map-tools.md#compare).
 
 **Pedestrian Mode**
 : A street-level, ground-based view of the map data.

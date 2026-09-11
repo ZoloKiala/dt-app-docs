@@ -4,54 +4,56 @@ title: Área de Trabalho
 
 # Área de Trabalho
 
-O **Workbench** (*Área de Trabalho*) é o painel à esquerda do mapa que gere
-todos os conjuntos de dados ativos. Tudo o que adicionar a partir do
+A **Workbench** (*Área de Trabalho*) é o painel à esquerda que gere os conjuntos
+de dados atualmente no mapa. Tudo o que adicionar a partir do
 [Catálogo de Dados](data-catalogue.md) ou de [Os Meus Dados](my-data.md) surge
-aqui.
+aqui, sob um cabeçalho **DATASETS (n)**.
 
 <figure markdown="span">
-  ![Área de Trabalho apresentada à esquerda do mapa](../assets/images/image47.png)
-  <figcaption>Figura 43: A Área de Trabalho, apresentada do lado esquerdo do mapa.</figcaption>
+  ![A área de trabalho com o menu de ações de um conjunto de dados aberto](../assets/v2/v2-workbench-actions.png)
+  <figcaption>Figura 6: A área de trabalho. Cada cartão de dados tem Ideal Zoom, About Data e um menu de três pontos (Export / Remove).</figcaption>
 </figure>
 
-## O que faz a Área de Trabalho
+## Gerir toda a lista
 
-- **Ativar e desativar conjuntos de dados** — conforme necessário.
-- **Ajustar a opacidade** — alterar a transparência de um conjunto de dados.
-- **Comparar dados** — utilizar o modo de ecrã dividido para colocar conjuntos
-  de dados lado a lado.
-- **Navegação temporal** — percorrer séries temporais nos conjuntos de dados
-  que as disponibilizam.
-
-## Gerir conjuntos de dados
+Acima da lista, três ações aplicam-se a tudo de uma vez:
 
 | Controlo | Efeito |
 | --- | --- |
-| **Remove All** (*Remover tudo*) | Limpa todos os conjuntos de dados da área de trabalho |
-| **Collapse All** (*Recolher tudo*) | Minimiza todos os conjuntos de dados para uma vista mais limpa |
-| **Ícone de três pontos** | Remove um conjunto de dados específico, ou abre o editor de estilo e as opções de exportação |
-| **Caixa de seleção** | Ativa ou desativa um conjunto de dados individual |
-| **Menu pendente do conjunto** | Ampliação, ajuste de opacidade e detalhes desse conjunto de dados |
+| **Disable All** | Oculta todos os conjuntos sem os remover |
+| **Collapse All** | Minimiza todos os cartões para uma vista mais limpa |
+| **Remove All** | Limpa todos os conjuntos da área de trabalho |
 
-!!! tip "Ideal Zoom (*Ampliação ideal*)"
-    A opção **Ideal Zoom** no menu pendente de um conjunto de dados desloca o
-    mapa para a vista que melhor enquadra esses dados — útil quando adicionou
-    uma camada cuja extensão desconhece.
+## Controlos por conjunto de dados
 
-## Estilizar a partir da Área de Trabalho
+Cada cartão de dados oferece:
 
-O controlo **display variable** (*variável de visualização*) determina o
-atributo pelo qual um conjunto de dados é desenhado. Para um controlo mais
-fino, abra o menu de três pontos, escolha **Edit Style**, faça as alterações e
-clique em **Done**.
+- **Interruptor** — o botão no topo do cartão ativa ou desativa o conjunto.
+- **Ideal Zoom** — desloca o mapa para a vista que melhor enquadra o conjunto.
+- **About Data** — regressa à entrada do catálogo e à sua descrição completa.
+- **Menu de três pontos (⋮)** — **Show more actions**, que abre:
+    - **Export** — exportar o conjunto de dados.
+    - **Remove** — remover apenas este conjunto do mapa e da área de trabalho.
+- **Menu pendente (▾)** — expande o cartão para a opacidade, a **display
+  variable** (o atributo pelo qual a camada é desenhada), a estilização e —
+  quando disponível — gráficos e uma linha temporal.
 
-Consulte
-[Estilizar um conjunto de dados](data-catalogue.md#estilizar-um-conjunto-de-dados)
-para um exemplo prático com o conjunto E-flow Monitoring and Forecasting.
+## Estilizar um conjunto de dados
+
+A **display variable** determina o atributo pelo qual um conjunto é desenhado.
+Para um controlo mais fino, abra o menu de três pontos e escolha o editor de
+estilo, aplicando depois as alterações. Os dados de população, por exemplo,
+podem ser estilizados por sub-bacia, área, identificador do polígono ou
+população.
+
+## Séries temporais
+
+Os conjuntos com dimensão temporal expõem uma linha temporal por baixo do mapa
+e no cartão da área de trabalho; as setas esquerda e direita percorrem o tempo.
+Ative **Timeline → Always show** nas
+[Definições do Mapa](map-tools.md#definicoes-do-mapa) para a manter visível.
 
 ## Comparar conjuntos de dados
 
-A ferramenta de comparação atua diretamente sobre o conteúdo da Área de
-Trabalho — ver
-[Funcionalidade Compare](map-tools.md#funcionalidade-compare) em Ferramentas do
-Mapa.
+A ferramenta de comparação atua diretamente sobre o conteúdo da área de
+trabalho — ver [Comparar](map-tools.md#comparar) em Ferramentas do Mapa.

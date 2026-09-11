@@ -59,7 +59,7 @@ interface do portal são apresentados em inglês, tal como surgem no ecrã.
 
 **Split Screen Mode** (*Modo de ecrã dividido*)
 : A vista de comparação que coloca dois conjuntos de dados lado a lado.
-  Ver [Funcionalidade Compare](../guide/map-tools.md#funcionalidade-compare).
+  Ver [Funcionalidade Compare](../guide/map-tools.md#comparar).
 
 **Pedestrian Mode** (*Modo peão*)
 : Uma vista dos dados ao nível da rua, a partir do solo.

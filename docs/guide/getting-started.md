@@ -4,91 +4,92 @@ title: Getting Started
 
 # Getting Started
 
-## The portal homepage
+## Signing in
 
-When you open the portal you land on a welcome homepage that offers several
-routes into the platform.
+The v2 portal is access-controlled: opening
+[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/) prompts
+you to **sign in** before the map loads. Authentication is handled by IWMI's
+central sign-in service (Keycloak). Once signed in, the top bar shows
+**Account** and **Log out**; use **Account** to manage your profile.
+
+!!! info "Need access?"
+    If you do not have an account, contact the IWMI geospatial team at
+    [iwmigeospatial@gmail.com](mailto:iwmigeospatial@gmail.com).
+
+## The welcome screen
+
+On first load the portal shows a **"Let's get you started"** welcome panel over
+the map.
 
 <figure markdown="span">
-  ![Homepage of the WebGIS portal](../assets/images/image2.png)
-  <figcaption>Figure 2: Homepage of the WebGIS portal.</figcaption>
+  ![The v2 welcome panel over the Limpopo basin](../assets/v2/v2-welcome.png)
+  <figcaption>Figure 1: The &ldquo;Let's get you started&rdquo; welcome panel.</figcaption>
 </figure>
 
-### Let's get you started
+It offers three ways in:
 
-The homepage presents four starting points:
+- **Take the tour** — an interactive walkthrough that names each control on
+  screen.
+- **I'll need some help** — opens the help guide.
+- **Explore map data** — dismisses the welcome panel and opens the
+  [Data Catalogue](data-catalogue.md) straight away.
 
-- **Getting Started with the Map** — a video prompt that guides you through
-  navigating and exploring the WebGIS portal.
-- **Take the Tour** — an interactive guide that walks you through the
-  platform's features and functionalities.
-- **I'll Need Some Help** — a help guide for users who need assistance
-  navigating the platform or using specific tools.
-- **Explore Map Data** — begin data exploration directly.
+Dismiss the panel with **Close message and don't show me this again** (or the
+**✕**) to go directly to the map. A short coach-mark then points at **Help**
+in the top bar — click **Got it, thanks!** to clear it.
 
-!!! tip
-    If this is your first visit, take the tour first. It names each control on
-    screen, which makes the rest of this guide much easier to follow.
+!!! tip "First visit? Take the tour"
+    The tour labels every control, which makes the rest of this guide much
+    easier to follow.
+
+## The main interface
+
+<figure markdown="span">
+  ![The main portal interface](../assets/v2/v2-main-map.png)
+  <figcaption>Figure 2: The main interface — workbench and data controls on the left, the 3D globe centre, map tools down the right, and the account and tool bar across the top.</figcaption>
+</figure>
+
+The interface has four regions:
+
+- **Workbench (left)** — the IWMI / LIMCOM / CGIAR Digital Transformation logo,
+  a location search, the **Explore data** and **Upload data** buttons, and the
+  list of datasets currently on the map. See [Workbench](workbench.md).
+- **Map (centre)** — the Cesium 3D globe, showing the basin outline over
+  satellite imagery.
+- **Map tools (right)** — orientation, zoom, location, compare, pedestrian
+  mode and measuring. See [Map Tools](map-tools.md).
+- **Top bar** — **About**, **Account**, **Log out** on the left; **Map
+  Settings**, **Help**, **Story** and **Share / Print** on the right.
 
 ## Search for a location
 
-A search bar in the top-left corner lets you jump quickly to a specific
-location within the Limpopo River basin. The search is geocoded and restricted
-to the study area.
-
-<div class="image-pair" markdown>
-![Search location tool](../assets/images/image3.png)
-![Search location results](../assets/images/image4.png)
-</div>
-
-*Figure 3: The search location tool.*
-
-<figure markdown="span">
-  ![Geocoded location in the Limpopo River basin](../assets/images/image5.png)
-  <figcaption>Figure 4: A geocoded location in the Limpopo River basin.</figcaption>
-</figure>
+The **Search for locations** bar at the top of the workbench jumps to a place
+within the Limpopo River basin. The search is geocoded and scoped to the basin
+study area.
 
 ## Explore map data
 
-Choose **Explore Map Data** to reach the datasets. This is where data gets
-added to the map — you can add several datasets at once and then manage them
-all from the [Workbench](workbench.md).
-
-<figure markdown="span">
-  ![The Explore map data tool](../assets/images/image6.png)
-  <figcaption>Figure 5: The &ldquo;Explore Map Data&rdquo; tool.</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![Portal main interface](../assets/images/image7.png)
-  <figcaption>Figure 6: The portal's main interface.</figcaption>
-</figure>
+Click **Explore data** (or **Explore map data** on the welcome panel) to open
+the [Data Catalogue](data-catalogue.md). You can add several datasets at once;
+each is then managed from the [Workbench](workbench.md).
 
 ## Interactive map controls
 
-Once the map is open, the core navigation controls behave the way you would
-expect from any web map:
+The core navigation controls behave like any web map:
 
-- **Zoom and pan** — standard map controls for moving around the spatial
-  datasets intuitively.
-- **Layer control panel** — toggle thematic layers on and off to focus your
-  analysis.
-- **Customisable basemaps** — pick a background map that suits the data you
-  are viewing.
-- **Time series** — explore temporal change, such as water levels or land use
-  over time.
-
-The full set of navigation, orientation and measurement controls is described
-in [Map Tools](map-tools.md).
+- **Zoom and pan** — navigate the datasets intuitively.
+- **Basemaps** — choose a background map in [Map Settings](map-tools.md#map-settings)
+  (the v2 set includes Bing, OpenStreetMap, Esri, Dark Matter, Positron and
+  more).
+- **2D / 3D** — switch between the 3D globe, a smooth 3D view, and a flat 2D
+  map in Map Settings.
+- **Time series** — explore temporal change with the timeline, where a dataset
+  provides it.
 
 ## Accessibility and compatibility
 
-The interface is designed for simplicity and accessibility:
-
-- **Cross-browser compatibility** — the platform works across all major
-  browsers, giving a consistent experience on different devices.
-- **Responsive design** — the UI adapts to varying screen sizes, including
-  tablets and mobile devices.
+- **Cross-browser** — works across all major browsers.
+- **Responsive** — adapts to tablets and smaller screens.
 
 ## Next steps
 

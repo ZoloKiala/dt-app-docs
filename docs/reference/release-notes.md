@@ -26,16 +26,26 @@ What changed between the portal documented by the **v1** guide (TerriaMap
 
 ## What this means for users
 
-The changes that are visible while using the portal:
+The changes that are visible while using the portal (confirmed against the live
+v2 deployment):
 
+- **Sign-in is now required.** The portal is access-controlled — you sign in
+  through IWMI's central service before the map loads. See
+  [Getting Started](../guide/getting-started.md#signing-in).
 - **The interface was redesigned.** TerriaMap `0.4.0` brought "a new look UI
-  with changes to workbench and other panels". The
-  [Workbench](../guide/workbench.md) and surrounding panels do not look the
-  same as in v1.
-- **Basemap choices changed.** The Carto basemaps — *positron*, *dark matter*
-  and *black marble* — were removed from the defaults, because they now
-  require a commercial Carto licence. **OpenStreetMap** was added as a default
-  basemap in their place.
+  with changes to workbench and other panels", and the workbench now carries
+  the IWMI / LIMCOM / CGIAR Digital Transformation branding.
+- **The catalogue grew from five categories to eleven.** New categories:
+  **Flood Monitoring & Early Warning**, **Drought Monitoring & Risk
+  Assessment**, **Citizen Science**, **Water Use Monitoring and Analysis**, and
+  **Data Sources & Providers**. See [Dataset Themes](../guide/datasets.md).
+- **Two new tools.** A **Water Copilot** AI chatbot and a **SWAT Extraction
+  Tool** (query modelled flows for a channel over a date range) — see
+  [Map Tools](../guide/map-tools.md).
+- **More basemaps.** The Map Settings basemap set now includes
+  **OpenStreetMap**, **Esri World Imagery**, **Esri Topographic**,
+  **OpenTopoMap**, **Natural Earth II**, the Bing family, plus **Dark Matter**
+  and **Positron (Light)**.
 - **More data formats can be added.** The catalogue gained support for
   **I3S** (indexed 3D scene layers) and **COG** (cloud-optimised GeoTIFF), so
   more external services can be brought in via

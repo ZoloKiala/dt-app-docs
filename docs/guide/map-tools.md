@@ -4,124 +4,123 @@ title: Map Tools
 
 # Map Tools
 
-The controls along the right-hand side of the map view handle orientation,
-navigation, comparison and measurement.
+The controls down the right-hand side of the map handle orientation,
+navigation, comparison and measurement; the top bar carries Map Settings and
+Share / Print; and v2 adds two new tools — an AI chatbot and a SWAT extraction
+tool.
+
+## Map Settings
+
+**Map Settings** (top bar) customises how the map is drawn.
+
+<figure markdown="span">
+  ![The Map Settings panel](../assets/v2/v2-map-settings.png)
+  <figcaption>Figure 7: Map Settings — view mode, terrain, basemaps, timeline and quality.</figcaption>
+</figure>
+
+- **Map View** — **3D Terrain**, **3D Smooth** or **2D**.
+- **Show Terrain on the** — Left / Both / Right, with an option so **terrain
+  hides underground features**.
+- **Base Map** — v2 offers a wider set than the 2024 release: **Bing Aerial
+  with Labels** (default), **Bing Aerial**, **Bing Roads**, **OpenStreetMap**,
+  **OpenTopoMap**, **Esri World Imagery**, **Esri Topographic**, **Dark
+  Matter**, **Positron (Light)** and **Natural Earth II**.
+- **Timeline → Always show** — keeps the time-series controls on screen.
+- **Image Optimisation** — use native device resolution.
+- **Map Quality** — a Quality ↔ Performance slider.
 
 ## View controls
 
-The **View Controls** icon — a ring with a cross in the middle — offers:
-
-- **Orientation** — rotate the map through 360 degrees.
-- **Reset** — restore the default map orientation.
-
-<figure markdown="span">
-  ![View controls description tool](../assets/images/image55.png)
-  <figcaption>Figure 44: The &ldquo;View Controls&rdquo; description tool.</figcaption>
-</figure>
-
-Additional icons beneath this control handle everyday navigation:
+The **Change view** control (the ring-and-cross icon) rotates the map through
+360°, and a double-click resets it. Beneath it:
 
 | Control | Action |
 | --- | --- |
-| **Home icon** | Returns the map to the default globe view |
-| **+ icon** | Zooms in |
-| **&ndash; icon** | Zooms out |
-| **Location** | Activates live location tracking — click *Allow* in the popup to enable |
+| **Home** | Returns to the default globe view |
+| **+ / –** | Zoom in / out (the mouse wheel also zooms) |
+| **Location** | Live location tracking — click *Allow* in the popup |
 | **Pan** | Drag the map with the left mouse button |
-| **Zoom** | Adjust zoom levels with the mouse scroll wheel |
-| **Measure Tool** | Measure distances between points on the map |
+
+## Compare
+
+The **Compare** tool (*Enable side-by-side comparison between two different sets
+of data*) puts two datasets side by side in split-screen mode.
 
 <figure markdown="span">
-  ![Globe view of the map using the home icon](../assets/images/image56.png)
-  <figcaption>Figure 45: The globe view, reached with the home icon on the right of the map.</figcaption>
+  ![Split-screen compare mode](../assets/v2/v2-compare.png)
+  <figcaption>Figure 8: Side-by-side comparison mode.</figcaption>
 </figure>
 
-## Compare feature
-
-The **Compare** feature puts two datasets side by side in **Split Screen
-Mode** — useful for detailed comparison.
-
-### How it works
-
-1. **Activate split screen** — click the Compare tool to enter Split Screen
-   Mode.
-2. **Select datasets** — choose the two datasets you want to compare.
-3. **Adjust the view** — drag the split bar to resize and align the datasets.
-4. **Analyse** — compare the datasets visually, identifying differences and
-   similarities.
-
-<figure markdown="span">
-  ![Split screen mode tool on the WebGIS portal](../assets/images/image57.png)
-  <figcaption>Figure 46: Split screen mode on the WebGIS portal.</figcaption>
-</figure>
-
-The comparison panel gives you:
-
-- **Data Sets** — lists the datasets currently being compared.
-- **Remove All** — clears all datasets from the comparison view.
-- **Collapse All** — minimises dataset details for a cleaner interface.
-
-Split Screen Mode places each dataset explicitly:
-
-| Setting | Result |
-| --- | --- |
-| **Left** | Displays one dataset on the left side of the screen |
-| **Right** | Displays the other dataset on the right side |
-| **Both** | Presents both datasets on either side for direct comparison |
+1. Click **Compare** to enter split-screen mode.
+2. Choose the two datasets to compare.
+3. Drag the split bar to align them; assign each dataset to **Left**, **Right**
+   or **Both**.
 
 !!! warning "Terrain note"
-    Terrain layers may obscure underground features. Depending on the datasets
-    being compared, this can matter to your interpretation.
+    Terrain layers can obscure underground features — relevant depending on the
+    datasets being compared.
 
 ## Pedestrian mode
 
-**Pedestrian Mode** gives a street-level view of the data for detailed
-exploration of geographic features.
-
-- **Street view** — a ground-level perspective, mimicking a pedestrian's view.
-- **Control tool** — rotate the imagery for a better angle.
-- **Keyboard shortcuts** — ++space++ moves forward, ++shift++ moves backward.
+**Pedestrian Mode** gives a street-level view for detailed exploration.
 
 <figure markdown="span">
-  ![The pedestrian mode tool](../assets/images/image58.png)
-  <figcaption>Figure 47: The &ldquo;Pedestrian Mode&rdquo; tool.</figcaption>
+  ![Pedestrian mode](../assets/v2/v2-pedestrian.png)
+  <figcaption>Figure 9: Pedestrian Mode — a ground-level view of the data.</figcaption>
 </figure>
 
-## Measurement tool
+Use the control tool to rotate the view; ++space++ moves forward and ++shift++
+moves backward.
 
-The **Measurement Tool** measures distances between points on the map,
-including length measurement between two or more points.
+## Measure
+
+The **Line Measure** tool (*Measure distance between locations*) measures the
+distance between two or more points on the map.
 
 <figure markdown="span">
-  ![Exploring the measure tool feature](../assets/images/image59.png)
-  <figcaption>Figure 48: Exploring the measure tool.</figcaption>
+  ![Measure tool](../assets/v2/v2-measure.png)
+  <figcaption>Figure 10: Measuring distance between points.</figcaption>
 </figure>
 
-## Map settings
+## Water Copilot chatbot
 
-**Map Settings** customises how the map is displayed — base map selection, data
-attribution, and map quality for better performance.
+!!! note "New in v2"
+    **Open Chatbot** (bottom-right of the map) launches **Water Copilot**, an
+    AI assistant. Ask questions about the basin and its data in plain language
+    and get guided answers and navigation help. The assistant opens in a panel
+    beside the map.
+
+## SWAT Extraction Tool
+
+!!! note "New in v2"
+    The **SWAT Extraction Tool** queries modelled flows from the SWAT
+    hydrological model for a specific river channel.
 
 <figure markdown="span">
-  ![Description of the map settings from the site tour](../assets/images/image60.png)
-  <figcaption>Figure 49: The map settings, described during the site tour.</figcaption>
+  ![The SWAT Extraction Tool](../assets/v2/v2-swat-tool.png)
+  <figcaption>Figure 11: The SWAT Extraction Tool — choose a flow type, channel and date range, then fetch data. Tabs switch between Map, Table, Help and ProbFlo.</figcaption>
 </figure>
 
-The settings cover:
+- **Select Flow Type** — e.g. *Natural Flows*.
+- **Channel ID** — the channel to query.
+- **Start Date / End Date** — the period of interest.
+- **Condition** — a filter on the flow condition.
+- **FETCH DATA** — retrieves the modelled series; the **MAP / TABLE / HELP /
+  PROBFLO** tabs switch between the map picker, the results table, help, and the
+  ProbFlo view.
 
-- Map view
-- Terrain positioning
-- Base map selection
-- Timeline
-- Image optimisation
-- Map quality
+## Feedback
+
+The **Give Feedback** tool sends comments or questions directly to the
+developers.
 
 <figure markdown="span">
-  ![The map settings feature](../assets/images/image61.png)
-  <figcaption>Figure 50: The map settings panel.</figcaption>
+  ![The feedback form](../assets/v2/v2-feedback.png)
+  <figcaption>Figure 12: The feedback form — name and email are optional; you can include your current map view.</figcaption>
 </figure>
 
 ## Data attribution and basemap selection
 
-At the bottom of the homepage you will find options for data attribution, base
-map selection, and the disclaimers that apply to the data in use.
+Along the bottom of the map are data attribution, the basemap selector, and the
+disclaimers that apply to the data in use, plus a live **Lat / Lon / Elev**
+readout and a scale bar.

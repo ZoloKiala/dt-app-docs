@@ -26,16 +26,27 @@ TerriaJS `8.7.1`, agosto de 2024) e o portal atualmente em funcionamento em
 
 ## O que isto significa para os utilizadores
 
-As alterações visíveis durante a utilização do portal:
+As alterações visíveis durante a utilização do portal (confirmadas na
+instalação v2 em produção):
 
+- **O início de sessão passou a ser obrigatório.** O portal tem acesso
+  controlado — inicia sessão através do serviço central do IWMI antes de o mapa
+  carregar. Ver [Primeiros Passos](../guide/getting-started.md#iniciar-sessao).
 - **A interface foi redesenhada.** O TerriaMap `0.4.0` trouxe "um novo aspeto
-  da interface, com alterações à área de trabalho e a outros painéis". A
-  [Área de Trabalho](../guide/workbench.md) e os painéis em seu redor já não
-  têm o aspeto apresentado na v1.
-- **As opções de mapa de base mudaram.** Os mapas de base da Carto —
-  *positron*, *dark matter* e *black marble* — foram removidos das predefinições
-  por passarem a exigir uma licença comercial da Carto. Em sua substituição, o
-  **OpenStreetMap** passou a ser um mapa de base predefinido.
+  da interface, com alterações à área de trabalho e a outros painéis", e a área
+  de trabalho passou a exibir a marca IWMI / LIMCOM / CGIAR Digital
+  Transformation.
+- **O catálogo passou de cinco para onze categorias.** Novas categorias:
+  **Flood Monitoring & Early Warning**, **Drought Monitoring & Risk
+  Assessment**, **Citizen Science**, **Water Use Monitoring and Analysis** e
+  **Data Sources & Providers**. Ver [Temas dos Dados](../guide/datasets.md).
+- **Duas novas ferramentas.** Um assistente de IA **Water Copilot** e uma
+  **SWAT Extraction Tool** (consulta caudais modelados para um canal num
+  intervalo de datas) — ver [Ferramentas do Mapa](../guide/map-tools.md).
+- **Mais mapas de base.** O conjunto de mapas de base inclui agora
+  **OpenStreetMap**, **Esri World Imagery**, **Esri Topographic**,
+  **OpenTopoMap**, **Natural Earth II**, a família Bing, além de **Dark Matter**
+  e **Positron (Light)**.
 - **Mais formatos de dados podem ser adicionados.** O catálogo passou a
   suportar **I3S** (camadas de cena 3D indexadas) e **COG** (GeoTIFF otimizado
   para a nuvem), pelo que mais serviços externos podem ser integrados através de

@@ -4,151 +4,77 @@ title: Catálogo de Dados
 
 # Catálogo de Dados
 
-O **Data Catalogue** (*Catálogo de Dados*) está organizado em categorias
-temáticas, cada uma com conjuntos de dados relevantes para a bacia do Rio
-Limpopo: **Natural Basin Characteristics** (*Características Naturais da
-Bacia*), **Socio-Economic Profile** (*Perfil Socioeconómico*), **Water
-Resources** (*Recursos Hídricos*), **Ecosystems** (*Ecossistemas*) e
-**Satellite Images** (*Imagens de Satélite*).
+Clique em **Explore data** na área de trabalho (ou **Explore map data** no
+painel de boas-vindas) para abrir o **Data Catalogue** (*Catálogo de Dados*).
+Na v2, é um painel de dois lados: a árvore de categorias à esquerda e a
+pré-visualização de um conjunto de dados à direita.
 
 <figure markdown="span">
-  ![Catálogo de Dados com as camadas temáticas](../assets/images/image8.png)
-  <figcaption>Figura 7: O Catálogo de Dados, mostrando as camadas temáticas.</figcaption>
+  ![O Catálogo de Dados da v2 com as suas onze categorias](../assets/v2/v2-data-catalogue.png)
+  <figcaption>Figura 3: O Catálogo de Dados. O painel esquerdo lista as onze categorias temáticas; ao selecionar um conjunto de dados, este é pré-visualizado à direita.</figcaption>
 </figure>
 
-Para saber o que contém cada categoria, consulte
-[Temas dos Dados](datasets.md).
+No topo do painel estão dois separadores — **Data** (o catálogo curado) e
+**My Data** (os seus próprios ficheiros, ver [Os Meus Dados](my-data.md)) — uma
+caixa **Search the catalogue** (*Pesquisar no catálogo*), e um botão **Done**
+(*Concluído*) que o devolve ao mapa.
+
+## As onze categorias
+
+A v2 alarga o catálogo de cinco para **onze** categorias temáticas. Cinco são
+novas desde a versão de 2024 (assinaladas **Nova**):
+
+| Categoria | Conteúdo |
+| --- | --- |
+| **Natural Basin Characteristic** | Fisiografia, ocupação e uso do solo, nuvens de pontos 3D, clima |
+| **Flood Monitoring & Early Warning** | **Nova** — camadas de monitorização de cheias e alerta precoce |
+| **Drought Monitoring & Risk Assessment** | **Nova** — camadas de monitorização e risco de seca |
+| **Socio-Economic Profile** | Dados de população e demografia |
+| **Water Resources** | Fontes de água superficial e infraestruturas |
+| **Citizen Science** | **Nova** — observações da comunidade (p. ex. miniSASS, FishTRAC) |
+| **Water Use Monitoring and Analysis** | **Nova** — contabilidade e monitorização do uso da água |
+| **Ecosystems** | Regiões de caudal ecológico, monitorização, alertas e avisos |
+| **Satellite Images** | GeoMAD (Sentinel-2), Water Observations from Space |
+| **Data Sources & Providers** | **Nova** — proveniência e informação dos fornecedores do catálogo |
+
+Ver [Temas dos Dados](datasets.md) para um percurso pelo conteúdo de cada
+categoria.
 
 ## Pesquisar no catálogo
 
-Utilize **Search the Catalogue** (*Pesquisar no catálogo*) para encontrar um
-conjunto de dados pelo nome. Chega rapidamente aos dados que procura, sem ter
-de percorrer toda a árvore de categorias.
+Use **Search the catalogue** para encontrar um conjunto de dados pelo nome em
+todas as categorias — mais rápido do que percorrer a árvore.
 
 ## Pré-visualizar e adicionar dados
 
-Ao selecionar um conjunto de dados abre-se o painel **Data Preview**
-(*Pré-visualização dos dados*), com uma breve descrição e a opção de adicionar
-o conjunto ao mapa. Tomando como exemplo "Soil maps" (*Mapas de solos*), em
-*Natural Basin Characteristics*, a pré-visualização apresenta:
+Clique numa categoria para a expandir e selecione um conjunto de dados. A sua
+**pré-visualização** aparece no painel direito, com uma descrição e um comando
+de **adição** (o ícone **+**). A informação típica inclui:
 
-1. **Descrição do conjunto de dados** — a relevância dos dados, incluindo a sua
-   importância para a gestão sustentável do solo e os esforços de conservação.
-2. **Add to the Map** (*Adicionar ao mapa*) — visualizar o conjunto de dados
-   diretamente no mapa.
-3. **Service Contact** (*Contacto do serviço*) — informação de contacto para
-   esclarecimentos adicionais sobre os dados.
-4. **GetCapabilities URL** — um endereço para integrar o conjunto de dados
-   noutro software SIG.
-5. **DOI e fonte dos dados** — a origem dos dados, incluindo um DOI para
-   citação e o fornecedor principal.
+1. **Descrição do conjunto de dados** — o que são os dados e a sua relevância.
+2. **Adicionar ao mapa** — desenha o conjunto no globo (o ícone **+**; mantenha
+   **Shift** e clique em **+** para adicionar vários de uma vez).
+3. **Contacto do serviço** — quem contactar sobre os dados.
+4. **GetCapabilities URL** — para integrar o conjunto noutro software SIG.
+5. **DOI e fonte dos dados** — identificador de citação e fornecedor principal.
 
-<figure markdown="span">
-  ![Adicionar um conjunto de dados ao mapa](../assets/images/image9.png)
-  <figcaption>Figura 8: Adicionar um conjunto de dados à vista do mapa.</figcaption>
-</figure>
+!!! tip "Adicionar vários de uma vez"
+    O catálogo indica *"Press Shift and click + to add multiple datasets."* Use
+    **Go to the map** ou **Done** quando terminar a seleção.
 
-<figure markdown="span">
-  ![Pré-visualização do conjunto de dados Soil maps](../assets/images/image10.png)
-  <figcaption>Figura 9: Pré-visualização do conjunto &ldquo;Soil maps&rdquo;, com a opção de o adicionar ao mapa e descrições detalhadas.</figcaption>
-</figure>
+Depois de adicionado, um conjunto de dados aparece na
+[Área de Trabalho](workbench.md), onde o pode ativar, ajustar a opacidade,
+reestilizar, representar graficamente e comparar.
 
-<figure markdown="span">
-  ![Mapas de solos apresentados no mapa](../assets/images/image11.png)
-  <figcaption>Figura 10: A camada de mapas de solos apresentada no mapa.</figcaption>
-</figure>
+## Informação do elemento
 
-!!! info "About Data (*Sobre os dados*)"
-    O ícone **About Data** devolve-o à página do catálogo e mostra a informação
-    relativa ao conjunto de dados atualmente apresentado.
+Ao clicar num elemento do mapa abre-se a sua **Feature Information** — os
+atributos por detrás desse ponto, com opções para descarregar a tabela
+subjacente (CSV ou JSON) e mostrar os dados brutos. Para conjuntos com dimensão
+temporal, um gráfico e uma linha temporal permitem explorar a evolução num
+intervalo de datas escolhido.
 
-## Navegar nos dados
+## Passos seguintes
 
-Assim que um conjunto de dados é adicionado ao mapa, passa a aparecer na
-[Área de Trabalho](workbench.md) para manipulação posterior. A partir daí pode
-ajustar a visibilidade e a opacidade, e comparar conjuntos de dados. A
-plataforma suporta visualização 2D e 3D, consoante o conjunto de dados.
-
-<figure markdown="span">
-  ![Área de Trabalho e pré-visualização dos dados](../assets/images/image37.png)
-  <figcaption>Figura 11: A Área de Trabalho junto à pré-visualização dos dados.</figcaption>
-</figure>
-
-### Ferramentas para dados 3D
-
-As nuvens de pontos e outros dados 3D dispõem de controlos adicionais:
-
-- **Shadows** (*Sombras*) — apenas projetar, apenas receber, ou projetar e
-  receber sombras.
-- **Clip Model** (*Recortar modelo*) — recortar os dados dentro ou fora de uma
-  caixa, ampliar até à caixa e reposicioná-la.
-
-<figure markdown="span">
-  ![Funcionalidade de recorte do modelo](../assets/images/image38.png)
-  <figcaption>Figura 12: A funcionalidade de recorte aplicada a um conjunto de dados 3D.</figcaption>
-</figure>
-
-## O ícone Feature Information
-
-**Feature Information** (*Informação do elemento*) apresenta os detalhes por
-detrás de um ponto específico do mapa, e permite exportá-los.
-
-<figure markdown="span">
-  ![Informação do elemento do conjunto de dados de barragens](../assets/images/image39.png)
-  <figcaption>Figura 13: Informação do elemento para o conjunto de dados de localização de barragens.</figcaption>
-</figure>
-
-No exemplo das barragens, o painel apresenta:
-
-- **Dam Locations — Site Data** (*Localização de barragens — dados do local*) —
-  informação sobre cada barragem.
-- **Opções de descarregamento** — exportar a tabela de dados em CSV ou JSON.
-- **Show Raw Data** (*Mostrar dados brutos*) — ver os dados não processados.
-
-## Estilizar um conjunto de dados
-
-O controlo **display variable** (*variável de visualização*) na Área de
-Trabalho define o atributo pelo qual o conjunto de dados é desenhado. Para um
-controlo mais fino, clique no **ícone de três pontos**, escolha **Edit Style**
-(*Editar estilo*) e clique em **Done** (*Concluído*) quando terminar.
-
-<figure markdown="span">
-  ![Explorar as funcionalidades do conjunto de dados E-flow](../assets/images/image40.png)
-  <figcaption>Figura 14: Explorar as funcionalidades do conjunto de dados E-flow Monitoring and Forecasting.</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![Estilização do conjunto de dados E-Flow](../assets/images/image41.png)
-  <figcaption>Figura 15: Estilizar o conjunto de dados E-flow Monitoring and Forecasting.</figcaption>
-</figure>
-
-## Gráficos e séries temporais
-
-Os conjuntos de dados com dimensão temporal podem ser representados
-graficamente. Selecione uma data de início e de fim para restringir o gráfico
-ao período de interesse.
-
-<figure markdown="span">
-  ![Gráfico do conjunto de dados E-flow com datas selecionadas](../assets/images/image42.png)
-  <figcaption>Figura 16: Gráfico do conjunto de dados E-flow Monitoring and Forecasting, com data de início e de fim selecionadas.</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![Gráfico do conjunto de dados E-flow Monitoring and Forecasting](../assets/images/image43.png)
-  <figcaption>Figura 17: Gráfico do conjunto de dados E-flow Monitoring and Forecasting.</figcaption>
-</figure>
-
-Ao passar o cursor sobre um ponto da curva são revelados os valores
-subjacentes. Para o conjunto de dados E-flow, os atributos são:
-
-| Atributo | Significado |
-| --- | --- |
-| **Availability Surplus** | O excedente disponível, em quantidade ou unidade |
-| **Deficit** | O défice ou a ausência de dados |
-| **SWAT Present Flow** | O caudal proveniente do modelo SWAT |
-| **E-Flow** | O caudal ecológico |
-
-<figure markdown="span">
-  ![Gráfico ajustado com a funcionalidade de série temporal](../assets/images/image44.png)
-  <figcaption>Figura 18: O gráfico ajustado através do controlo de série temporal.</figcaption>
-</figure>
+[Explorar os temas dos dados :octicons-arrow-right-24:](datasets.md){ .md-button .md-button--primary }
+[Gerir camadas na Área de Trabalho :octicons-arrow-right-24:](workbench.md){ .md-button }

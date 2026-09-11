@@ -4,48 +4,54 @@ title: Workbench
 
 # Workbench
 
-The **Workbench** is the panel on the left of the map that manages every
-dataset currently active. Anything you add from the
-[Data Catalogue](data-catalogue.md) or [My Data](my-data.md) lands here.
+The **Workbench** is the panel on the left that manages the datasets currently
+on the map. Anything you add from the [Data Catalogue](data-catalogue.md) or
+[My Data](my-data.md) appears here under a **DATASETS (n)** heading.
 
 <figure markdown="span">
-  ![Workbench displayed on the left side of the map](../assets/images/image47.png)
-  <figcaption>Figure 43: The Workbench, displayed on the left side of the map.</figcaption>
+  ![The workbench with a dataset's actions menu open](../assets/v2/v2-workbench-actions.png)
+  <figcaption>Figure 6: The workbench. Each dataset card carries Ideal Zoom, About Data and a three-dot menu (Export / Remove).</figcaption>
 </figure>
 
-## What the Workbench does
+## Managing the whole list
 
-- **Toggle datasets** — turn datasets on or off as needed.
-- **Adjust opacity** — modify the transparency of a dataset.
-- **Compare data** — use split screen mode to place datasets side by side.
-- **Temporal navigation** — step through time series data where a dataset
-  provides it.
-
-## Managing datasets
+Above the dataset list, three actions apply to everything at once:
 
 | Control | Effect |
 | --- | --- |
+| **Disable All** | Hides every dataset without removing it |
+| **Collapse All** | Minimises every dataset card for a cleaner view |
 | **Remove All** | Clears every dataset from the workbench |
-| **Collapse All** | Minimises all datasets for a cleaner view |
-| **Three-dot icon** | Removes one specific dataset, or opens its style editor and export options |
-| **Checkbox** | Turns an individual dataset on or off |
-| **Dataset dropdown** | Zoom, adjust opacity and view details for that dataset |
 
-!!! tip "Ideal Zoom"
-    The **Ideal Zoom** option in a dataset's dropdown moves the map to the view
-    that best frames that dataset — useful when you have added a layer whose
-    extent you do not know.
+## Per-dataset controls
 
-## Styling from the Workbench
+Each dataset card gives you:
 
-The **display variable** control decides which attribute a dataset is drawn by.
-For finer control, open the three-dot menu, choose **Edit Style**, make your
-changes and click **Done**.
+- **Toggle** — the switch at the top of the card turns the dataset on or off.
+- **Ideal Zoom** — moves the map to the view that best frames the dataset.
+- **About Data** — returns to the catalogue entry and its full description.
+- **Three-dot menu (⋮)** — **Show more actions**, opening:
+    - **Export** — export the dataset.
+    - **Remove** — remove just this dataset from the map and workbench.
+- **Dropdown (▾)** — expands the card for opacity, the **display variable**
+  (which attribute the layer is drawn by), styling, and — where available —
+  charts and a timeline.
 
-See [Styling a dataset](data-catalogue.md#styling-a-dataset) for a worked
-example using the E-flow Monitoring and Forecasting dataset.
+## Styling a dataset
+
+The **display variable** decides which attribute a dataset is drawn by. For
+finer control, open the three-dot menu and choose the style editor, then apply
+your changes. Population data, for example, can be styled by sub-basin, area,
+polygon ID or population.
+
+## Time series
+
+Datasets with a temporal dimension expose a timeline beneath the map and in the
+workbench card; the left and right arrows step through time. Turn on
+**Timeline → Always show** in [Map Settings](map-tools.md#map-settings) to keep
+it visible.
 
 ## Comparing datasets
 
-The compare tool works directly against the Workbench contents — see
-[Compare feature](map-tools.md#compare-feature) in Map Tools.
+The compare tool works directly against the workbench contents — see
+[Compare](map-tools.md#compare) in Map Tools.

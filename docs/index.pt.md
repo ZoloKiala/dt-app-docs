@@ -9,24 +9,19 @@ DT) da Bacia do Rio Limpopo**, desenvolvido para o Instituto Internacional de
 Gestão da Água (IWMI).
 
 !!! abstract "Sobre esta documentação"
-    Este sítio é a edição web do documento *DT_03 — Guia do Utilizador:
-    TerriaJS Digital Twin* (agosto de 2024). Abrange o que é o portal, como foi
-    construído e como utilizar todas as funcionalidades da sua interface.
+    Esta é a documentação da **v2** — descreve o portal atualmente em
+    funcionamento em
+    [limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/)
+    (TerriaMap `0.4.1` / TerriaJS `8.9.5`, compilado a 2026-05-15). As imagens
+    foram captadas dessa versão. Para o portal original de 2024, selecione
+    **v1** no seletor de versão no cabeçalho.
 
 !!! tip "Abrir o portal"
-    O portal em produção está em
-    **[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/)**
-    — TerriaMap `0.4.1` / TerriaJS `8.9.5`, compilado a 2026-05-15. Consulte as
-    [Notas de Versão](reference/release-notes.md) para saber o que mudou desde
-    a versão de 2024, ou selecione **v1** no seletor de versão para o guia
-    anterior.
-
-!!! warning "As imagens estão a ser recapturadas"
-    O TerriaMap `0.4.0` redesenhou a interface, alterando a área de trabalho e
-    outros painéis. As imagens deste guia são ainda as do portal de 2024, pelo
-    que alguns painéis não terão exatamente o aspeto apresentado. Os
-    procedimentos descritos mantêm-se válidos; as imagens estão a ser
-    atualizadas.
+    Abra o portal em produção em
+    **[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/)**.
+    Consulte as [Notas de Versão](reference/release-notes.md) para o que mudou
+    desde 2024 — uma interface redesenhada, cinco novas categorias de dados, e
+    novas ferramentas como o assistente de IA e a ferramenta de extração SWAT.
 
 !!! info "Nomes dos comandos"
     A interface do portal está em inglês. Ao longo deste guia, os nomes dos
@@ -48,8 +43,8 @@ exploração de catálogos geoespaciais na web. O portal inspira-se em plataform
 como a Digital Earth Africa (DE Africa) e o NationalMap.
 
 <figure markdown="span">
-  ![A página inicial da framework TerriaJS](assets/images/image1.png)
-  <figcaption>Figura 1: A página inicial da framework TerriaJS.</figcaption>
+  ![O portal do Gémeo Digital do Limpopo, com a bacia no globo 3D](assets/v2/v2-main-map.png)
+  <figcaption>Figura 1: O portal do Gémeo Digital do Limpopo — a bacia no globo 3D, com a área de trabalho e os controlos de dados à esquerda.</figcaption>
 </figure>
 
 ## Comece por aqui
@@ -88,12 +83,23 @@ como a Digital Earth Africa (DE Africa) e o NationalMap.
 | Capacidade | O que lhe oferece |
 | --- | --- |
 | Visualização geoespacial | Vistas interativas 2D e 3D dos dados da bacia |
-| Catálogo temático de dados | Conjuntos de dados organizados em cinco categorias temáticas |
+| Catálogo temático de dados | Conjuntos de dados organizados em **onze** categorias temáticas |
 | Análise de séries temporais | Explore a evolução ao longo do tempo com a barra temporal |
 | Área de Trabalho (*Workbench*) | Ative, reestilize, reordene e compare as camadas ativas |
 | Os Meus Dados (*My Data*) | Adicione ficheiros locais ou serviços web sem os carregar para a nuvem |
 | Histórias (*Stories*) | Capture cenas para construir uma narrativa que pode partilhar |
 | Partilhar e imprimir | Ligações partilháveis, exportação PNG e vistas para impressão |
+| Assistente de IA (Water Copilot) | Faça perguntas sobre a bacia e obtenha respostas guiadas |
+| Ferramenta de extração SWAT | Consulte caudais modelados para um canal num intervalo de datas |
+
+!!! note "Novo na v2"
+    Face à versão de 2024, a v2 acrescenta cinco categorias de catálogo
+    (**Flood Monitoring & Early Warning**, **Drought Monitoring & Risk
+    Assessment**, **Citizen Science**, **Water Use Monitoring and Analysis** e
+    **Data Sources & Providers**), duas novas ferramentas (o assistente
+    **Water Copilot** e a **SWAT Extraction Tool**), um conjunto de mapas de
+    base alargado e uma área de trabalho redesenhada. O início de sessão passou
+    a ser obrigatório para abrir o portal.
 | Assistente com IA | Apoio a questões e navegação no portal |
 
 ## Conclusão do relatório original

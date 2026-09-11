@@ -6,65 +6,41 @@ title: Stories & Sharing
 
 ## The Story feature
 
-The **Story** feature lets you build and share narratives by capturing
-geospatial data in a structured format — combining the visual and interactive
-strengths of the map with explanatory text.
+The **Story** feature (top bar) builds shareable narratives by capturing map
+scenes with explanatory text — combining the visual and interactive strengths
+of the map with a guided storyline.
 
 <figure markdown="span">
-  ![Description of the story tool](../assets/images/image51.png)
-  <figcaption>Figure 51: The story tool, for creating informative narratives.</figcaption>
+  ![The Story builder](../assets/v2/v2-story.png)
+  <figcaption>Figure 13: The Story builder.</figcaption>
 </figure>
 
-### Story Editor
+- **Story Editor** — the interface for creating and managing stories,
+  integrating maps, data layers and narrative text.
+- **Capture Scene** — saves the current map view, with a title and description,
+  as a step in the story.
+- **Getting Started** — links to a Terria video on building data stories.
 
-The **Story Editor** is the main interface for creating and managing stories.
-It provides tools for integrating maps, data layers and narrative text into one
-coordinated presentation, so you can highlight specific aspects of the data.
-
-<figure markdown="span">
-  ![Story tool interface on the WebGIS portal](../assets/images/image52.png)
-  <figcaption>Figure 52: The story tool interface on the WebGIS portal.</figcaption>
-</figure>
-
-### Getting started
-
-The **Getting Started** tab links to a YouTube video produced by Terria that
-covers the basics of data stories — a practical introduction to creating and
-using the story tool.
-
-### Capture Scene
-
-To start telling a story, click the **Capture Scene** icon. A popup opens where
-you enter a project title and a detailed description, in an editor similar to
-Microsoft Word. Click **Save** to store the scene.
-
-<figure markdown="span">
-  ![Creating a story with the capture scene tool](../assets/images/image53.png)
-  <figcaption>Figure 53: Creating a story for a project with the capture scene tool in the story editor.</figcaption>
-</figure>
+Add scenes in the order you want to present them, then share the finished story
+using **Share / Print**.
 
 ## Share / Print
 
-The **Share/Print** feature lets you:
-
-- **Share** — generate a URL that links to your project.
-- **Download** — save the map as a PNG image.
-- **Print** — view and print the map.
+The **Share / Print** feature (top bar) shares or exports the current map.
 
 <figure markdown="span">
-  ![Share/print tool interface](../assets/images/image54.png)
-  <figcaption>Figure 54: The share/print tool, for exporting and sharing maps.</figcaption>
+  ![The Share / Print panel](../assets/v2/v2-share-print.png)
+  <figcaption>Figure 14: Share / Print — a shareable URL, PNG download and print view.</figcaption>
 </figure>
 
-### Advanced options
-
-Click the **Advanced Options** dropdown for:
-
-- **Include Story** — add your story to the shared content.
-- **Shorten URL** — use a web service to create a shorter shareable link.
+- **Share URL** — generates a link that reproduces your current map
+  ("*Anyone with this URL will be able to access this map*"); the URL is
+  shortened automatically. Click **Copy**.
+- **Download map (png)** — saves the current view as a PNG image.
+- **Show Print View** — opens a printable version of the map.
+- **Advanced options** — expand for extra settings, including whether to
+  include your story in the shared content.
 
 !!! note "Older share links"
-    If you have share links from an earlier version of TerriaJS, the
-    **Share & Story Migration** guide in the
-    [Help feature](help-support.md#the-help-feature) explains how to update
-    them.
+    Share links created by older versions of TerriaJS can be migrated — see the
+    **Share & Story Migration** guide in the [Help feature](help-support.md).

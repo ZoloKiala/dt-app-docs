@@ -4,131 +4,124 @@ title: Ferramentas do Mapa
 
 # Ferramentas do Mapa
 
-Os controlos ao longo da margem direita da vista do mapa tratam da orientação,
-navegação, comparação e medição.
+Os controlos à direita do mapa tratam da orientação, navegação, comparação e
+medição; a barra superior tem as Definições do Mapa e Share / Print; e a v2
+acrescenta duas novas ferramentas — um assistente de IA e uma ferramenta de
+extração SWAT.
 
-## View controls (*Controlos de vista*)
+## Definições do Mapa
 
-O ícone **View Controls** — um anel com uma cruz no centro — oferece:
-
-- **Orientação** — rodar o mapa 360 graus.
-- **Reset** (*Repor*) — restaurar a orientação predefinida do mapa.
+**Map Settings** (barra superior) personaliza a forma como o mapa é desenhado.
 
 <figure markdown="span">
-  ![Ferramenta de descrição dos controlos de vista](../assets/images/image55.png)
-  <figcaption>Figura 44: A ferramenta de descrição &ldquo;View Controls&rdquo;.</figcaption>
+  ![O painel Map Settings](../assets/v2/v2-map-settings.png)
+  <figcaption>Figura 7: Map Settings — modo de vista, terreno, mapas de base, linha temporal e qualidade.</figcaption>
 </figure>
 
-Os ícones adicionais por baixo deste controlo tratam da navegação corrente:
+- **Map View** — **3D Terrain**, **3D Smooth** ou **2D**.
+- **Show Terrain on the** — Left / Both / Right, com uma opção para que o
+  **terreno oculte elementos subterrâneos**.
+- **Base Map** — a v2 oferece um conjunto mais amplo do que a versão de 2024:
+  **Bing Aerial with Labels** (predefinido), **Bing Aerial**, **Bing Roads**,
+  **OpenStreetMap**, **OpenTopoMap**, **Esri World Imagery**, **Esri
+  Topographic**, **Dark Matter**, **Positron (Light)** e **Natural Earth II**.
+- **Timeline → Always show** — mantém os controlos de série temporal no ecrã.
+- **Image Optimisation** — usar a resolução nativa do dispositivo.
+- **Map Quality** — um cursor Quality ↔ Performance.
+
+## Controlos de vista
+
+O comando **Change view** (o ícone de anel e cruz) roda o mapa 360°, e um duplo
+clique repõe-no. Por baixo:
 
 | Controlo | Ação |
 | --- | --- |
-| **Ícone de casa** (*Home*) | Devolve o mapa à vista do globo predefinida |
-| **Ícone +** | Amplia |
-| **Ícone &ndash;** | Reduz |
-| **Location** (*Localização*) | Ativa o seguimento da localização em tempo real — clique em *Allow* na janela emergente |
-| **Pan** (*Deslocar*) | Arraste o mapa com o botão esquerdo do rato |
-| **Zoom** | Ajuste o nível de ampliação com a roda do rato |
-| **Measure Tool** (*Ferramenta de medição*) | Mede distâncias entre pontos do mapa |
+| **Home** | Regressa à vista predefinida do globo |
+| **+ / –** | Ampliar / reduzir (a roda do rato também amplia) |
+| **Location** | Seguimento da localização em tempo real — clique em *Allow* |
+| **Pan** | Arraste o mapa com o botão esquerdo do rato |
+
+## Comparar
+
+A ferramenta **Compare** (*Enable side-by-side comparison between two different
+sets of data*) coloca dois conjuntos de dados lado a lado em ecrã dividido.
 
 <figure markdown="span">
-  ![Vista do globo através do ícone de casa](../assets/images/image56.png)
-  <figcaption>Figura 45: A vista do globo, obtida com o ícone de casa à direita do mapa.</figcaption>
+  ![Modo de comparação em ecrã dividido](../assets/v2/v2-compare.png)
+  <figcaption>Figura 8: Modo de comparação lado a lado.</figcaption>
 </figure>
 
-## Funcionalidade Compare
-
-A funcionalidade **Compare** (*Comparar*) coloca dois conjuntos de dados lado a
-lado em **Split Screen Mode** (*modo de ecrã dividido*) — útil para comparações
-detalhadas.
-
-### Como funciona
-
-1. **Ativar o ecrã dividido** — clique na ferramenta Compare para entrar em
-   Split Screen Mode.
-2. **Selecionar os conjuntos de dados** — escolha os dois conjuntos que quer
-   comparar.
-3. **Ajustar a vista** — arraste a barra divisória para redimensionar e alinhar
-   os conjuntos de dados.
-4. **Analisar** — compare visualmente os dados, identificando diferenças e
-   semelhanças.
-
-<figure markdown="span">
-  ![Ferramenta de ecrã dividido no portal WebGIS](../assets/images/image57.png)
-  <figcaption>Figura 46: O modo de ecrã dividido no portal WebGIS.</figcaption>
-</figure>
-
-O painel de comparação apresenta:
-
-- **Data Sets** (*Conjuntos de dados*) — lista os conjuntos que estão a ser
-  comparados.
-- **Remove All** (*Remover tudo*) — limpa todos os conjuntos da vista de
-  comparação.
-- **Collapse All** (*Recolher tudo*) — minimiza os detalhes para uma interface
-  mais limpa.
-
-O Split Screen Mode posiciona explicitamente cada conjunto de dados:
-
-| Definição | Resultado |
-| --- | --- |
-| **Left** (*Esquerda*) | Apresenta um dos conjuntos no lado esquerdo do ecrã |
-| **Right** (*Direita*) | Apresenta o outro conjunto no lado direito |
-| **Both** (*Ambos*) | Apresenta ambos os conjuntos em cada lado, para comparação direta |
+1. Clique em **Compare** para entrar no modo de ecrã dividido.
+2. Escolha os dois conjuntos a comparar.
+3. Arraste a barra divisória para os alinhar; atribua cada conjunto a **Left**,
+   **Right** ou **Both**.
 
 !!! warning "Nota sobre o terreno"
-    As camadas de terreno podem ocultar elementos subterrâneos. Consoante os
-    conjuntos de dados em comparação, isso pode afetar a sua interpretação.
+    As camadas de terreno podem ocultar elementos subterrâneos — relevante
+    consoante os conjuntos em comparação.
 
-## Pedestrian mode (*Modo peão*)
+## Modo peão
 
-O **Pedestrian Mode** oferece uma vista ao nível da rua, para exploração
-detalhada dos elementos geográficos.
-
-- **Vista de rua** — uma perspetiva ao nível do solo, semelhante à de um peão.
-- **Ferramenta de controlo** — roda a imagem para obter um melhor ângulo.
-- **Atalhos de teclado** — ++space++ avança, ++shift++ recua.
+O **Pedestrian Mode** oferece uma vista ao nível da rua para exploração
+detalhada.
 
 <figure markdown="span">
-  ![A ferramenta de modo peão](../assets/images/image58.png)
-  <figcaption>Figura 47: A ferramenta &ldquo;Pedestrian Mode&rdquo;.</figcaption>
+  ![Modo peão](../assets/v2/v2-pedestrian.png)
+  <figcaption>Figura 9: Pedestrian Mode — uma vista dos dados ao nível do solo.</figcaption>
 </figure>
 
-## Ferramenta de medição
+Use a ferramenta de controlo para rodar a vista; ++space++ avança e ++shift++
+recua.
 
-A **Measurement Tool** mede distâncias entre pontos do mapa, incluindo a
-medição de comprimento entre dois ou mais pontos.
+## Medir
+
+A ferramenta **Line Measure** (*Measure distance between locations*) mede a
+distância entre dois ou mais pontos do mapa.
 
 <figure markdown="span">
-  ![Explorar a ferramenta de medição](../assets/images/image59.png)
-  <figcaption>Figura 48: Explorar a ferramenta de medição.</figcaption>
+  ![Ferramenta de medição](../assets/v2/v2-measure.png)
+  <figcaption>Figura 10: Medir a distância entre pontos.</figcaption>
 </figure>
 
-## Map settings (*Definições do mapa*)
+## Assistente Water Copilot
 
-As **Map Settings** personalizam a apresentação do mapa — seleção do mapa de
-base, atribuição dos dados e qualidade do mapa para melhor desempenho.
+!!! note "Novo na v2"
+    **Open Chatbot** (canto inferior direito do mapa) abre o **Water Copilot**,
+    um assistente de IA. Faça perguntas sobre a bacia e os seus dados em
+    linguagem natural e obtenha respostas guiadas e ajuda na navegação. O
+    assistente abre num painel ao lado do mapa.
+
+## Ferramenta de extração SWAT
+
+!!! note "Novo na v2"
+    A **SWAT Extraction Tool** consulta caudais modelados pelo modelo
+    hidrológico SWAT para um canal fluvial específico.
 
 <figure markdown="span">
-  ![Descrição das definições do mapa na visita guiada](../assets/images/image60.png)
-  <figcaption>Figura 49: As definições do mapa, descritas durante a visita guiada.</figcaption>
+  ![A SWAT Extraction Tool](../assets/v2/v2-swat-tool.png)
+  <figcaption>Figura 11: A SWAT Extraction Tool — escolha o tipo de caudal, o canal e o intervalo de datas, e depois obtenha os dados. Os separadores alternam entre Map, Table, Help e ProbFlo.</figcaption>
 </figure>
 
-As definições abrangem:
+- **Select Flow Type** — p. ex. *Natural Flows*.
+- **Channel ID** — o canal a consultar.
+- **Start Date / End Date** — o período de interesse.
+- **Condition** — um filtro sobre a condição do caudal.
+- **FETCH DATA** — obtém a série modelada; os separadores **MAP / TABLE / HELP /
+  PROBFLO** alternam entre o seletor no mapa, a tabela de resultados, a ajuda e
+  a vista ProbFlo.
 
-- Vista do mapa
-- Posicionamento do terreno
-- Seleção do mapa de base
-- Linha temporal
-- Otimização de imagem
-- Qualidade do mapa
+## Comentários
+
+A ferramenta **Give Feedback** envia comentários ou questões diretamente para os
+programadores.
 
 <figure markdown="span">
-  ![O painel de definições do mapa](../assets/images/image61.png)
-  <figcaption>Figura 50: O painel de definições do mapa.</figcaption>
+  ![O formulário de comentários](../assets/v2/v2-feedback.png)
+  <figcaption>Figura 12: O formulário de comentários — o nome e o email são opcionais; pode incluir a sua vista atual do mapa.</figcaption>
 </figure>
 
 ## Atribuição dos dados e seleção do mapa de base
 
-Na parte inferior da página inicial encontra as opções de atribuição dos dados,
-de seleção do mapa de base, e as advertências aplicáveis aos dados em
-utilização.
+Ao longo da base do mapa estão a atribuição dos dados, o seletor de mapa de base
+e as advertências aplicáveis aos dados em uso, além de uma leitura em tempo real
+**Lat / Lon / Elev** e uma barra de escala.

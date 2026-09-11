@@ -6,69 +6,44 @@ title: Histórias e Partilha
 
 ## A funcionalidade Story
 
-A funcionalidade **Story** (*História*) permite construir e partilhar
-narrativas, captando dados geoespaciais num formato estruturado — combinando a
-força visual e interativa do mapa com texto explicativo.
+A funcionalidade **Story** (*História*, barra superior) constrói narrativas
+partilháveis, captando cenas do mapa com texto explicativo — combinando a força
+visual e interativa do mapa com um fio condutor guiado.
 
 <figure markdown="span">
-  ![Descrição da ferramenta de histórias](../assets/images/image51.png)
-  <figcaption>Figura 51: A ferramenta de histórias, para criar narrativas informativas.</figcaption>
+  ![O editor de histórias](../assets/v2/v2-story.png)
+  <figcaption>Figura 13: O editor de histórias (Story).</figcaption>
 </figure>
 
-### Story Editor (*Editor de histórias*)
+- **Story Editor** — a interface para criar e gerir histórias, integrando
+  mapas, camadas de dados e texto narrativo.
+- **Capture Scene** — guarda a vista atual do mapa, com título e descrição,
+  como um passo da história.
+- **Getting Started** — liga a um vídeo da Terria sobre a criação de histórias
+  de dados.
 
-O **Story Editor** é a interface principal para criar e gerir histórias.
-Disponibiliza ferramentas para integrar mapas, camadas de dados e texto
-narrativo numa apresentação coerente, permitindo destacar aspetos específicos
-dos dados.
-
-<figure markdown="span">
-  ![Interface da ferramenta de histórias no portal WebGIS](../assets/images/image52.png)
-  <figcaption>Figura 52: A interface da ferramenta de histórias no portal WebGIS.</figcaption>
-</figure>
-
-### Getting Started (*Começar*)
-
-O separador **Getting Started** liga a um vídeo do YouTube produzido pela
-Terria que aborda as noções básicas das histórias de dados — uma introdução
-prática à criação e utilização da ferramenta.
-
-### Capture Scene (*Captar cena*)
-
-Para começar a contar uma história, clique no ícone **Capture Scene**. Abre-se
-uma janela onde introduz o título do projeto e uma descrição detalhada, num
-editor semelhante ao Microsoft Word. Clique em **Save** (*Guardar*) para
-guardar a cena.
-
-<figure markdown="span">
-  ![Criar uma história com a ferramenta capture scene](../assets/images/image53.png)
-  <figcaption>Figura 53: Criar uma história para um projeto com a ferramenta capture scene no editor de histórias.</figcaption>
-</figure>
+Adicione cenas pela ordem em que as quer apresentar e partilhe a história
+concluída usando **Share / Print**.
 
 ## Share / Print (*Partilhar / Imprimir*)
 
-A funcionalidade **Share/Print** permite-lhe:
-
-- **Share** (*Partilhar*) — gerar um endereço que liga ao seu projeto.
-- **Download** (*Descarregar*) — guardar o mapa como imagem PNG.
-- **Print** (*Imprimir*) — visualizar e imprimir o mapa.
+A funcionalidade **Share / Print** (barra superior) partilha ou exporta o mapa
+atual.
 
 <figure markdown="span">
-  ![Interface da ferramenta de partilha e impressão](../assets/images/image54.png)
-  <figcaption>Figura 54: A ferramenta de partilha/impressão, para exportar e partilhar mapas.</figcaption>
+  ![O painel Share / Print](../assets/v2/v2-share-print.png)
+  <figcaption>Figura 14: Share / Print — um URL partilhável, descarregamento em PNG e vista de impressão.</figcaption>
 </figure>
 
-### Advanced Options (*Opções avançadas*)
-
-Clique no menu pendente **Advanced Options** para:
-
-- **Include Story** (*Incluir história*) — acrescentar a sua história ao
-  conteúdo partilhado.
-- **Shorten URL** (*Encurtar endereço*) — utilizar um serviço web para criar
-  uma ligação de partilha mais curta.
+- **Share URL** — gera uma ligação que reproduz o seu mapa atual (*"Anyone with
+  this URL will be able to access this map"*); o URL é encurtado
+  automaticamente. Clique em **Copy**.
+- **Download map (png)** — guarda a vista atual como imagem PNG.
+- **Show Print View** — abre uma versão imprimível do mapa.
+- **Advanced options** — expanda para opções adicionais, incluindo se deve
+  incluir a sua história no conteúdo partilhado.
 
 !!! note "Ligações de partilha antigas"
-    Se tiver ligações de partilha criadas por versões anteriores do TerriaJS, o
-    guia **Share & Story Migration** na
-    [funcionalidade Help](help-support.md#a-funcionalidade-help) explica como
-    atualizá-las.
+    As ligações criadas por versões anteriores do TerriaJS podem ser migradas —
+    ver o guia **Share & Story Migration** na
+    [funcionalidade Help](help-support.md).

@@ -8,3 +8,6 @@ venv/
 
 # Cloned upstream application source (iwmihq/dt-app) - not part of the docs.
 dt-app/
+
+# Cloned upstream API source (iwmihq/dt-api) - not part of the docs.
+dt-api/

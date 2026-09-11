@@ -4,26 +4,25 @@ title: My Data
 
 # My Data
 
-The **My Data** section lets you bring your own datasets into the map for
-localised analysis and visualisation. Reach it from the **Upload** icon, or
-from the **Explore Map Data** page.
+The **My Data** feature lets you bring your own datasets onto the map for
+localised analysis. In v2 it is the second tab of the Data Catalogue: click
+**Upload data** in the workbench (or **Explore data**, then the **My Data**
+tab).
 
 <figure markdown="span">
-  ![Description of the Upload Data feature](../assets/images/image45.png)
-  <figcaption>Figure 41: The &ldquo;Upload Data&rdquo; feature.</figcaption>
+  ![The My Data tab with its drag-and-drop area](../assets/v2/v2-my-data.png)
+  <figcaption>Figure 5: The My Data tab — drag and drop a file, or use Add Local Data / Add Web Data.</figcaption>
 </figure>
 
 !!! success "Your data stays on your machine"
-    Data added through My Data is **not uploaded or saved to the internet**. It
-    is rendered locally in your browser, so sensitive information stays
-    private.
+    Data added through My Data is **not saved or uploaded to the internet** —
+    the panel says so explicitly. It is rendered locally in your browser, so
+    sensitive information stays private.
 
 ## Adding local data
 
-Drag and drop files into the My Data section to view them immediately. Nothing
-is uploaded to the cloud.
-
-Supported formats:
+Drag a file into the area marked *"Drag and drop a file here to view it locally
+on the map"*, or click **Add Local Data** and choose a file. Supported formats:
 
 - GeoTIFF
 - Shapefiles
@@ -31,37 +30,23 @@ Supported formats:
 - GeoJSON
 - CSV with location coordinates
 
-### Steps to add local data
-
-1. **Drag and drop** — drag the file from local storage into the area labelled
-   *"Drag and drop a file here to view it locally on the map"*.
-2. **View on the map** — the platform renders the data automatically, ready
-   for you to view and interact with.
-3. **Manipulate the data** — use the [Workbench](workbench.md) tools to toggle
-   visibility, adjust opacity, and compare your dataset against other layers.
-
-<figure markdown="span">
-  ![The drag-and-drop area in the My Data section](../assets/images/image46.png)
-  <figcaption>Figure 42: The drag-and-drop area in the My Data section, where local files are added to the map.</figcaption>
-</figure>
+The platform renders the data immediately, ready to view and interact with. Use
+the [Workbench](workbench.md) tools to toggle visibility, adjust opacity and
+compare your dataset against other layers.
 
 ## Adding web data
 
-You can also pull in datasets from external web sources with **Add Web Data**.
-This accepts URLs from Web Map Services (WMS), Web Feature Services (WFS), and
-other compatible online geospatial data sources.
+Click **Add Web Data** to pull in a dataset from an external service. This
+accepts URLs from **WMS** (Web Map Service), **WFS** (Web Feature Service) and
+other compatible online geospatial sources.
 
-### Steps to add web data
-
-1. **Select Add Web Data** — click the *Add Web Data* button.
-2. **Enter the URL** — paste the URL of the web service or data source.
-3. **Visualise** — the platform fetches the data from the URL and displays it
-   on the map.
+1. Click **Add Web Data**.
+2. Paste the service or data-source URL.
+3. The platform fetches the data and draws it on the map.
 
 !!! tip "Finding a service URL"
-    Datasets in the built-in catalogue expose a **GetCapabilities URL** in
-    their preview panel. That same style of URL is what *Add Web Data* expects
-    from external services.
+    Catalogue datasets expose a **GetCapabilities URL** in their preview — that
+    is the style of URL *Add Web Data* expects from external services.
 
 ## Why use My Data
 

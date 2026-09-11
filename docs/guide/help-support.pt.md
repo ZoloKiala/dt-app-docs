@@ -4,80 +4,60 @@ title: Ajuda e Apoio
 
 # Ajuda e Apoio
 
-## A página About
-
-O ícone **About** (*Sobre*) abre uma nova janela do navegador que explica o
-conceito do Gémeo Digital do Limpopo e a sua ligação à plataforma NationalMap.
-Aborda a finalidade da plataforma, a sua arquitetura de dados abertos e oferece
-orientações sobre a utilização do portal.
-
-## Related Maps (*Mapas relacionados*)
-
-O ícone **Related Maps** leva-o a uma página com mapas semelhantes noutras
-plataformas, como o NationalMap e o Digital Twin Victoria — uma forma de
-alargar a perspetiva, ligando-se a recursos geoespaciais adicionais.
-
-- **Navegação** — ao clicar num mapa abre-se uma nova janela ou separador na
-  plataforma selecionada.
-- **Comparação e exploração** — visualize e avalie mapas de diferentes fontes
-  para uma análise espacial mais rica.
-
-<figure markdown="span">
-  ![A funcionalidade Related Maps](../assets/images/image48.png)
-  <figcaption>Figura 55: A funcionalidade &ldquo;Related Maps&rdquo;.</figcaption>
-</figure>
-
 ## A funcionalidade Help
 
-A funcionalidade **Help** (*Ajuda*) reúne num só lugar os recursos de
-orientação e apoio do portal.
+O botão **Help** na barra superior reúne num só lugar a orientação do portal — a
+visita guiada, vídeos e guias passo a passo. No primeiro carregamento, uma dica
+aponta para ele: *"Find the Tour, how-to videos & other help content here."*
 
 <figure markdown="span">
-  ![Explorar a funcionalidade Help](../assets/images/image50.png)
-  <figcaption>Figura 56: Explorar a funcionalidade &ldquo;Help&rdquo; do portal WebGIS.</figcaption>
+  ![A funcionalidade Help](../assets/v2/v2-help.png)
+  <figcaption>Figura 15: A funcionalidade Help.</figcaption>
 </figure>
 
 Inclui:
 
-- **Guias e contacto** — aceda aos guias, ou contacte a equipa de apoio através
-  de [iwmigeospatial@gmail.com](mailto:iwmigeospatial@gmail.com).
-- **Take the Tour** (*Fazer a visita*) — uma visita guiada para novos
-  utilizadores, que percorre cada funcionalidade do portal e descreve a sua
-  função. Clique em **Start Tour** (*Iniciar visita*) para começar.
-- **Getting Started with the Map** (*Começar a utilizar o mapa*) — um vídeo e
-  instruções sobre a funcionalidade básica do mapa: procurar localizações,
-  explorar conjuntos de dados, interagir com camadas e mudar o mapa de base.
-- **Step-by-Step Guides** (*Guias passo a passo*) — instruções detalhadas para
-  vários fluxos de trabalho.
-- **Share & Story Migration** — como atualizar ligações de partilha criadas por
-  versões anteriores do TerriaJS.
+- **Take the Tour** — uma visita guiada que identifica cada comando; clique em
+  **Start Tour** para começar.
+- **Getting Started with the Map** — um vídeo e instruções sobre o essencial:
+  pesquisar, explorar conjuntos de dados, interagir com camadas e mudar o mapa
+  de base.
+- **Step-by-Step Guides** — instruções detalhadas para fluxos de trabalho
+  comuns.
+- **Share & Story Migration** — como atualizar ligações de partilha de versões
+  anteriores do TerriaJS.
+- **Guias e contacto** — contacte a equipa de apoio através de
+  [iwmigeospatial@gmail.com](mailto:iwmigeospatial@gmail.com).
 
-<figure markdown="span">
-  ![A funcionalidade de navegação da visita guiada](../assets/images/image49.png)
-  <figcaption>Figura 57: A funcionalidade de navegação da visita guiada.</figcaption>
-</figure>
+## A página About
+
+O botão **About** (barra superior) abre informação sobre o conceito do Gémeo
+Digital do Limpopo — a finalidade da plataforma, a sua arquitetura de dados
+abertos e orientações sobre a utilização do portal.
 
 ## Comentários
 
-O ícone **Feedback** (*Comentários*), na parte inferior da página inicial do
-portal, envia as suas observações ou questões diretamente para os programadores
-do Gémeo Digital do Limpopo.
+A ferramenta **Give Feedback** envia os seus comentários ou questões diretamente
+para os programadores.
 
 <figure markdown="span">
-  ![A funcionalidade de comentários](../assets/images/image62.png)
-  <figcaption>Figura 58: O formulário de comentários.</figcaption>
+  ![O formulário de comentários](../assets/v2/v2-feedback.png)
+  <figcaption>Figura 16: O formulário de comentários.</figcaption>
 </figure>
-
-O formulário oferece:
 
 | Campo | Notas |
 | --- | --- |
-| **Your name** (*O seu nome*) | Opcional |
-| **Email address** (*Endereço de correio eletrónico*) | Opcional, mas necessário se pretender resposta da equipa de desenvolvimento |
-| **Comment or question** (*Comentário ou questão*) | As suas observações ou dúvidas |
-| **Share my map view** (*Partilhar a minha vista do mapa*) | Envia a vista atual do mapa juntamente com o comentário, dando contexto aos programadores |
-| **Cancel** (*Cancelar*) | Sai do formulário sem enviar |
-| **Send** (*Enviar*) | Submete os comentários aos programadores |
+| **Your name** | Opcional |
+| **Email address** | Opcional, mas necessário se pretender resposta |
+| **Comment or question** | As suas observações ou dúvidas |
+| **Share my map view** | Envia a vista atual do mapa para dar contexto |
+| **Send** | Submete os comentários |
+
+## Conta
+
+Como a v2 exige início de sessão, a barra superior tem também **Account** (gerir
+o perfil) e **Log out**. Ver
+[Primeiros Passos](getting-started.md#iniciar-sessao).
 
 ## Versão e informação do sistema
 
@@ -90,6 +70,5 @@ O formulário oferece:
 
 !!! info "Canal de apoio"
     A manutenção contínua abrange correção de erros, atualizações regulares e
-    novas funcionalidades. Existe um canal de apoio para ajudar os utilizadores
-    com questões ou problemas — ver
+    novas funcionalidades — ver
     [Implementação e Manutenção](../project/deployment.md).
