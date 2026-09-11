@@ -7,13 +7,22 @@ title: Getting Started
 ## Signing in
 
 The v2 portal is access-controlled: opening
-[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/) prompts
-you to **sign in** before the map loads. Authentication is handled by IWMI's
-central sign-in service (Keycloak). Once signed in, the top bar shows
-**Account** and **Log out**; use **Account** to manage your profile.
+[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/) takes
+you to the **Digital Twin Applications Single Sign-On** page before the map
+loads. You can sign in in three ways:
+
+- **Email and password** — enter your credentials and click **Sign In**
+  (tick **Remember me** to stay signed in; use **Forgot Password?** to reset).
+- **Sign in with Google** — use your Google account.
+- **Sign in with Microsoft** — use your Microsoft account.
+
+New users can **Register** from the link at the bottom of the sign-in page.
+
+Once signed in, the top bar shows **Account** and **Log out**; use **Account**
+to manage your profile.
 
 !!! info "Need access?"
-    If you do not have an account, contact the IWMI geospatial team at
+    If you cannot sign in or register, contact the IWMI geospatial team at
     [iwmigeospatial@gmail.com](mailto:iwmigeospatial@gmail.com).
 
 ## The welcome screen

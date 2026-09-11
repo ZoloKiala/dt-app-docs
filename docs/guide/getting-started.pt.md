@@ -7,14 +7,25 @@ title: Primeiros Passos
 ## Iniciar sessão
 
 O portal v2 tem acesso controlado: ao abrir
-[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/) é-lhe
-pedido que **inicie sessão** antes de o mapa carregar. A autenticação é
-assegurada pelo serviço central de início de sessão do IWMI (Keycloak). Após
-iniciar sessão, a barra superior mostra **Account** (*Conta*) e **Log out**
-(*Terminar sessão*); use **Account** para gerir o seu perfil.
+[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/) é
+encaminhado para a página **Digital Twin Applications Single Sign-On** antes de
+o mapa carregar. Pode iniciar sessão de três formas:
+
+- **Email e palavra-passe** — introduza as credenciais e clique em **Sign In**
+  (marque **Remember me** para se manter com sessão iniciada; use
+  **Forgot Password?** para repor).
+- **Iniciar sessão com o Google** — use a sua conta Google.
+- **Iniciar sessão com a Microsoft** — use a sua conta Microsoft.
+
+Os novos utilizadores podem **Register** (*Registar*) na ligação no fundo da
+página de início de sessão.
+
+Após iniciar sessão, a barra superior mostra **Account** (*Conta*) e
+**Log out** (*Terminar sessão*); use **Account** para gerir o seu perfil.
 
 !!! info "Precisa de acesso?"
-    Se não tiver conta, contacte a equipa geoespacial do IWMI através de
+    Se não conseguir iniciar sessão ou registar-se, contacte a equipa
+    geoespacial do IWMI através de
     [iwmigeospatial@gmail.com](mailto:iwmigeospatial@gmail.com).
 
 ## O ecrã de boas-vindas
