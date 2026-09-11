@@ -21,7 +21,10 @@ The original Word document is kept alongside this site at
 
 ## Portal version
 
-- **Version:** `2024-8-26-0.1.2-8.7.1-aba34780`
+- **Portal:** <https://limpopo.digitaltwins.iwmi.org/>
+- **TerriaMap version:** `0.4.1`
+- **TerriaJS version:** `8.9.5`
+- **Build date:** 2026-05-15
 - **Platform components:** Cesium ion for 3D mapping, data attribution and base
   map selection.
 

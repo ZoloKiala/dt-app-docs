@@ -81,7 +81,10 @@ O formulário oferece:
 
 ## Versão e informação do sistema
 
-- **Versão:** `2024-8-26-0.1.2-8.7.1-aba34780`
+- **Portal:** <https://limpopo.digitaltwins.iwmi.org/>
+- **Versão do TerriaMap:** `0.4.1`
+- **Versão do TerriaJS:** `8.9.5`
+- **Data de compilação:** 2026-05-15
 - **Componentes da plataforma:** Cesium ion para cartografia 3D, atribuição dos
   dados e seleção do mapa de base.
 

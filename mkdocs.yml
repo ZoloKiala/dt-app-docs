@@ -129,6 +129,7 @@ plugins:
             Development Process: Processo de Desenvolvimento
             Deployment & Maintenance: Implementação e Manutenção
             Reference: Referência
+            Release Notes: Notas de Versão
             Glossary: Glossário
   - glightbox:
       touchNavigation: true
@@ -177,4 +178,5 @@ nav:
       - Deployment & Maintenance: project/deployment.md
   - Reference:
       - reference/index.md
+      - Release Notes: reference/release-notes.md
       - Glossary: reference/glossary.md

@@ -13,12 +13,20 @@ Gestão da Água (IWMI).
     TerriaJS Digital Twin* (agosto de 2024). Abrange o que é o portal, como foi
     construído e como utilizar todas as funcionalidades da sua interface.
 
-!!! warning "Esta é a documentação da v1"
-    Descreve o **portal de 2024** — TerriaMap `0.1.2` / TerriaJS `8.7.1`,
-    compilado a 2024-08-26. Essa versão foi substituída. Para o portal
-    atualmente em funcionamento em
-    [limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/),
-    mude para a **v2** através do seletor de versão no cabeçalho.
+!!! tip "Abrir o portal"
+    O portal em produção está em
+    **[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/)**
+    — TerriaMap `0.4.1` / TerriaJS `8.9.5`, compilado a 2026-05-15. Consulte as
+    [Notas de Versão](reference/release-notes.md) para saber o que mudou desde
+    a versão de 2024, ou selecione **v1** no seletor de versão para o guia
+    anterior.
+
+!!! warning "As imagens estão a ser recapturadas"
+    O TerriaMap `0.4.0` redesenhou a interface, alterando a área de trabalho e
+    outros painéis. As imagens deste guia são ainda as do portal de 2024, pelo
+    que alguns painéis não terão exatamente o aspeto apresentado. Os
+    procedimentos descritos mantêm-se válidos; as imagens estão a ser
+    atualizadas.
 
 !!! info "Nomes dos comandos"
     A interface do portal está em inglês. Ao longo deste guia, os nomes dos

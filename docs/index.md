@@ -13,12 +13,18 @@ Institute (IWMI).
     (August 2024). It covers what the portal is, how it was built, and how to
     use every feature of its interface.
 
-!!! warning "This is the v1 documentation"
-    It describes the **2024 portal** — TerriaMap `0.1.2` / TerriaJS `8.7.1`,
-    built 2024-08-26. That release has been superseded. For the portal now
-    running at
-    [limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/),
-    switch to **v2** using the version selector in the header.
+!!! tip "Open the portal"
+    The live portal is at
+    **[limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/)**
+    — TerriaMap `0.4.1` / TerriaJS `8.9.5`, built 2026-05-15. See
+    [Release Notes](reference/release-notes.md) for what changed since the 2024
+    release, or pick **v1** in the version selector for the older guide.
+
+!!! warning "Screenshots are being re-captured"
+    TerriaMap `0.4.0` redesigned the interface, changing the workbench and
+    other panels. The screenshots in this guide still come from the 2024
+    portal, so some panels will not look exactly as shown. The described
+    workflows still apply; the images are being refreshed.
 
 ## What the portal does
 
