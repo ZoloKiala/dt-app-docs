@@ -23,22 +23,28 @@ theme:
   icon:
     logo: material/earth
     repo: fontawesome/brands/github
+  # IWMI brand fonts are defined in stylesheets/extra.css, because the brand
+  # body face (National) is commercial and needs a fallback stack that
+  # theme.font cannot express. Disabling it stops Material loading Roboto.
+  font: false
   palette:
     - media: "(prefers-color-scheme)"
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: light blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: light blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
