@@ -4,7 +4,10 @@
     "title": "v2",
     "aliases": [
       "latest"
-    ]
+    ],
+    "properties": {
+      "title": "v2 (current)"
+    }
   },
   {
     "version": "v1",
