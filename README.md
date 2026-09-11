@@ -25,15 +25,98 @@ mkdocs build --strict
 The static site is written to `site/` (git-ignored). `--strict` turns broken
 internal links and invalid config into build failures — use it in CI.
 
-## Deploy
+## Versions
 
-To publish to GitHub Pages:
+The site is versioned with [`mike`](https://github.com/jimporter/mike). Each
+version is a snapshot built into its own subdirectory of the `gh-pages`
+branch, and Material's header shows a version selector driven by the
+`versions.json` at the deployment root.
+
+| Version | Documents | Portal |
+| --- | --- | --- |
+| `v2` (alias `latest`, default) | TerriaMap `0.4.1` / TerriaJS `8.9.5`, built 2026-05-15 | <https://limpopo.digitaltwins.iwmi.org/> |
+| `v1` | TerriaMap `0.1.2` / TerriaJS `8.7.1`, built 2024-08-26 | retired |
+
+`v1` is frozen: it is the guide as written from the August 2024 Word document
+and should not be edited except to correct errors. Ongoing work happens on
+`v2`.
+
+### Working with versions
 
 ```bash
-mkdocs gh-deploy
+mike list                       # show deployed versions
+mike serve                      # preview the whole versioned site locally
+mike deploy --update-aliases v2 latest   # rebuild v2 and keep it as `latest`
+mike set-default latest         # make / redirect to the default version
+mike retitle v2 "v2 (current)"  # change a version's display title
 ```
 
-Any static host works too — just serve the contents of `site/`.
+Note `mike serve` previews what is on `gh-pages`; for authoring use
+`mkdocs serve`, which live-reloads the working tree.
+
+### Cutting a new version
+
+When the portal ships a release worth documenting separately:
+
+```bash
+# freeze what is current under its own name first, if not already deployed
+mike deploy v2
+
+# then update docs/ for the new release and publish it as latest
+mike deploy --update-aliases v3 latest
+mike set-default latest
+```
+
+## Deploy
+
+`mike` writes to the local `gh-pages` branch. To publish:
+
+```bash
+git push origin gh-pages
+```
+
+Add `--push` to any `mike deploy` to build and push in one step. Any static
+host works too — serve the contents of the `gh-pages` branch.
+
+> **Note:** `mkdocs gh-deploy` is *not* used here — it would overwrite the
+> whole `gh-pages` branch and destroy the version subdirectories.
+
+## Branding
+
+Styling follows the [IWMI brand guidelines](https://branding.iwmi.org/), in
+`docs/stylesheets/extra.css`:
+
+- **Colour** — Dark Blue `#28537D` as primary and Sky Blue `#46BBD4` as
+  accent, keeping to the brand rule that "in most instances only two colours
+  may be used in combination, on a grey/white background". The secondary
+  palette (Teal `#0297A6`, Green `#22AD7A`, Orange `#E86933`, Yellow
+  `#DD9103`) is reserved for semantic admonition accents.
+- **Type** — [DM Serif Text](https://fonts.google.com/specimen/DM+Serif+Text)
+  for headings and **National** for body text, as specified.
+
+> **Font licensing:** National is a commercial typeface and cannot be
+> self-hosted without a licence — contact iwmi-communications@cgiar.org for
+> terms. It is listed first in the CSS font stack so licensed machines use it,
+> with **Inter** as the free fallback. If IWMI holds a web licence, drop the
+> web-font files into `docs/stylesheets/` and add an `@font-face` rule; no
+> other change is needed.
+
+Material's `theme.font` is set to `false` so it does not load Roboto over the
+top; both palette entries use `primary: custom` / `accent: custom`, which the
+stylesheet then defines.
+
+## Upstream application source
+
+The portal's own source lives in
+[iwmihq/dt-app](https://github.com/iwmihq/dt-app). A working copy is cloned to
+`dt-app/` (git-ignored, ~400 MB) and is the reference for version facts:
+
+- `dt_limpopo/` — the current Limpopo portal (what `v2` documents)
+- `TerriaJS/` — the retired v1 codebase (what `v1` documents)
+- `dt_limpopo/CHANGES.md` — the changelog behind `docs/reference/release-notes.md`
+
+Refresh it with `git -C dt-app pull`. The live build's version can always be
+checked at <https://limpopo.digitaltwins.iwmi.org/version.json>.
 
 ## Languages
 
