@@ -1,0 +1,16 @@
+# Only the container needs Dockerfile, Caddyfile and public/.
+dt-app/
+dt-api/
+site/
+docs/
+overrides/
+.git/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.docx
+mkdocs.yml
+requirements.txt
+README.md
+ONBOARDING.md

@@ -81,6 +81,29 @@ host works too — serve the contents of the `gh-pages` branch.
 > **Note:** `mkdocs gh-deploy` is *not* used here — it would overwrite the
 > whole `gh-pages` branch and destroy the version subdirectories.
 
+### Railway
+
+The versioned site is also deployed to Railway as a static container (Caddy):
+
+- **Live URL:** <https://dt-limpopo-docs-production.up.railway.app>
+- **Project:** `dt-limpopo-docs` (Railway CLI must be logged in: `railway login`)
+
+To (re)deploy after changing docs:
+
+```bash
+mike deploy --update-aliases v2 latest   # update the gh-pages build first
+./deploy-railway.sh                        # materialise public/ and railway up
+```
+
+`deploy-railway.sh` copies the `gh-pages` output into `public/` (resolving the
+`latest` alias, since Windows can't create the symlink) and runs `railway up`.
+
+- `Dockerfile` / `Caddyfile` — a `caddy:2-alpine` image serving `public/` on
+  `$PORT`, with the root redirecting to `latest/`.
+- `public/` is **generated** — do not commit it (~90 MB). It is deliberately
+  **not** in `.gitignore`, because `railway up` skips gitignored paths and the
+  image needs it in the build context; just avoid `git add public/`.
+
 ## Branding
 
 Styling follows the [IWMI brand guidelines](https://branding.iwmi.org/), in
