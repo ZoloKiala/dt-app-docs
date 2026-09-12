@@ -120,6 +120,55 @@
         <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2pt/reference/release-notes/"/>
     </url>
     <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/use-cases/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2/use-cases/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2pt/use-cases/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/use-cases/droughts/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2/use-cases/droughts/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2pt/use-cases/droughts/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/use-cases/eflows/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2/use-cases/eflows/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2pt/use-cases/eflows/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/use-cases/floods/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2/use-cases/floods/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2pt/use-cases/floods/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/use-cases/irrigation/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2/use-cases/irrigation/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2pt/use-cases/irrigation/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/use-cases/reservoirs/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2/use-cases/reservoirs/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2pt/use-cases/reservoirs/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/use-cases/water-accounting/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2/use-cases/water-accounting/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2pt/use-cases/water-accounting/"/>
+    </url>
+    <url>
         <loc>https://iwmihq.github.io/dt-app-docs/v2/pt/</loc>
         <lastmod>2026-09-12</lastmod>
         <changefreq>daily</changefreq>
@@ -237,5 +286,54 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2/pt/reference/release-notes/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2reference/release-notes/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2use-cases/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/droughts/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/droughts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2use-cases/droughts/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/eflows/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/eflows/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2use-cases/eflows/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/floods/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/floods/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2use-cases/floods/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/irrigation/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/irrigation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2use-cases/irrigation/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/reservoirs/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/reservoirs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2use-cases/reservoirs/"/>
+    </url>
+    <url>
+        <loc>https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/water-accounting/</loc>
+        <lastmod>2026-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://iwmihq.github.io/dt-app-docs/v2/pt/use-cases/water-accounting/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://iwmihq.github.io/dt-app-docs/v2use-cases/water-accounting/"/>
     </url>
 </urlset>
