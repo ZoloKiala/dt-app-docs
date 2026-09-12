@@ -4,6 +4,21 @@ title: Primeiros Passos
 
 # Primeiros Passos
 
+## Vídeo: uma visita rápida
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../assets/v2/v2-main-map.png">
+  <source src="../assets/video/limpopo-getting-started.mp4" type="video/mp4">
+  <track kind="captions" src="../assets/video/limpopo-getting-started.vtt" srclang="en" label="English" default>
+  O seu navegador não suporta vídeo incorporado.
+  <a href="../assets/video/limpopo-getting-started.mp4">Descarregar o tutorial</a>.
+</video>
+</div>
+
+*Uma visita de ~2,5 minutos: início de sessão, exploração de dados, a área de
+trabalho, mapas de base e partilha. A narração e as legendas estão em inglês
+(voz sintética); ative as legendas com o botão **CC**.*
+
 ## Iniciar sessão
 
 O portal v2 tem acesso controlado: ao abrir
