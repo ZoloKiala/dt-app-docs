@@ -4,6 +4,20 @@ title: Área de Trabalho
 
 # Área de Trabalho
 
+## Vídeo: visita rápida
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-workbench-actions.png">
+  <source src="../../assets/video/quick-workbench.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-workbench.vtt" srclang="en" label="English">
+  O seu navegador não suporta vídeo incorporado.
+  <a href="../../assets/video/quick-workbench.mp4">Descarregar o vídeo</a>.
+</video>
+</div>
+
+*Uma visita de um minuto sobre os controlos da área de trabalho. A narração e as legendas estão em inglês (voz sintética); ative as legendas com o botão **CC**.*
+
+
 A **Workbench** (*Área de Trabalho*) é o painel à esquerda que gere os conjuntos
 de dados atualmente no mapa. Tudo o que adicionar a partir do
 [Catálogo de Dados](data-catalogue.md) ou de [Os Meus Dados](my-data.md) surge

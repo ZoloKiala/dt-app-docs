@@ -4,6 +4,20 @@ title: Temas dos Dados
 
 # Temas dos Dados
 
+## Vídeo: visita rápida
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-data-catalogue.png">
+  <source src="../../assets/video/quick-datasets.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-datasets.vtt" srclang="en" label="English">
+  O seu navegador não suporta vídeo incorporado.
+  <a href="../../assets/video/quick-datasets.mp4">Descarregar o vídeo</a>.
+</video>
+</div>
+
+*Uma visita de um minuto aos onze temas de dados. A narração e as legendas estão em inglês (voz sintética); ative as legendas com o botão **CC**.*
+
+
 Na v2, o [Catálogo de Dados](data-catalogue.md) agrupa os dados em **onze**
 categorias temáticas. Esta página descreve o conteúdo de cada uma. Os
 procedimentos de pré-visualização, adição, estilização e representação gráfica

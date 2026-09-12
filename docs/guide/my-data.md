@@ -4,6 +4,20 @@ title: My Data
 
 # My Data
 
+## Watch: quick tour
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-my-data.png">
+  <source src="../../assets/video/quick-my-data.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-my-data.vtt" srclang="en" label="English">
+  Your browser does not support embedded video.
+  <a href="../../assets/video/quick-my-data.mp4">Download the video</a>.
+</video>
+</div>
+
+*A one-minute walkthrough of adding your own local or web data. Narration uses a synthetic voice; turn on captions with the **CC** button.*
+
+
 The **My Data** feature lets you bring your own datasets onto the map for
 localised analysis. In v2 it is the second tab of the Data Catalogue: click
 **Upload data** in the workbench (or **Explore data**, then the **My Data**

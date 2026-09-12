@@ -4,6 +4,20 @@ title: Ferramentas do Mapa
 
 # Ferramentas do Mapa
 
+## Vídeo: visita rápida
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-map-settings.png">
+  <source src="../../assets/video/quick-map-tools.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-map-tools.vtt" srclang="en" label="English">
+  O seu navegador não suporta vídeo incorporado.
+  <a href="../../assets/video/quick-map-tools.mp4">Descarregar o vídeo</a>.
+</video>
+</div>
+
+*Uma visita de um minuto sobre definições do mapa, navegação, comparação e medição. A narração e as legendas estão em inglês (voz sintética); ative as legendas com o botão **CC**.*
+
+
 Os controlos à direita do mapa tratam da orientação, navegação, comparação e
 medição; a barra superior tem as Definições do Mapa e Share / Print; e a v2
 acrescenta duas novas ferramentas — um assistente de IA e uma ferramenta de

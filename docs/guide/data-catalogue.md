@@ -4,6 +4,20 @@ title: Data Catalogue
 
 # Data Catalogue
 
+## Watch: quick tour
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-data-catalogue.png">
+  <source src="../../assets/video/quick-data-catalogue.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-data-catalogue.vtt" srclang="en" label="English">
+  Your browser does not support embedded video.
+  <a href="../../assets/video/quick-data-catalogue.mp4">Download the video</a>.
+</video>
+</div>
+
+*A one-minute walkthrough of finding, previewing and adding data. Narration uses a synthetic voice; turn on captions with the **CC** button.*
+
+
 Click **Explore data** in the workbench (or **Explore map data** on the welcome
 panel) to open the **Data Catalogue**. In v2 this is a two-pane panel: the
 category tree on the left, and a dataset preview on the right.

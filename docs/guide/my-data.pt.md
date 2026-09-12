@@ -4,6 +4,20 @@ title: Os Meus Dados
 
 # Os Meus Dados
 
+## Vídeo: visita rápida
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-my-data.png">
+  <source src="../../assets/video/quick-my-data.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-my-data.vtt" srclang="en" label="English">
+  O seu navegador não suporta vídeo incorporado.
+  <a href="../../assets/video/quick-my-data.mp4">Descarregar o vídeo</a>.
+</video>
+</div>
+
+*Uma visita de um minuto sobre adicionar os seus dados locais ou da web. A narração e as legendas estão em inglês (voz sintética); ative as legendas com o botão **CC**.*
+
+
 A funcionalidade **My Data** (*Os Meus Dados*) permite trazer os seus próprios
 conjuntos de dados para o mapa, para análise localizada. Na v2 é o segundo
 separador do Catálogo de Dados: clique em **Upload data** na área de trabalho

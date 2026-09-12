@@ -4,6 +4,20 @@ title: Dataset Themes
 
 # Dataset Themes
 
+## Watch: quick tour
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-data-catalogue.png">
+  <source src="../../assets/video/quick-datasets.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-datasets.vtt" srclang="en" label="English">
+  Your browser does not support embedded video.
+  <a href="../../assets/video/quick-datasets.mp4">Download the video</a>.
+</video>
+</div>
+
+*A one-minute walkthrough of the eleven dataset themes. Narration uses a synthetic voice; turn on captions with the **CC** button.*
+
+
 The [Data Catalogue](data-catalogue.md) groups data into **eleven** thematic
 categories in v2. This page describes what each one holds. The mechanics of
 previewing, adding, styling and charting any dataset are the same throughout —

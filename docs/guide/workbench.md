@@ -4,6 +4,20 @@ title: Workbench
 
 # Workbench
 
+## Watch: quick tour
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-workbench-actions.png">
+  <source src="../../assets/video/quick-workbench.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-workbench.vtt" srclang="en" label="English">
+  Your browser does not support embedded video.
+  <a href="../../assets/video/quick-workbench.mp4">Download the video</a>.
+</video>
+</div>
+
+*A one-minute walkthrough of the workbench controls. Narration uses a synthetic voice; turn on captions with the **CC** button.*
+
+
 The **Workbench** is the panel on the left that manages the datasets currently
 on the map. Anything you add from the [Data Catalogue](data-catalogue.md) or
 [My Data](my-data.md) appears here under a **DATASETS (n)** heading.

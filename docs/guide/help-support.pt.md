@@ -4,6 +4,20 @@ title: Ajuda e Apoio
 
 # Ajuda e Apoio
 
+## Vídeo: visita rápida
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-help.png">
+  <source src="../../assets/video/quick-help-support.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-help-support.vtt" srclang="en" label="English">
+  O seu navegador não suporta vídeo incorporado.
+  <a href="../../assets/video/quick-help-support.mp4">Descarregar o vídeo</a>.
+</video>
+</div>
+
+*Uma visita de um minuto sobre ajuda, comentários e apoio. A narração e as legendas estão em inglês (voz sintética); ative as legendas com o botão **CC**.*
+
+
 ## A funcionalidade Help
 
 O botão **Help** na barra superior reúne num só lugar a orientação do portal — a

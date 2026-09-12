@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.800 --> 00:00:07.119
+My Data lets you bring your own files onto the map, without uploading them anywhere.
+
+00:00:07.953 --> 00:00:11.907
+Click Upload data to open the My Data tab.
+
+00:00:12.559 --> 00:00:23.537
+Drag and drop a GeoTIFF, shapefile, KML, GeoJSON or CSV here. Nothing is sent to the internet.
+
+00:00:24.199 --> 00:00:27.993
+Or browse for a file with Add Local Data.
+
+00:00:28.667 --> 00:00:35.006
+Add Web Data connects a W M S or W F S service by its URL.
+
+00:00:35.676 --> 00:00:38.875
+Click Done to go back to the map.
+
+00:00:39.530 --> 00:00:44.684
+That is My Data. Your files stay in your browser.

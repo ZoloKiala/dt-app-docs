@@ -4,6 +4,20 @@ title: Map Tools
 
 # Map Tools
 
+## Watch: quick tour
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-map-settings.png">
+  <source src="../../assets/video/quick-map-tools.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-map-tools.vtt" srclang="en" label="English">
+  Your browser does not support embedded video.
+  <a href="../../assets/video/quick-map-tools.mp4">Download the video</a>.
+</video>
+</div>
+
+*A one-minute walkthrough of map settings, navigation, compare and measure. Narration uses a synthetic voice; turn on captions with the **CC** button.*
+
+
 The controls down the right-hand side of the map handle orientation,
 navigation, comparison and measurement; the top bar carries Map Settings and
 Share / Print; and v2 adds two new tools — an AI chatbot and a SWAT extraction

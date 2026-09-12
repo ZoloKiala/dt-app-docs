@@ -4,6 +4,20 @@ title: Histórias e Partilha
 
 # Histórias e Partilha
 
+## Vídeo: visita rápida
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-share-print.png">
+  <source src="../../assets/video/quick-sharing.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-sharing.vtt" srclang="en" label="English">
+  O seu navegador não suporta vídeo incorporado.
+  <a href="../../assets/video/quick-sharing.mp4">Descarregar o vídeo</a>.
+</video>
+</div>
+
+*Uma visita de um minuto sobre partilha, impressão e histórias. A narração e as legendas estão em inglês (voz sintética); ative as legendas com o botão **CC**.*
+
+
 ## A funcionalidade Story
 
 A funcionalidade **Story** (*História*, barra superior) constrói narrativas

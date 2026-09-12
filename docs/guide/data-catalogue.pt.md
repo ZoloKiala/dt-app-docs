@@ -4,6 +4,20 @@ title: Catálogo de Dados
 
 # Catálogo de Dados
 
+## Vídeo: visita rápida
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-data-catalogue.png">
+  <source src="../../assets/video/quick-data-catalogue.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-data-catalogue.vtt" srclang="en" label="English">
+  O seu navegador não suporta vídeo incorporado.
+  <a href="../../assets/video/quick-data-catalogue.mp4">Descarregar o vídeo</a>.
+</video>
+</div>
+
+*Uma visita de um minuto sobre encontrar, pré-visualizar e adicionar dados. A narração e as legendas estão em inglês (voz sintética); ative as legendas com o botão **CC**.*
+
+
 Clique em **Explore data** na área de trabalho (ou **Explore map data** no
 painel de boas-vindas) para abrir o **Data Catalogue** (*Catálogo de Dados*).
 Na v2, é um painel de dois lados: a árvore de categorias à esquerda e a

@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.800 --> 00:00:09.033
+The workbench manages every layer on your map. First we add a layer, then look at its controls.
+
+00:00:09.844 --> 00:00:12.453
+Open Explore data.
+
+00:00:13.114 --> 00:00:18.093
+Search for a dataset, here the vegetation index.
+
+00:00:19.399 --> 00:00:25.298
+Add it to the map. It appears as a card in the workbench on the left.
+
+00:00:37.093 --> 00:00:42.917
+Disable All, Collapse All and Remove All act on every layer at once.
+
+00:00:43.577 --> 00:00:47.311
+Each layer has a switch to show or hide it.
+
+00:00:47.968 --> 00:00:51.657
+Ideal Zoom frames the layer on the map.
+
+00:00:52.315 --> 00:00:56.624
+About Data opens the layer's catalogue description.
+
+00:00:57.289 --> 00:01:02.068
+The three dot menu exports the layer, or removes it.
+
+00:01:11.515 --> 00:01:18.099
+Use the arrow on the card to open opacity, display variable and style controls.
+
+00:01:18.757 --> 00:01:26.390
+That is the workbench. Expand a card for opacity, styling and time controls.

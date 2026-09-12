@@ -4,6 +4,20 @@ title: Stories & Sharing
 
 # Stories & Sharing
 
+## Watch: quick tour
+
+<div class="video-wrap" markdown>
+<video controls preload="metadata" poster="../../assets/v2/v2-share-print.png">
+  <source src="../../assets/video/quick-sharing.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/quick-sharing.vtt" srclang="en" label="English">
+  Your browser does not support embedded video.
+  <a href="../../assets/video/quick-sharing.mp4">Download the video</a>.
+</video>
+</div>
+
+*A one-minute walkthrough of sharing, printing and stories. Narration uses a synthetic voice; turn on captions with the **CC** button.*
+
+
 ## The Story feature
 
 The **Story** feature (top bar) builds shareable narratives by capturing map
