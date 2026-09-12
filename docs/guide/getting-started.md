@@ -7,11 +7,11 @@ title: Getting Started
 ## Watch: a quick tour
 
 <div class="video-wrap" markdown>
-<video controls preload="metadata" poster="../assets/v2/v2-main-map.png">
-  <source src="../assets/video/limpopo-getting-started.mp4" type="video/mp4">
-  <track kind="captions" src="../assets/video/limpopo-getting-started.vtt" srclang="en" label="English" default>
+<video controls preload="metadata" poster="../../assets/v2/v2-main-map.png">
+  <source src="../../assets/video/limpopo-getting-started.mp4" type="video/mp4">
+  <track kind="captions" src="../../assets/video/limpopo-getting-started.vtt" srclang="en" label="English" default>
   Your browser does not support embedded video.
-  <a href="../assets/video/limpopo-getting-started.mp4">Download the tutorial</a>.
+  <a href="../../assets/video/limpopo-getting-started.mp4">Download the tutorial</a>.
 </video>
 </div>
 
