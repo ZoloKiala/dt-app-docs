@@ -129,6 +129,13 @@ plugins:
             Map Tools: Ferramentas do Mapa
             Stories & Sharing: Histórias e Partilha
             Help & Support: Ajuda e Apoio
+            Use Cases: Casos de Uso
+            Irrigation water use: Uso de água na irrigação
+            Floods: Cheias
+            Droughts: Secas
+            Environmental flows: Caudais ecológicos
+            Reservoir monitoring: Monitorização de albufeiras
+            Water accounting: Contabilidade da água
             Project: Projeto
             Technical Implementation: Implementação Técnica
             Development Process: Processo de Desenvolvimento
@@ -176,6 +183,14 @@ nav:
       - Map Tools: guide/map-tools.md
       - Stories & Sharing: guide/sharing.md
       - Help & Support: guide/help-support.md
+  - Use Cases:
+      - use-cases/index.md
+      - Irrigation water use: use-cases/irrigation.md
+      - Floods: use-cases/floods.md
+      - Droughts: use-cases/droughts.md
+      - Environmental flows: use-cases/eflows.md
+      - Reservoir monitoring: use-cases/reservoirs.md
+      - Water accounting: use-cases/water-accounting.md
   - Project:
       - project/index.md
       - Technical Implementation: project/architecture.md
