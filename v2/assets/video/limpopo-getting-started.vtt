@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:12.893
+Welcome to the Limpopo Digital Twin portal. In this short tour, you will learn how to sign in, explore data, and build your own map of the Limpopo River basin.
+
+00:00:12.893 --> 00:00:34.834
+The portal is open to registered users. You can sign in with your email and password, or with your Google or Microsoft account. New users can register from the sign in page. Once you are in, a welcome panel lets you take a guided tour, open the help, or jump straight into the data.
+
+00:00:34.834 --> 00:00:53.565
+This is the main interface. On the left is the workbench, with a location search and the datasets currently on your map. The three D globe in the centre shows the basin. Map tools run down the right, and your account and settings sit along the top.
+
+00:00:53.565 --> 00:01:12.272
+Click Explore data to open the catalogue. Datasets are grouped into eleven themes, from flood and drought monitoring to water resources, ecosystems, and satellite imagery. Select any dataset to preview it, then add it to the map.
+
+00:01:12.272 --> 00:01:29.439
+Have your own data? The My Data tab lets you drag and drop local files, such as GeoTIFF, shapefiles, or CSV, or connect a web service. Your files stay in your browser and are never uploaded.
+
+00:01:29.439 --> 00:01:45.556
+Every layer you add appears in the workbench. From here you can toggle it on or off, change its opacity, zoom to it, restyle it, or remove it. You can also chart data and step through time series.
+
+00:01:45.556 --> 00:01:59.799
+Under Map Settings you can switch between three D and two D views, and choose a basemap. Options include satellite imagery, streets, topographic maps, and light or dark themes.
+
+00:01:59.799 --> 00:02:14.441
+When you are ready, Share and Print gives you a shareable link, a P N G image download, or a printable version of your map. You can also capture scenes into a story to tell with your data.
+
+00:02:14.441 --> 00:02:27.978
+That is the Limpopo Digital Twin in a nutshell. Explore the full user guide, available in English and Portuguese, at limpopo dot digital twins dot i w m i dot org.

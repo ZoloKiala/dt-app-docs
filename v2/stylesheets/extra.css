@@ -303,3 +303,19 @@ input,
 .md-grid {
   max-width: 66rem;
 }
+
+/* Embedded tutorial video */
+.md-typeset .video-wrap {
+  margin: 1.2em 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(40, 83, 125, 0.18);
+  line-height: 0;
+}
+.md-typeset .video-wrap video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #10243a;
+}
