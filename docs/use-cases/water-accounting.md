@@ -95,41 +95,46 @@ flowchart TD
 
 ## Reading the charts
 
-<figure markdown="span">
-  ![Annual water balance 2003-2024](../assets/charts/wa-annual-balance.png)
-  <figcaption>Figure 1: Rainfall, total evapotranspiration and river outflow by year from the WA+ accounts (km³/yr).</figcaption>
-</figure>
-
-- **ET is nearly constant (200–330 km³)** while rainfall swings 3×: the
-  landscape evaporates whatever it gets, and the surplus of a wet year leaves
-  quickly as outflow (2021: 52 km³) or refills storage.
-- In **dry years ET exceeds rainfall** (2003, 2005, 2008, 2012, 2015, 2024):
-  the difference is soil moisture, groundwater and reservoir drawdown — which
-  is why droughts here are felt a year after the rainfall deficit.
-- Only **2.6 % of rainfall** reaches the sea on average; the Limpopo is a
-  closed basin in most years. Any new allocation is a reallocation.
+The figures below are the portal's own charts, captured from the **Feature Information** panel (click a feature) and from the **Charts** dock that opens with the panel's **Expand** button. Every station, dam and site chart in the portal follows the same pattern: a summary card, a preview chart, **Expand** to enlarge, **Download** for the CSV.
 
 <figure markdown="span">
-  ![ET by WA+ land-use class](../assets/charts/wa-et-by-landuse.png)
-  <figcaption>Figure 2: Share of basin evapotranspiration by WA+ land-use class, 2003–2020.</figcaption>
+  ![Figure 1](../assets/charts/portal/wa-dashboard-panel.png)
+  <figcaption>Figure 1: Limpopo Basin Water Balance (WA+ Dashboard) — the basin marker's card, with Show Raw Data, Advanced Chart and Balance Dashboard buttons. The Balance Dashboard opens the compiled WA+ accounts (resource-base sheet as a Sankey) in the live portal.</figcaption>
 </figure>
-
-- **Utilized land (rangeland, dryland farming, natural bush) consumes ~75 %**
-  of the water — rain used where it falls (green water).
-- **Managed water use — irrigation, reservoirs, towns — averages ~8 %**, rising
-  to ~17 % in the 2017 drought year when rain-fed ET collapsed and irrigation
-  kept going. This is the blue-water share that allocation rules govern.
-- Protected areas (Kruger, Gonarezhou, Limpopo NP) hold a steady 13–15 % —
-  the ecological reserve, in water-accounting terms.
+- This single marker is the entry point to the accounts: **Balance Dashboard** for the sheets, **Download** for the monthly CSV of every term since 2003.
 
 <figure markdown="span">
-  ![Land use share](../assets/charts/wa-landuse-share.png)
-  <figcaption>Figure 3: Basin area by WA+ land-use class.</figcaption>
+  ![Figure 2](../assets/charts/portal/wa-dashboard-chart.png)
+  <figcaption>Figure 2: The WA+ site after Expand — every term of the monthly balance (some 35 series: inflows, ET by land-use class, outflows, storage change) on one axis, 2003–2021.</figcaption>
 </figure>
+- The dock plots **all terms at once**, which is only useful for spotting the seasonal rhythm: the pink rainfall inflow peaks each summer; the yellow/orange ET terms follow one to two months later.
+- Turn series off in the legend to isolate a term — e.g. keep *Inflow Precipitation Rainfall* and *Outflow ET Landscape Utilized* to see that in dry summers ET exceeds rain.
+- For analysis use **Download** (one column per term) or the **Balance Dashboard**; the collapsed section below shows what the annual totals look like.
 
-- **2 % of the area consumes 8 % of the water** — irrigated land uses roughly
-  four times as much water per hectare as the rangeland around it, which is the
-  productivity gap the *Beneficial Fraction* layer helps you locate.
+<figure markdown="span">
+  ![Figure 3](../assets/charts/portal/realtime-station-a2h012-panel.png)
+  <figcaption>Figure 3: SWAT and Observed Sites — the card for gauge A2H012FW (Krokodil at Kalkheuwel): status, latest discharge (16.55 m³/s on 2 Sep 2026) and an Advanced Chart button. Gauges like this are the ground truth the accounts are validated against.</figcaption>
+</figure>
+- Observed discharge at the basin's gauges is the **outflow term** measured, not modelled; where it disagrees with the WA+ outflow, the account needs adjusting.
+
+??? note "Longer-term context (charts derived from the same API data)"
+    These are not portal screens: they were rendered from the same series with `tools/use_case_charts.py` to show what the portal's series look like over decades.
+
+    <figure markdown="span">
+      ![Rainfall, total ET and outflow by year, 2003–2024 (km³/yr).](../assets/charts/wa-annual-balance.png)
+      <figcaption>Rainfall, total ET and outflow by year, 2003–2024 (km³/yr).</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Share of basin ET by WA+ land-use class, 2003–2020.](../assets/charts/wa-et-by-landuse.png)
+      <figcaption>Share of basin ET by WA+ land-use class, 2003–2020.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Basin area by WA+ land-use class.](../assets/charts/wa-landuse-share.png)
+      <figcaption>Basin area by WA+ land-use class.</figcaption>
+    </figure>
+
 
 ## Indicators and what to do
 

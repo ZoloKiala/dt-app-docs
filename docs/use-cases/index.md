@@ -56,12 +56,14 @@ written exactly as they appear in **Explore data**, so you can find them with
 | **Limits to keep in mind** | Latency, model assumptions and coverage caveats — so you don't over-read the data |
 
 !!! info "About the charts"
-    The charts on these pages are rendered from live responses of the IWMI
-    Digital Twins API (`api.digitaltwins.iwmi.org`) — the same service that
-    draws the feature-info charts in the portal. Each chart states its source and
-    its "as of" date. Workflow diagrams and indicator tables are guidance, not
-    official operating rules; check thresholds against your institution's
-    procedures.
+    The charts on these pages are the portal's own: screenshots of the
+    **Feature Information** card and of the **Charts** dock (the panel's
+    **Expand** button) for real stations, dams and sites, captured from the
+    production catalogue in September 2026. Where longer-term context helps, a
+    collapsed block adds charts rendered from the same API series
+    (`api.digitaltwins.iwmi.org`) — those are labelled as derived, not portal
+    screens. Workflow diagrams and indicator tables are guidance, not official
+    operating rules; check thresholds against your institution's procedures.
 
 !!! tip "Save your analysis as a Story"
     Once you have a view that answers your question, use **Story → Capture

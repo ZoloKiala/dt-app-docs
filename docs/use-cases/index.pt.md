@@ -56,13 +56,15 @@ possa encontrar com **Search the catalogue**.
 | **Limites a ter em conta** | Latência, pressupostos dos modelos e cobertura — para não sobreinterpretar os dados |
 
 !!! info "Sobre os gráficos"
-    Os gráficos destas páginas são gerados a partir de respostas em tempo real
-    da API dos Gémeos Digitais do IWMI (`api.digitaltwins.iwmi.org`) — o mesmo
-    serviço que desenha os gráficos de informação do elemento no portal. Cada
-    gráfico indica a fonte e a data de referência; os rótulos estão em inglês.
-    Os diagramas de fluxo e as tabelas de indicadores são orientações, não
-    regras operacionais oficiais; confirme os limiares com os procedimentos da
-    sua instituição.
+    Os gráficos destas páginas são os do próprio portal: capturas do cartão
+    **Feature Information** e do painel **Charts** (botão **Expand**) para
+    estações, barragens e locais reais, obtidas do catálogo de produção em
+    setembro de 2026. Onde o contexto de longo prazo ajuda, um bloco recolhido
+    acrescenta gráficos gerados a partir das mesmas séries da API
+    (`api.digitaltwins.iwmi.org`) — identificados como derivados, não ecrãs do
+    portal. Os rótulos estão em inglês. Os diagramas de fluxo e as tabelas de
+    indicadores são orientações, não regras operacionais oficiais; confirme os
+    limiares com os procedimentos da sua instituição.
 
 !!! tip "Guarde a sua análise como uma história"
     Quando tiver uma vista que responde à sua pergunta, use **Story → Capture

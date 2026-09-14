@@ -92,46 +92,55 @@ read them in the feature-info panel before quoting a number.
 
 ## Reading the charts
 
-<figure markdown="span">
-  ![Massingir storage history and forecast](../assets/charts/reservoirs-massingir-storage.png)
-  <figcaption>Figure 1: The chart you get when you click Massingir Dam — estimated storage since 2002, observed points, and the ensemble forecast to the end of the dry season.</figcaption>
-</figure>
-
-- Massingir went from **4 % (2003, 2005) to 110 % (2008)** — the basin's largest
-  reservoir can empty and refill within a few seasons; a 20-month drawdown
-  (2002–06) is the historical worst case.
-- Since 2021 it has cycled between **60 and 105 %**, and the median forecast
-  takes it to **~73 % by November 2026** — comfortable, but the fan's lower
-  bound (~70 %) is what a dry start to the season would give.
-- Blue dots are the **observations the estimate is calibrated against**; where
-  the line runs without dots (2010–13, 2016–19) the estimate is interpolated
-  and should be read as a trend, not a value.
+The figures below are the portal's own charts, captured from the **Feature Information** panel (click a feature) and from the **Charts** dock that opens with the panel's **Expand** button. Every station, dam and site chart in the portal follows the same pattern: a summary card, a preview chart, **Expand** to enlarge, **Download** for the CSV.
 
 <figure markdown="span">
-  ![Storage by country](../assets/charts/reservoirs-by-country.png)
-  <figcaption>Figure 2: Capacity and current storage of monitored dams by country. Percentages are volume-weighted.</figcaption>
+  ![Figure 1](../assets/charts/portal/dam-massingir-panel.png)
+  <figcaption>Figure 1: Dams & Reservoirs Basin Level Estimates — the Massingir card: current level 90.2 %, latest estimated volume 2,038 Mm³, status Full, capacity 2,260 Mm³, dam height, reservoir area, catchment, year built, mean and min/max volume, the estimation model (altimetry_level) and its R² (0.9974), with the storage preview.</figcaption>
 </figure>
-
-- **South Africa holds 43 % of monitored capacity** (3,620 Mm³ in 147 dams);
-  **Mozambique's 4 dams** hold 29 %, almost all of it Massingir.
-- Zimbabwe's dams are the **lowest at 75 %** and mostly Low-confidence
-  estimates — verify against ZINWA bulletins before acting.
-- A country average hides individual dams: South Africa's 82 % includes
-  Middle Letaba at 10 % and Eerste Poort at 49 %.
+- **Model and R²** are the confidence check: *altimetry_level* with R² 0.997 is Tier 1; a *capacity_fraction* dam with no R² is a Tier 3 estimate (± 20 %).
+- **Min / max 83.9 – 2,485 Mm³** frames the history: the dam has been effectively empty (2003, 2005) and above full supply (2008).
+- **Expand ▾** offers four series — Estimated Volume, Observed Volume, % Capacity, Area; **Download this Table** gives the CSV.
 
 <figure markdown="span">
-  ![Loskop seasonal storage profile](../assets/charts/reservoirs-loskop-seasonal.png)
-  <figcaption>Figure 3: Loskop Dam's storage by calendar month across all years — the "normal band" against which a current reading is judged.</figcaption>
+  ![Figure 2](../assets/charts/portal/dam-massingir-chart.png)
+  <figcaption>Figure 2: Massingir after Expand → Estimated Volume: volume (Mm³, left axis) and % of capacity (second axis) since 2002, with the observed points overlaid.</figcaption>
 </figure>
+- Where the estimate (blue) and observations (orange) coincide the model is calibrated; the straight segments (2010–13, 2016–19) are **gaps with no observations** — read them as trend only.
+- The annual saw-tooth since 2021 is the operating cycle: fill to 100–105 % in March, draw down to ~65–75 % by November for Chókwè irrigation.
 
-- The normal cycle: **full in Feb–May, drawn down to ~85–90 % by Oct–Nov** as
-  irrigation quotas are used, refilled by the summer rains.
-- A reading **below the interquartile band for its month** is the early
-  warning; below the min–max envelope (as in 2016, when Loskop reached 42 %) is
-  a supply emergency.
-- Compare the current dot on the portal's chart with this band rather than
-  with last month: a fall from 100 % to 92 % in October is normal, the same
-  fall in April is not.
+<figure markdown="span">
+  ![Figure 3](../assets/charts/portal/reservoir-area-massingir-chart.png)
+  <figcaption>Figure 3: Reservoir Levels – Water Area Timeseries for Massingir Dam, expanded: satellite water area (ha, blue) with observed volume (Mm³) and observed capacity fraction where a gauge record exists.</figcaption>
+</figure>
+- The **water-area series continues after the gauge record ends (2019)** — this is how the portal monitors dams with no telemetry: area from satellite, converted to volume by the calibrated curve.
+- Area and volume move together but not proportionally (a flat reservoir loses area quickly at low levels); that non-linearity is the area–capacity curve the Tier 1 model encodes.
+
+<figure markdown="span">
+  ![Figure 4](../assets/charts/portal/dam-loskop-chart.png)
+  <figcaption>Figure 4: Loskop Dam (Olifants), Expand → Estimated Volume, 2016–2026 (Mm³ and %).</figcaption>
+</figure>
+- Three drawdowns stand out: **2016 (to ~150 Mm³, 42 %)**, 2019 (~250 Mm³) and late 2024 (~250 Mm³) — each the end of a dry season before the summer refill.
+- The flat top at ~350–365 Mm³ is full supply; values above it are spill periods. This is the chart to read against the seasonal band in the collapsed section below.
+
+??? note "Longer-term context (charts derived from the same API data)"
+    These are not portal screens: they were rendered from the same series with `tools/use_case_charts.py` to show what the portal's series look like over decades.
+
+    <figure markdown="span">
+      ![Massingir storage in % of capacity since 2002 with the ensemble forecast to November 2026.](../assets/charts/reservoirs-massingir-storage.png)
+      <figcaption>Massingir storage in % of capacity since 2002 with the ensemble forecast to November 2026.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Capacity and current storage of monitored dams by country.](../assets/charts/reservoirs-by-country.png)
+      <figcaption>Capacity and current storage of monitored dams by country.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Loskop's storage by calendar month across all years — the normal band.](../assets/charts/reservoirs-loskop-seasonal.png)
+      <figcaption>Loskop's storage by calendar month across all years — the normal band.</figcaption>
+    </figure>
+
 
 ## Indicators and what to do
 

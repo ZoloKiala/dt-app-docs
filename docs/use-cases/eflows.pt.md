@@ -87,48 +87,54 @@ flowchart TD
 
 ## Interpretar os gráficos
 
-*Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
-inglês.*
+As figuras abaixo são os gráficos do próprio portal, capturados no painel **Feature Information** (clique num elemento) e no painel **Charts** que abre com o botão **Expand**. Todos os gráficos de estações, barragens e locais seguem o mesmo padrão: um cartão-resumo, um gráfico de pré-visualização, **Expand** para ampliar, **Download** para o CSV. Os gráficos estão em inglês.
 
 <figure markdown="span">
-  ![Regime mensal de caudal no local do Crocodile West](../assets/charts/eflows-regime-croc.png)
-  <figcaption>Figura 1: As três séries do gráfico de caudal ecológico, em média mensal, para o Crocodile (West) em Rooibokkraal. O caudal natural é o que o SWAT simula sem captações; o caudal presente inclui barragens e usos.</figcaption>
+  ![Figura 1](../assets/charts/portal/eflow-croc-panel.png)
+  <figcaption>Figura 1: E-flow Monitoring and Forecasting — o cartão do local CROC-A24J-ROOIB (Crocodile West em Rooibokkraal) com a pré-visualização do caudal modelado desde 2001, Show Raw Data, Advanced Chart, Expand e Download.</figcaption>
 </figure>
-
-- O **requisito de caudal ecológico segue a sazonalidade natural** — mais alto
-  em jan.–mar., mais baixo em jul.–set. — porque os ecossistemas precisam de
-  cheias e não só de caudal de base.
-- **É no inverno que o troço sofre**: em julho e agosto os caudais presentes
-  estão 43 % e 69 % abaixo do natural e ficam *no* requisito, sem margem. Os
-  caudais de verão estão próximos ou acima do natural (retornos e descargas).
-- A leitura prática: este troço não precisa de mais água na época das chuvas;
-  precisa de **caudal de base protegido na época seca**.
+- O cartão identifica o **código do rio** (usado pela API e pela SWAT Extraction Tool), a descrição do troço e o local; a pré-visualização é só o caudal presente.
+- **Advanced Chart** abre a vista analítica (regime, conformidade, mapa de calor de défices) do local no portal em produção.
 
 <figure markdown="span">
-  ![Caudal presente vs requisito, Limpopo Shashe-Mzingwane](../assets/charts/eflows-timeseries-mapun.png)
-  <figcaption>Figura 2: Caudal presente contra o requisito em LIMP-A71L-MAPUN desde 2015 (escala logarítmica). Sombreado = meses em défice.</figcaption>
+  ![Figura 2](../assets/charts/portal/eflow-croc-chart.png)
+  <figcaption>Figura 2: O mesmo local após Expand — quatro séries: SWAT Present Flow, Natural Flow, Availability Surplus e E-Flow (o requisito), 2001–2026, m³/s.</figcaption>
 </figure>
-
-- Os défices (sombreados) concentram-se em **ago.–nov. todos os anos** e foram
-  mais longos nas secas de 2015–16 e 2023–24, quando o rio deixou de correr
-  durante vários meses.
-- O requisito da época das chuvas (~30–120 m³/s) é quase sempre cumprido; os
-  **picos de 300–2 500 m³/s** são as cheias descritas em [Cheias](floods.md).
-- Como o eixo é logarítmico, uma pequena diferença visual no inverno pode ser
-  **todo o caudal de base**: um défice de 2 m³/s contra um requisito de
-  2,3 m³/s é Nível 5.
+- O **requisito E-Flow** (verde) é a linha baixa e sazonal em baixo; o caudal presente (rosa) fica acima na maioria dos meses. Onde o rosa desce **até** à linha verde no inverno, o troço está em Nível 2–3.
+- Os picos da época das chuvas (300–560 m³/s em 2004, 2014, 2017, 2021, 2025) são quase naturais — este troço está alterado na época seca, não na húmida.
+- Arraste sobre um inverno para ampliar: a diferença entre rosa e verde em m³/s é o défice que a mensagem de alerta pede ao operador da barragem para descarregar.
 
 <figure markdown="span">
-  ![Conformidade anual de caudal ecológico em dois locais](../assets/charts/eflows-compliance.png)
-  <figcaption>Figura 3: Percentagem de dias por ano que cumpre o requisito nos dois locais. O eixo começa em 90 %.</figcaption>
+  ![Figura 3](../assets/charts/portal/eflow-mapun-chart.png)
+  <figcaption>Figura 3: O curso principal do Limpopo, Shashe a Mzingwane (LIMP-A71L-MAPUN), expandido. Os picos atingem 2 500 m³/s (2021) enquanto o requisito fica abaixo de ~120 m³/s.</figcaption>
 </figure>
+- Num local do curso principal os picos da época das chuvas ofuscam tudo o resto; **amplie os meses secos** para ver os défices, ou leia a série *Deficit* em **Show Raw Data**.
+- Compare com a Figura 2: a mesma lógica de requisito, uma ordem de grandeza mais água.
 
-- Uma conformidade de **99 %** ainda significa 3–5 dias de défice por ano — e
-  esses dias caem nas mesmas semanas críticas de caudal baixo. Reporte os *dias
-  de défice* e o *défice máximo*, não só a percentagem.
-- A conformidade manteve-se mesmo em anos de seca porque o próprio requisito é
-  baixo na época seca; o dano ecológico está em **quanto tempo** duram os
-  períodos de défice (as análises do portal indicam a duração máxima por local).
+<figure markdown="span">
+  ![Figura 4](../assets/charts/portal/glofas-swat-cha0978-panel.png)
+  <figcaption>Figura 4: O cartão do canal SWAT cha0978 — o canal do Crocodile que alimenta o local de caudal ecológico. O seu Channel ID é o que se introduz na SWAT Extraction Tool (Flow Type, Start/End Date, FETCH DATA → MAP / TABLE / PROBFLO).</figcaption>
+</figure>
+- A geometria do canal (ordem 4, 3,58 milhões de ha drenados) indica quanta bacia a montante — e quanta captação — está por trás do local.
+
+??? note "Contexto de longo prazo (gráficos derivados dos mesmos dados da API)"
+    Estes não são ecrãs do portal: foram gerados a partir das mesmas séries com `tools/use_case_charts.py` para mostrar como as séries do portal se comportam ao longo de décadas.
+
+    <figure markdown="span">
+      ![Regime mensal no local do Crocodile](../assets/charts/eflows-regime-croc.png)
+      <figcaption>Regime mensal no local do Crocodile: caudal natural vs presente e requisito de caudal ecológico.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Caudal presente vs requisito em LIMP-A71L-MAPUN desde 2015 com meses em défice sombreados (eixo log).](../assets/charts/eflows-timeseries-mapun.png)
+      <figcaption>Caudal presente vs requisito em LIMP-A71L-MAPUN desde 2015 com meses em défice sombreados (eixo log).</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Conformidade anual de caudal ecológico nos dois locais.](../assets/charts/eflows-compliance.png)
+      <figcaption>Conformidade anual de caudal ecológico nos dois locais.</figcaption>
+    </figure>
+
 
 ## Níveis de alerta e o que fazer
 

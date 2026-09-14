@@ -88,47 +88,53 @@ flowchart TD
 
 ## Reading the charts
 
-<figure markdown="span">
-  ![Irrigation schemes: designed vs irrigated area](../assets/charts/irrigation-schemes.png)
-  <figcaption>Figure 1: The basin's major schemes — command area versus currently irrigated area, with utilisation and main crop.</figcaption>
-</figure>
-
-- **Utilisation runs 50–80 %**: the difference between designed and irrigated
-  area is rehabilitation potential — or, in a dry year, the area that will be
-  cut first.
-- The Mozambican lowland schemes (**Lower Limpopo and Chókwè, ~67,000 ha
-  irrigated**) depend on the Limpopo main stem and Massingir releases; every
-  upstream decision reaches them.
-- Rice at Chókwè and the Lower Limpopo is the basin's most water-intensive
-  crop; citrus and horticulture (Groot Letaba, Tuli Block) have the highest
-  value per m³.
+The figures below are the portal's own charts, captured from the **Feature Information** panel (click a feature) and from the **Charts** dock that opens with the panel's **Expand** button. Every station, dam and site chart in the portal follows the same pattern: a summary card, a preview chart, **Expand** to enlarge, **Download** for the CSV.
 
 <figure markdown="span">
-  ![Managed-land ET against the rainfall calendar](../assets/charts/irrigation-managed-et.png)
-  <figcaption>Figure 2: Mean monthly evapotranspiration from managed (irrigated) land compared with the basin rainfall calendar, WA+ accounts 2003–2021. The dashed line is the part supplied by withdrawals (blue ET).</figcaption>
+  ![Figure 1](../assets/charts/portal/dam-loskop-panel.png)
+  <figcaption>Figure 1: Dams & Reservoirs Basin Level Estimates — the Loskop card (Olifants River, main use Irrigation): current level, estimated volume, status, capacity, catchment and the estimation model, with the storage preview. This is the supply check for the Loskop Irrigation Scheme.</figcaption>
 </figure>
-
-- Irrigated ET **peaks in February** with the summer crop and drops to ~15 % of
-  peak in June–August — but rainfall drops to ~3 %. **Winter irrigation is
-  almost entirely blue water**, drawn from storage.
-- The blue-ET line is **flat through the year**: withdrawals are steady, so
-  irrigation demand on dams does not fall in winter even though total crop ET
-  does — this is why reservoir drawdown is linear from May to November
-  (see [Reservoir monitoring](reservoirs.md), Figure 3).
-- Read the portal's **Water Use Time-series** result against this shape: a
-  scheme whose winter use is a larger fraction of its summer use is growing
-  winter wheat or vegetables — and drawing proportionally more from the dam.
+- **Main use: Irrigation** and **catchment** tell you what the dam is for and how fast it can refill; **current level** at the start of October is the number the irrigation board sets quotas on.
 
 <figure markdown="span">
-  ![Loskop Dam storage by year](../assets/charts/irrigation-loskop-supply.png)
-  <figcaption>Figure 3: Annual storage of Loskop Dam, which supplies the Loskop Irrigation Scheme (27,000 ha command area).</figcaption>
+  ![Figure 2](../assets/charts/portal/dam-loskop-chart.png)
+  <figcaption>Figure 2: Loskop after Expand → Estimated Volume, 2016–2026 (Mm³ and % of capacity).</figcaption>
 </figure>
+- Each **saw-tooth is one irrigation season**: full after the summer rains, drawn down from May to November as the scheme takes its quota, then refilled. The depth of the tooth is the season's consumption from storage.
+- **2016** (down to ~150 Mm³, 42 %) followed the failed 2015 rains — the year quotas were cut; 2019 and late 2024 (~250 Mm³) were tight but not critical.
+- Compare the current position with the same month in previous years before committing the coming season's allocation.
 
-- Since 2017 the dam has **started every irrigation season effectively full**;
-  the 2016 crisis (minimum 42 %) followed the 2015 rainfall failure shown in
-  [Droughts](droughts.md), Figure 2.
-- The year-to-year **minimum** (bottom of the whisker) is the supply-security
-  indicator: a minimum below 50 % means quotas were, or should have been, cut.
+<figure markdown="span">
+  ![Figure 3](../assets/charts/portal/reservoir-area-massingir-chart.png)
+  <figcaption>Figure 3: Reservoir Levels – Water Area Timeseries for Massingir Dam — the reservoir that supplies the Chókwè and Lower Limpopo schemes (~67,000 ha irrigated). Satellite water area (ha) with observed volume where gauged.</figcaption>
+</figure>
+- The 2016–19 decline and 2020 recovery visible here set the irrigated area at Chókwè in those seasons; the layer keeps monitoring after the gauge record ends (2019).
+
+<figure markdown="span">
+  ![Figure 4](../assets/charts/portal/realtime-station-a2h012-panel.png)
+  <figcaption>Figure 4: SWAT and Observed Sites — gauge A2H012FW on the Krokodil (Crocodile West) at Kalkheuwel, downstream of the Hartbeespoort irrigation area: latest observed discharge and an Advanced Chart button.</figcaption>
+</figure>
+- River gauges below a scheme show its **return flows and abstraction** in the dry season; a gauge reading near zero while the scheme's fields are green in *Irrigated Mapping* is the signature of full abstraction.
+- The scheme-level consumption chart itself comes from **Water Use Time-series (Irrigated Areas) (Polygon)** — draw the polygon and run it; the result is monthly m³ for your area (it is an analysis process, so there is no fixed feature to click).
+
+??? note "Longer-term context (charts derived from the same API data)"
+    These are not portal screens: they were rendered from the same series with `tools/use_case_charts.py` to show what the portal's series look like over decades.
+
+    <figure markdown="span">
+      ![Major schemes — designed vs currently irrigated area.](../assets/charts/irrigation-schemes.png)
+      <figcaption>Major schemes — designed vs currently irrigated area.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Mean monthly ET from managed (irrigated) land against the basin rainfall calendar.](../assets/charts/irrigation-managed-et.png)
+      <figcaption>Mean monthly ET from managed (irrigated) land against the basin rainfall calendar.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Loskop Dam storage by year with annual min–max.](../assets/charts/irrigation-loskop-supply.png)
+      <figcaption>Loskop Dam storage by year with annual min–max.</figcaption>
+    </figure>
+
 
 ## Indicators and what to do
 

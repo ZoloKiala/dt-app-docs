@@ -221,6 +221,15 @@ in the `nav:` section of `mkdocs.yml`.
 
 ## Use-case charts
 
+The figures on the Use Cases pages are the portal's own feature-info charts,
+captured with `dt-app/dt_limpopo/demo/portal-charts.mjs` (Playwright, against a
+local build loaded with the production catalogue) into
+`docs/assets/charts/portal/`. Each scenario in that script names a catalogue
+item id and the coordinates of the feature to click; re-run it after the
+catalogue changes.
+
+### Derived charts
+
 The charts on the Use Cases pages (`docs/assets/charts/*.png`) are rendered from
 live responses of the IWMI Digital Twins API by `tools/use_case_charts.py`
 (matplotlib + pandas). Raw responses are cached in `tools/.cache/` (git-ignored).

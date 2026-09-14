@@ -90,53 +90,53 @@ flowchart TD
 
 ## Interpretar os gráficos
 
-*Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
-inglês.*
+As figuras abaixo são os gráficos do próprio portal, capturados no painel **Feature Information** (clique num elemento) e no painel **Charts** que abre com o botão **Expand**. Todos os gráficos de estações, barragens e locais seguem o mesmo padrão: um cartão-resumo, um gráfico de pré-visualização, **Expand** para ampliar, **Download** para o CSV. Os gráficos estão em inglês.
 
 <figure markdown="span">
-  ![Perímetros de irrigação: área projetada vs irrigada](../assets/charts/irrigation-schemes.png)
-  <figcaption>Figura 1: Os principais perímetros da bacia — área de comando versus área atualmente irrigada, com utilização e cultura principal.</figcaption>
+  ![Figura 1](../assets/charts/portal/dam-loskop-panel.png)
+  <figcaption>Figura 1: Dams & Reservoirs Basin Level Estimates — o cartão de Loskop (rio Olifants, uso principal Irrigação): nível atual, volume estimado, estado, capacidade, bacia e modelo de estimativa, com a pré-visualização do armazenamento. É a verificação de abastecimento do perímetro de Loskop.</figcaption>
 </figure>
-
-- **A utilização anda entre 50 e 80 %**: a diferença entre área projetada e
-  irrigada é potencial de reabilitação — ou, num ano seco, a área que será
-  cortada primeiro.
-- Os perímetros da planície moçambicana (**Baixo Limpopo e Chókwè, ~67 000 ha
-  irrigados**) dependem do curso principal do Limpopo e das descargas de
-  Massingir; cada decisão a montante chega até eles.
-- O arroz em Chókwè e no Baixo Limpopo é a cultura mais exigente em água da
-  bacia; os citrinos e a horticultura (Groot Letaba, Tuli Block) têm o maior
-  valor por m³.
+- **Main use: Irrigation** e **catchment** dizem para que serve a barragem e quão depressa pode reencher; o **nível atual** no início de outubro é o número com que a associação de regantes fixa as quotas.
 
 <figure markdown="span">
-  ![ET do solo gerido face ao calendário de chuva](../assets/charts/irrigation-managed-et.png)
-  <figcaption>Figura 2: Evapotranspiração mensal média do solo gerido (irrigado) comparada com o calendário de precipitação da bacia, contas WA+ 2003–2021. A linha tracejada é a parte fornecida por captações (ET azul).</figcaption>
+  ![Figura 2](../assets/charts/portal/dam-loskop-chart.png)
+  <figcaption>Figura 2: Loskop após Expand → Estimated Volume, 2016–2026 (Mm³ e % da capacidade).</figcaption>
 </figure>
-
-- A ET irrigada **atinge o pico em fevereiro** com a cultura de verão e cai para
-  ~15 % do pico em junho–agosto — mas a precipitação cai para ~3 %. **A irrigação
-  de inverno é quase toda água azul**, retirada do armazenamento.
-- A linha de ET azul é **plana ao longo do ano**: as captações são constantes,
-  pelo que a procura de irrigação sobre as barragens não diminui no inverno
-  embora a ET total das culturas diminua — é por isso que o esvaziamento das
-  albufeiras é linear de maio a novembro (ver [Monitorização de
-  albufeiras](reservoirs.md), Figura 3).
-- Leia o resultado do **Water Use Time-series** do portal contra esta forma: um
-  perímetro cujo uso de inverno é uma fração maior do uso de verão está a
-  cultivar trigo ou hortícolas de inverno — e a retirar proporcionalmente mais
-  da barragem.
+- Cada **dente de serra é uma campanha de irrigação**: cheia após as chuvas de verão, baixada de maio a novembro à medida que o perímetro usa a quota, depois reenchida. A profundidade do dente é o consumo da campanha a partir do armazenamento.
+- **2016** (até ~150 Mm³, 42 %) seguiu-se às chuvas falhadas de 2015 — o ano em que as quotas foram cortadas; 2019 e fim de 2024 (~250 Mm³) foram apertados mas não críticos.
+- Compare a posição atual com o mesmo mês de anos anteriores antes de comprometer a repartição da próxima campanha.
 
 <figure markdown="span">
-  ![Armazenamento da barragem de Loskop por ano](../assets/charts/irrigation-loskop-supply.png)
-  <figcaption>Figura 3: Armazenamento anual da barragem de Loskop, que abastece o perímetro de Loskop (27 000 ha de área de comando).</figcaption>
+  ![Figura 3](../assets/charts/portal/reservoir-area-massingir-chart.png)
+  <figcaption>Figura 3: Reservoir Levels – Water Area Timeseries para a barragem de Massingir — a albufeira que abastece os perímetros de Chókwè e do Baixo Limpopo (~67 000 ha irrigados). Área de água por satélite (ha) com volume observado onde há estação.</figcaption>
 </figure>
+- O declínio de 2016–19 e a recuperação de 2020 aqui visíveis determinaram a área irrigada em Chókwè nessas campanhas; a camada continua a monitorizar depois de terminar o registo da estação (2019).
 
-- Desde 2017 a barragem **iniciou cada campanha de irrigação praticamente
-  cheia**; a crise de 2016 (mínimo de 42 %) seguiu-se à falha de precipitação de
-  2015 mostrada em [Secas](droughts.md), Figura 2.
-- O **mínimo** anual (fundo da barra de erro) é o indicador de segurança de
-  abastecimento: um mínimo abaixo de 50 % significa que as quotas foram, ou
-  deviam ter sido, cortadas.
+<figure markdown="span">
+  ![Figura 4](../assets/charts/portal/realtime-station-a2h012-panel.png)
+  <figcaption>Figura 4: SWAT and Observed Sites — estação A2H012FW no Krokodil (Crocodile West) em Kalkheuwel, a jusante da área de irrigação de Hartbeespoort: último caudal observado e um botão Advanced Chart.</figcaption>
+</figure>
+- As estações a jusante de um perímetro mostram os seus **retornos e captações** na época seca; uma leitura perto de zero enquanto os campos do perímetro estão verdes em *Irrigated Mapping* é a assinatura de captação total.
+- O gráfico de consumo ao nível do perímetro vem de **Water Use Time-series (Irrigated Areas) (Polygon)** — desenhe o polígono e execute; o resultado são m³ mensais para a sua área (é um processo de análise, por isso não há um elemento fixo onde clicar).
+
+??? note "Contexto de longo prazo (gráficos derivados dos mesmos dados da API)"
+    Estes não são ecrãs do portal: foram gerados a partir das mesmas séries com `tools/use_case_charts.py` para mostrar como as séries do portal se comportam ao longo de décadas.
+
+    <figure markdown="span">
+      ![Principais perímetros — área projetada vs atualmente irrigada.](../assets/charts/irrigation-schemes.png)
+      <figcaption>Principais perímetros — área projetada vs atualmente irrigada.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![ET mensal média do solo gerido (irrigado) contra o calendário de precipitação da bacia.](../assets/charts/irrigation-managed-et.png)
+      <figcaption>ET mensal média do solo gerido (irrigado) contra o calendário de precipitação da bacia.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Armazenamento da barragem de Loskop por ano com mín.–máx. anual.](../assets/charts/irrigation-loskop-supply.png)
+      <figcaption>Armazenamento da barragem de Loskop por ano com mín.–máx. anual.</figcaption>
+    </figure>
+
 
 ## Indicadores e o que fazer
 

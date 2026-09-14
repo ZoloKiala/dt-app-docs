@@ -106,50 +106,56 @@ flowchart TD
 
 ## Interpretar os gráficos
 
-*Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
-inglês.*
+As figuras abaixo são os gráficos do próprio portal, capturados no painel **Feature Information** (clique num elemento) e no painel **Charts** que abre com o botão **Expand**. Todos os gráficos de estações, barragens e locais seguem o mesmo padrão: um cartão-resumo, um gráfico de pré-visualização, **Expand** para ampliar, **Download** para o CSV. Os gráficos estão em inglês.
 
 <figure markdown="span">
-  ![Perspetiva de caudal em Beit Bridge](../assets/charts/floods-glofas-forecast.png)
-  <figcaption>Figura 1: O que o gráfico GloFAS Discharge Forecast mostra para o Limpopo em Beit Bridge na época seca — caudal recente e previsão a 30 dias contra os limiares percentílicos da estação. Compare com a Figura 2 para ver quão longe está de uma cheia.</figcaption>
+  ![Figura 1](../assets/charts/portal/glofas-gauge-a7h004-panel.png)
+  <figcaption>Figura 1: Feature Information da estação A7H004, rio Limpopo em Beit Bridge (GloFAS Discharge Forecast – Verified Gauges). O cartão dá as previsões a 24 h, 72 h e 30 dias, o estado do caudal, o canal SWAT associado e a corrida do modelo; a pré-visualização mostra o ano corrente.</figcaption>
 </figure>
-
-- As **linhas ponteadas são os limiares da própria estação** — p90, p95 e p99
-  do seu caudal diário de longo prazo. Variam de estação para estação: um valor
-  *Extreme* num afluente do Steelpoort seria *Normal* em Beit Bridge.
-- A **previsão abre em leque com o horizonte**: os valores a 1–3 dias são
-  fiáveis, os de 10–30 dias indicam tendência. Leia a *posição da linha laranja
-  em relação aos limiares*, não o valor exato.
-- Uma previsão que sobe de p90 para p95 em corridas sucessivas é o sinal que
-  importa; um pico isolado que desaparece no dia seguinte é ruído.
+- **Leia primeiro os três números**: 24,6 → 34,4 → 24,0 m³/s significa uma pequena subida esta semana e depois recessão — estado *Moderate*, sem alerta. Na época das chuvas o mesmo cartão pode ler 500 → 1 500 → 900.
+- **Model run** é a data a citar num relatório de situação; **Linked SWAT** (cha0215) é o canal a abrir na SWAT Extraction Tool.
+- A pré-visualização mostra o caudal diário deste ano: os dois picos perto de 1 500 m³/s (fevereiro e fim de março de 2026) são os pulsos da época das chuvas que formam o histórico de máximos anuais.
 
 <figure markdown="span">
-  ![Pico anual de caudal em Beit Bridge 1979-2026](../assets/charts/floods-annual-maxima.png)
-  <figcaption>Figura 2: Pico anual de caudal em Beit Bridge segundo a reanálise GloFAS. A cheia de 2000 (7 070 m³/s) continua a ser a referência; 2013 e 2025 ficaram a menos de 30 % dela.</figcaption>
+  ![Figura 2](../assets/charts/portal/glofas-gauge-a7h004-chart.png)
+  <figcaption>Figura 2: A mesma estação após Expand — o painel Charts com o registo GloFAS completo desde 1979. Cada cor é um horizonte de previsão; a série laranja é a reanálise.</figcaption>
 </figure>
-
-- A maioria dos anos atinge o pico **entre p95 e p99** (laranja) — um caudal
-  alto na época das chuvas em Beit Bridge é normal e não significa cheia a
-  jusante.
-- Os **anos a vermelho** são os que se recordam: 1981, 1996, 2000, 2013, 2017,
-  2021, 2025. Um pico previsto acima de ~2 500 m³/s coloca um evento nessa
-  classe.
-- A camada **MODIS Flood Frequency (2001–2024)** é a versão espacial deste
-  gráfico: os píxeis inundados em 2013 e 2025 mostram as frequências mais
-  elevadas na planície do Baixo Limpopo.
+- O painel mostra **todas as previsões arquivadas e a reanálise** num só eixo: as cheias de 2000 (≈7 000 m³/s), 2013 e 2025 (≈5 000 m³/s) destacam-se de imediato.
+- Passe o cursor sobre um ponto para ler valor e data; arraste para ampliar uma estação; **Download** dá o CSV com uma coluna por horizonte.
+- Compare os picos previstos do ano corrente (margem direita) com esses máximos históricos para avaliar a severidade — uma previsão de 2 500 m³/s em Beit Bridge é um evento entre os dez maiores.
 
 <figure markdown="span">
-  ![Classificação do estado dos caudais na bacia](../assets/charts/floods-basin-status.png)
-  <figcaption>Figura 3: Como os 876 pontos de previsão são classificados num dado dia. É a legenda por trás das camadas Reporting Points e Flood Summary.</figcaption>
+  ![Figura 3](../assets/charts/portal/glofas-swat-cha0978-panel.png)
+  <figcaption>Figura 3: O mesmo modelo de cartão para um canal SWAT (GloFAS Discharge Forecast – SWAT Channels), aqui cha0978 no Crocodile. A geometria do canal (ordem, área drenada, largura, profundidade) ajuda a avaliar se um caudal previsto galgará as margens.</figcaption>
 </figure>
+- Os pontos de canal preenchem os vazios entre estações: 1 436 canais contra 363 estações. Um **canal com 8,6 m de profundidade e 696 m de largura** transporta 19 m³/s sem consequências; um afluente de primeira ordem não.
+- **30D forecast 2,4 m³/s** contra 19 m³/s hoje mostra a recessão da época seca — a previsão é de descida do caudal.
 
-- Mesmo na **época seca**, 7 % dos pontos leem *Extreme*. Em setembro trata-se
-  quase sempre de descargas de barragens ou de trovoadas isoladas em pequenos
-  afluentes — verifique o caudal em m³/s antes de reagir. Na época das chuvas a
-  mesma classe significa uma onda de cheia real.
-- Os pontos são **canais SWAT (1 436) mais estações verificadas (363)**; as
-  estações são a âncora — confie mais na previsão de um canal quando a estação
-  vizinha concorda.
+<figure markdown="span">
+  ![Figura 4](../assets/charts/portal/rainfall-forecast-ingwizi-panel.png)
+  <figcaption>Figura 4: Cartão da estação de Rainfall Monitoring and Forecast (s20592s27943e, canal cha0036, alto Shashe): últimos 7 e 30 dias, dias húmidos, previsão a 7 dias e última chuva, com a pré-visualização da chuva diária.</figcaption>
+</figure>
+- É a **camada-gatilho** do fluxo de trabalho de cheias: quando a *previsão a 7 dias* salta para dezenas de milímetros sobre canais de cabeceira, abra os pontos GloFAS a jusante.
+- Expand mostra a chuva diária desde 2020 com a previsão a verde — os aglomerados da época das chuvas (dez.–fev.) são onde nascem os picos de cheia.
+
+??? note "Contexto de longo prazo (gráficos derivados dos mesmos dados da API)"
+    Estes não são ecrãs do portal: foram gerados a partir das mesmas séries com `tools/use_case_charts.py` para mostrar como as séries do portal se comportam ao longo de décadas.
+
+    <figure markdown="span">
+      ![Pico anual de caudal em Beit Bridge 1979–2026 com os limiares p95/p99 da estação.](../assets/charts/floods-annual-maxima.png)
+      <figcaption>Pico anual de caudal em Beit Bridge 1979–2026 com os limiares p95/p99 da estação.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![A perspetiva atual a 30 dias em Beit Bridge contra os limiares da estação.](../assets/charts/floods-glofas-forecast.png)
+      <figcaption>A perspetiva atual a 30 dias em Beit Bridge contra os limiares da estação.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Como os 876 pontos de previsão foram classificados em 13 de setembro de 2026.](../assets/charts/floods-basin-status.png)
+      <figcaption>Como os 876 pontos de previsão foram classificados em 13 de setembro de 2026.</figcaption>
+    </figure>
+
 
 ## Indicadores e o que fazer
 

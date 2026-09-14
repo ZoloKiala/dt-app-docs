@@ -98,46 +98,46 @@ flowchart TD
 
 ## Interpretar os gráficos
 
-*Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
-inglês.*
+As figuras abaixo são os gráficos do próprio portal, capturados no painel **Feature Information** (clique num elemento) e no painel **Charts** que abre com o botão **Expand**. Todos os gráficos de estações, barragens e locais seguem o mesmo padrão: um cartão-resumo, um gráfico de pré-visualização, **Expand** para ampliar, **Download** para o CSV. Os gráficos estão em inglês.
 
 <figure markdown="span">
-  ![Balanço hídrico anual 2003-2024](../assets/charts/wa-annual-balance.png)
-  <figcaption>Figura 1: Precipitação, evapotranspiração total e escoamento fluvial por ano, das contas WA+ (km³/ano).</figcaption>
+  ![Figura 1](../assets/charts/portal/wa-dashboard-panel.png)
+  <figcaption>Figura 1: Limpopo Basin Water Balance (WA+ Dashboard) — o cartão do marcador da bacia, com os botões Show Raw Data, Advanced Chart e Balance Dashboard. O Balance Dashboard abre as contas WA+ compiladas (folha de recursos-base em Sankey) no portal em produção.</figcaption>
 </figure>
-
-- **A ET é quase constante (200–330 km³)** enquanto a precipitação varia 3×: a
-  paisagem evapora o que recebe, e o excedente de um ano húmido sai depressa
-  como escoamento (2021: 52 km³) ou reenche o armazenamento.
-- Em **anos secos a ET excede a precipitação** (2003, 2005, 2008, 2012, 2015,
-  2024): a diferença é humidade do solo, água subterrânea e albufeiras em
-  esvaziamento — razão pela qual as secas aqui se sentem um ano depois do défice
-  de chuva.
-- Só **2,6 % da precipitação** chega ao mar em média; o Limpopo é uma bacia
-  fechada na maioria dos anos. Qualquer nova repartição é uma realocação.
+- Este marcador único é a porta de entrada das contas: **Balance Dashboard** para as folhas, **Download** para o CSV mensal de cada termo desde 2003.
 
 <figure markdown="span">
-  ![ET por classe de uso do solo WA+](../assets/charts/wa-et-by-landuse.png)
-  <figcaption>Figura 2: Percentagem da evapotranspiração da bacia por classe de uso do solo WA+, 2003–2020.</figcaption>
+  ![Figura 2](../assets/charts/portal/wa-dashboard-chart.png)
+  <figcaption>Figura 2: O local WA+ após Expand — todos os termos do balanço mensal (cerca de 35 séries: entradas, ET por classe de uso do solo, saídas, variação de armazenamento) num só eixo, 2003–2021.</figcaption>
 </figure>
-
-- **O solo utilizado (pastagem, agricultura de sequeiro, mato natural) consome
-  ~75 %** da água — chuva usada onde cai (água verde).
-- **O uso gerido da água — irrigação, albufeiras, cidades — está em média em
-  ~8 %**, subindo a ~17 % no ano de seca de 2017, quando a ET de sequeiro
-  colapsou e a irrigação continuou. É a parcela de água azul que as regras de
-  repartição governam.
-- As áreas protegidas (Kruger, Gonarezhou, PN do Limpopo) mantêm 13–15 % — a
-  reserva ecológica, em termos de contabilidade da água.
+- O painel traça **todos os termos de uma vez**, o que só é útil para ver o ritmo sazonal: a entrada de precipitação (rosa) atinge o pico cada verão; os termos de ET (amarelo/laranja) seguem um a dois meses depois.
+- Desligue séries na legenda para isolar um termo — p. ex. mantenha *Inflow Precipitation Rainfall* e *Outflow ET Landscape Utilized* para ver que em verões secos a ET excede a chuva.
+- Para análise use **Download** (uma coluna por termo) ou o **Balance Dashboard**; a secção recolhida abaixo mostra como ficam os totais anuais.
 
 <figure markdown="span">
-  ![Repartição da área por uso do solo](../assets/charts/wa-landuse-share.png)
-  <figcaption>Figura 3: Área da bacia por classe de uso do solo WA+.</figcaption>
+  ![Figura 3](../assets/charts/portal/realtime-station-a2h012-panel.png)
+  <figcaption>Figura 3: SWAT and Observed Sites — o cartão da estação A2H012FW (Krokodil em Kalkheuwel): estado, último caudal (16,55 m³/s em 2 de set. de 2026) e um botão Advanced Chart. Estações como esta são a verdade de terreno com que as contas são validadas.</figcaption>
 </figure>
+- O caudal observado nas estações da bacia é o **termo de escoamento** medido, não modelado; onde discorda do escoamento WA+, a conta precisa de ajuste.
 
-- **2 % da área consome 8 % da água** — o solo irrigado usa cerca de quatro
-  vezes mais água por hectare do que a pastagem à sua volta, e é essa a lacuna
-  de produtividade que a camada *Beneficial Fraction* ajuda a localizar.
+??? note "Contexto de longo prazo (gráficos derivados dos mesmos dados da API)"
+    Estes não são ecrãs do portal: foram gerados a partir das mesmas séries com `tools/use_case_charts.py` para mostrar como as séries do portal se comportam ao longo de décadas.
+
+    <figure markdown="span">
+      ![Precipitação, ET total e escoamento por ano, 2003–2024 (km³/ano).](../assets/charts/wa-annual-balance.png)
+      <figcaption>Precipitação, ET total e escoamento por ano, 2003–2024 (km³/ano).</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Percentagem da ET da bacia por classe de uso do solo WA+, 2003–2020.](../assets/charts/wa-et-by-landuse.png)
+      <figcaption>Percentagem da ET da bacia por classe de uso do solo WA+, 2003–2020.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![Área da bacia por classe de uso do solo WA+.](../assets/charts/wa-landuse-share.png)
+      <figcaption>Área da bacia por classe de uso do solo WA+.</figcaption>
+    </figure>
+
 
 ## Indicadores e o que fazer
 

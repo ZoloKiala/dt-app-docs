@@ -104,44 +104,56 @@ flowchart TD
 
 ## Reading the charts
 
-<figure markdown="span">
-  ![Discharge outlook at Beit Bridge](../assets/charts/floods-glofas-forecast.png)
-  <figcaption>Figure 1: What the GloFAS Discharge Forecast chart shows for the Limpopo at Beit Bridge in the dry season — recent flow and the 30-day outlook against the station's percentile thresholds. Compare with Figure 2 to see how far below a flood this is.</figcaption>
-</figure>
-
-- The **dotted lines are the station's own thresholds** — p90, p95 and p99 of
-  its long-term daily flow. They differ from station to station, so a value
-  that is *Extreme* on a Steelpoort tributary would be *Normal* at Beit Bridge.
-- The **forecast fans out with lead time**: the 1–3-day values are reliable,
-  the 10–30-day values indicate tendency. Read the orange line's *position
-  relative to the thresholds*, not its exact value.
-- A forecast that climbs through p90 → p95 on successive model runs is the
-  signal that matters; a single spike that disappears the next day is noise.
+The figures below are the portal's own charts, captured from the **Feature Information** panel (click a feature) and from the **Charts** dock that opens with the panel's **Expand** button. Every station, dam and site chart in the portal follows the same pattern: a summary card, a preview chart, **Expand** to enlarge, **Download** for the CSV.
 
 <figure markdown="span">
-  ![Annual peak discharge at Beit Bridge 1979-2026](../assets/charts/floods-annual-maxima.png)
-  <figcaption>Figure 2: Annual peak discharge at Beit Bridge from the GloFAS reanalysis. The 2000 flood (7,070 m³/s) remains the benchmark; 2013 and 2025 came within 30 % of it.</figcaption>
+  ![Figure 1](../assets/charts/portal/glofas-gauge-a7h004-panel.png)
+  <figcaption>Figure 1: Feature Information for gauge A7H004, Limpopo River at Beit Bridge (GloFAS Discharge Forecast – Verified Gauges). The card gives the 24 h, 72 h and 30-day forecasts, the flow status, the linked SWAT channel and the model run; the preview chart shows the current year.</figcaption>
 </figure>
-
-- Most years peak **between p95 and p99** (orange) — a wet-season high flow at
-  Beit Bridge is normal and does not mean a flood downstream.
-- The **red years** are the ones people remember: 1981, 1996, 2000, 2013, 2017,
-  2021, 2025. A forecast peak above ~2,500 m³/s puts an event in that class.
-- The **MODIS Flood Frequency (2001–2024)** layer is the spatial version of this
-  chart: pixels that flooded in the 2013 and 2025 events show the highest
-  frequencies along the Lower Limpopo floodplain.
+- **Read the three numbers first**: 24.6 → 34.4 → 24.0 m³/s means a small rise this week, then recession — *Moderate* status, no alert. In the wet season the same card can read 500 → 1,500 → 900.
+- **Model run** is the date to quote in a situation report; **Linked SWAT** (cha0215) is the channel to open in the SWAT Extraction Tool.
+- The preview chart shows this year's daily flow: the two peaks near 1,500 m³/s (February and late March 2026) are the wet-season pulses that shape the annual maxima history.
 
 <figure markdown="span">
-  ![Basin flow status classification](../assets/charts/floods-basin-status.png)
-  <figcaption>Figure 3: How the 876 forecast points are classified on a given day. This is the legend behind the Reporting Points and Flood Summary layers.</figcaption>
+  ![Figure 2](../assets/charts/portal/glofas-gauge-a7h004-chart.png)
+  <figcaption>Figure 2: The same gauge after Expand — the Charts dock with the full GloFAS record since 1979. Each colour is a forecast lead time; the orange series is the reanalysis.</figcaption>
 </figure>
+- The dock shows **every archived forecast and the reanalysis** on one axis: the 2000 (≈7,000 m³/s), 2013 and 2025 (≈5,000 m³/s) floods stand out immediately.
+- Hover a point to read the value and date; drag to zoom into a season; **Download** gives the CSV with one column per lead time.
+- Compare the current year's forecast spikes (right edge) against those historical peaks to judge severity — a forecast of 2,500 m³/s at Beit Bridge is a top-ten event.
 
-- Even in the **dry season**, 7 % of points read *Extreme*. In September this is
-  almost always dam releases or isolated storms on small tributaries — check the
-  discharge in m³/s before reacting. In the wet season the same class means a
-  real flood wave.
-- Points are **SWAT channels (1,436) plus verified gauges (363)**; the gauges are
-  the anchor — trust a channel forecast more when the neighbouring gauge agrees.
+<figure markdown="span">
+  ![Figure 3](../assets/charts/portal/glofas-swat-cha0978-panel.png)
+  <figcaption>Figure 3: The same template for a SWAT channel (GloFAS Discharge Forecast – SWAT Channels), here cha0978 on the Crocodile. Channel geometry (stream order, drained area, width, depth) helps judge whether a forecast discharge will overtop the banks.</figcaption>
+</figure>
+- Channel points fill the gaps between gauges: 1,436 channels versus 363 gauges. A **channel 8.6 m deep and 696 m wide** carries 19 m³/s without notice; a first-order tributary would not.
+- **30D forecast 2.4 m³/s** against 19 m³/s today shows the dry-season recession — the forecast is for the flow to fall.
+
+<figure markdown="span">
+  ![Figure 4](../assets/charts/portal/rainfall-forecast-ingwizi-panel.png)
+  <figcaption>Figure 4: Rainfall Monitoring and Forecast station card (s20592s27943e, channel cha0036, upper Shashe): last 7 and 30 days, wet days, 7-day forecast and last rain, with the daily rainfall preview.</figcaption>
+</figure>
+- This is the **trigger layer** for the flood workflow: when *7-day forecast* jumps to tens of millimetres over headwater channels, open the GloFAS points downstream.
+- Expand shows daily rainfall since 2020 with the forecast in green — the wet-season clusters (Dec–Feb) are where flood peaks originate.
+
+??? note "Longer-term context (charts derived from the same API data)"
+    These are not portal screens: they were rendered from the same series with `tools/use_case_charts.py` to show what the portal's series look like over decades.
+
+    <figure markdown="span">
+      ![Annual peak discharge at Beit Bridge 1979–2026 with the station's p95/p99 thresholds.](../assets/charts/floods-annual-maxima.png)
+      <figcaption>Annual peak discharge at Beit Bridge 1979–2026 with the station's p95/p99 thresholds.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![The current 30-day outlook at Beit Bridge against the station thresholds.](../assets/charts/floods-glofas-forecast.png)
+      <figcaption>The current 30-day outlook at Beit Bridge against the station thresholds.</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      ![How the 876 forecast points were classified on 13 September 2026.](../assets/charts/floods-basin-status.png)
+      <figcaption>How the 876 forecast points were classified on 13 September 2026.</figcaption>
+    </figure>
+
 
 ## Indicators and what to do
 
