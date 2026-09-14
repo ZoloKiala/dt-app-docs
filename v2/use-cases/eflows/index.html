@@ -1759,50 +1759,59 @@ abstraction would alter the ecological risk</strong>.</p>
 <li>Capture the alert map and the chart as a <strong>Story</strong> for the e-flow committee.</li>
 </ol>
 <h2 id="reading-the-charts">Reading the charts<a class="headerlink" href="#reading-the-charts" title="Permanent link">¶</a></h2>
+<p>The figures below are the portal's own charts, captured from the <strong>Feature Information</strong> panel (click a feature) and from the <strong>Charts</strong> dock that opens with the panel's <strong>Expand</strong> button. Every station, dam and site chart in the portal follows the same pattern: a summary card, a preview chart, <strong>Expand</strong> to enlarge, <strong>Download</strong> for the CSV.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/eflows-regime-croc.png" data-title="Monthly flow regime at the Crocodile West site" data-desc-position="bottom"><img alt="Monthly flow regime at the Crocodile West site" src="../../assets/charts/eflows-regime-croc.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/eflow-croc-panel.png" data-title="Figure 1" data-desc-position="bottom"><img alt="Figure 1" src="../../assets/charts/portal/eflow-croc-panel.png"></a>
 <br>
-<figcaption>Figure 1: The three series of the e-flow chart averaged by month for the Crocodile (West) at Rooibokkraal. Natural flow is what SWAT simulates without abstraction; present flow includes dams and use.</figcaption>
+<figcaption>Figure 1: E-flow Monitoring and Forecasting — the site card for CROC-A24J-ROOIB (Crocodile West at Rooibokkraal) with the modelled-flow preview since 2001, Show Raw Data, Advanced Chart, Expand and Download.</figcaption>
 </figure>
 <ul>
-<li>The e-flow <strong>requirement follows the natural seasonality</strong> — higher in
-  Jan–Mar, lowest in Jul–Sep — because ecosystems need floods as well as base
-  flow.</li>
-<li><strong>Winter is where the reach is hurt</strong>: July and August present flows are
-  43 % and 69 % below natural, and sit <em>at</em> the requirement with no margin.
-  Summer flows are near or above natural (return flows and releases).</li>
-<li>The practical reading: this reach does not need more wet-season water; it
-  needs <strong>protected dry-season base flow</strong>.</li>
+<li>The card names the <strong>river code</strong> (used by the API and the SWAT Extraction Tool), the reach description and the site; the preview is present-day flow only.</li>
+<li><strong>Advanced Chart</strong> opens the analytics view (regime, compliance, deficit heat-map) for the site in the live portal.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/eflows-timeseries-mapun.png" data-title="Present flow vs e-flow requirement, Limpopo Shashe-Mzingwane" data-desc-position="bottom"><img alt="Present flow vs e-flow requirement, Limpopo Shashe-Mzingwane" src="../../assets/charts/eflows-timeseries-mapun.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/eflow-croc-chart.png" data-title="Figure 2" data-desc-position="bottom"><img alt="Figure 2" src="../../assets/charts/portal/eflow-croc-chart.png"></a>
 <br>
-<figcaption>Figure 2: Present-day flow against the requirement at LIMP-A71L-MAPUN since 2015 (log scale). Shaded = deficit months.</figcaption>
+<figcaption>Figure 2: The same site after Expand — four series: SWAT Present Flow, Natural Flow, Availability Surplus and E-Flow (the requirement), 2001–2026, m³/s.</figcaption>
 </figure>
 <ul>
-<li>Deficits (shaded) cluster in <strong>Aug–Nov every year</strong> and were longest in the
-  2015–16 and 2023–24 droughts, when the river stopped flowing for several
-  months.</li>
-<li>The wet-season requirement (~30–120 m³/s) is almost always met; the wet
-  season <strong>peaks of 300–2,500 m³/s</strong> are the floods described in
-  <a href="../floods/">Floods</a>.</li>
-<li>Because the axis is logarithmic, a small visual gap in winter can be the
-  <strong>entire base flow</strong>: a deficit of 2 m³/s against a requirement of 2.3 m³/s
-  is Level 5.</li>
+<li>The <strong>E-Flow requirement</strong> (green) is the low, seasonal line at the bottom; present flow (pink) rides above it in most months. Where pink dips <strong>to</strong> the green line in winter, the reach is at Level 2–3.</li>
+<li>Wet-season peaks (300–560 m³/s in 2004, 2014, 2017, 2021, 2025) are near natural — this reach is altered in the dry season, not the wet.</li>
+<li>Drag across a winter to zoom: the gap between pink and green in m³/s is the deficit the alert message asks the dam operator to release.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/eflows-compliance.png" data-title="Annual e-flow compliance at two sites" data-desc-position="bottom"><img alt="Annual e-flow compliance at two sites" src="../../assets/charts/eflows-compliance.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/eflow-mapun-chart.png" data-title="Figure 3" data-desc-position="bottom"><img alt="Figure 3" src="../../assets/charts/portal/eflow-mapun-chart.png"></a>
 <br>
-<figcaption>Figure 3: Share of days per year meeting the requirement at the two sites. The axis starts at 90 %.</figcaption>
+<figcaption>Figure 3: The Limpopo main stem, Shashe to Mzingwane (LIMP-A71L-MAPUN), expanded. Peaks reach 2,500 m³/s (2021) while the requirement stays below ~120 m³/s.</figcaption>
 </figure>
 <ul>
-<li>Compliance of <strong>99 %</strong> still means 3–5 deficit days per year — and those days
-  fall in the same critical low-flow weeks. Report the <em>deficit days</em> and the
-  <em>maximum deficit</em>, not just the percentage.</li>
-<li>Compliance held up even in drought years because the requirement itself is
-  low in the dry season; the ecological damage is in <strong>how long</strong> the deficit
-  spells last (the portal's analytics report a maximum spell length per site).</li>
+<li>On a main-stem site the wet-season peaks dwarf everything else; <strong>zoom into the dry months</strong> to see the deficits, or read the <em>Deficit</em> series in <strong>Show Raw Data</strong>.</li>
+<li>Compare with Figure 2: the same requirement logic, an order of magnitude more water.</li>
 </ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/glofas-swat-cha0978-panel.png" data-title="Figure 4" data-desc-position="bottom"><img alt="Figure 4" src="../../assets/charts/portal/glofas-swat-cha0978-panel.png"></a>
+<br>
+<figcaption>Figure 4: The SWAT channel card for cha0978 — the Crocodile channel that feeds the e-flow site. Its Channel ID is what you type into the SWAT Extraction Tool (Flow Type, Start/End Date, FETCH DATA → MAP / TABLE / PROBFLO).</figcaption>
+</figure>
+<ul>
+<li>Channel geometry (stream order 4, 3.58 million ha drained) tells you how much upstream catchment — and abstraction — sits behind the site.</li>
+</ul>
+<details class="note">
+<summary>Longer-term context (charts derived from the same API data)</summary>
+<p>These are not portal screens: they were rendered from the same series with <code>tools/use_case_charts.py</code> to show what the portal's series look like over decades.</p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/eflows-regime-croc.png" data-title="Monthly regime at the Crocodile site" data-desc-position="bottom"><img alt="Monthly regime at the Crocodile site" src="../../assets/charts/eflows-regime-croc.png"></a>
+  <figcaption>Monthly regime at the Crocodile site: natural vs present flow and the e-flow requirement.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/eflows-timeseries-mapun.png" data-title="Present flow vs requirement at LIMP-A71L-MAPUN since 2015 with deficit months shaded (log axis)." data-desc-position="bottom"><img alt="Present flow vs requirement at LIMP-A71L-MAPUN since 2015 with deficit months shaded (log axis)." src="../../assets/charts/eflows-timeseries-mapun.png"></a>
+  <figcaption>Present flow vs requirement at LIMP-A71L-MAPUN since 2015 with deficit months shaded (log axis).</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/eflows-compliance.png" data-title="Annual e-flow compliance at the two sites." data-desc-position="bottom"><img alt="Annual e-flow compliance at the two sites." src="../../assets/charts/eflows-compliance.png"></a>
+  <figcaption>Annual e-flow compliance at the two sites.</figcaption>
+</figure><p></p>
+</details>
 <h2 id="alert-levels-and-what-to-do">Alert levels and what to do<a class="headerlink" href="#alert-levels-and-what-to-do" title="Permanent link">¶</a></h2>
 <table>
 <thead>

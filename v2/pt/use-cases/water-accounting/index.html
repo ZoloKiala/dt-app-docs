@@ -1768,49 +1768,49 @@ utilizável) com a ET repartida por quatro classes de uso do solo — <em>Protec
 <li>Guarde a vista montada como <strong>Story</strong>, uma cena por termo do balanço.</li>
 </ol>
 <h2 id="interpretar-os-graficos">Interpretar os gráficos<a class="headerlink" href="#interpretar-os-graficos" title="Permanent link">¶</a></h2>
-<p><em>Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
-inglês.</em></p>
+<p>As figuras abaixo são os gráficos do próprio portal, capturados no painel <strong>Feature Information</strong> (clique num elemento) e no painel <strong>Charts</strong> que abre com o botão <strong>Expand</strong>. Todos os gráficos de estações, barragens e locais seguem o mesmo padrão: um cartão-resumo, um gráfico de pré-visualização, <strong>Expand</strong> para ampliar, <strong>Download</strong> para o CSV. Os gráficos estão em inglês.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/wa-annual-balance.png" data-title="Balanço hídrico anual 2003-2024" data-desc-position="bottom"><img alt="Balanço hídrico anual 2003-2024" src="../../../assets/charts/wa-annual-balance.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/wa-dashboard-panel.png" data-title="Figura 1" data-desc-position="bottom"><img alt="Figura 1" src="../../../assets/charts/portal/wa-dashboard-panel.png"></a>
 <br>
-<figcaption>Figura 1: Precipitação, evapotranspiração total e escoamento fluvial por ano, das contas WA+ (km³/ano).</figcaption>
+<figcaption>Figura 1: Limpopo Basin Water Balance (WA+ Dashboard) — o cartão do marcador da bacia, com os botões Show Raw Data, Advanced Chart e Balance Dashboard. O Balance Dashboard abre as contas WA+ compiladas (folha de recursos-base em Sankey) no portal em produção.</figcaption>
 </figure>
 <ul>
-<li><strong>A ET é quase constante (200–330 km³)</strong> enquanto a precipitação varia 3×: a
-  paisagem evapora o que recebe, e o excedente de um ano húmido sai depressa
-  como escoamento (2021: 52 km³) ou reenche o armazenamento.</li>
-<li>Em <strong>anos secos a ET excede a precipitação</strong> (2003, 2005, 2008, 2012, 2015,
-  2024): a diferença é humidade do solo, água subterrânea e albufeiras em
-  esvaziamento — razão pela qual as secas aqui se sentem um ano depois do défice
-  de chuva.</li>
-<li>Só <strong>2,6 % da precipitação</strong> chega ao mar em média; o Limpopo é uma bacia
-  fechada na maioria dos anos. Qualquer nova repartição é uma realocação.</li>
+<li>Este marcador único é a porta de entrada das contas: <strong>Balance Dashboard</strong> para as folhas, <strong>Download</strong> para o CSV mensal de cada termo desde 2003.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/wa-et-by-landuse.png" data-title="ET por classe de uso do solo WA+" data-desc-position="bottom"><img alt="ET por classe de uso do solo WA+" src="../../../assets/charts/wa-et-by-landuse.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/wa-dashboard-chart.png" data-title="Figura 2" data-desc-position="bottom"><img alt="Figura 2" src="../../../assets/charts/portal/wa-dashboard-chart.png"></a>
 <br>
-<figcaption>Figura 2: Percentagem da evapotranspiração da bacia por classe de uso do solo WA+, 2003–2020.</figcaption>
+<figcaption>Figura 2: O local WA+ após Expand — todos os termos do balanço mensal (cerca de 35 séries: entradas, ET por classe de uso do solo, saídas, variação de armazenamento) num só eixo, 2003–2021.</figcaption>
 </figure>
 <ul>
-<li><strong>O solo utilizado (pastagem, agricultura de sequeiro, mato natural) consome
-  ~75 %</strong> da água — chuva usada onde cai (água verde).</li>
-<li><strong>O uso gerido da água — irrigação, albufeiras, cidades — está em média em
-  ~8 %</strong>, subindo a ~17 % no ano de seca de 2017, quando a ET de sequeiro
-  colapsou e a irrigação continuou. É a parcela de água azul que as regras de
-  repartição governam.</li>
-<li>As áreas protegidas (Kruger, Gonarezhou, PN do Limpopo) mantêm 13–15 % — a
-  reserva ecológica, em termos de contabilidade da água.</li>
+<li>O painel traça <strong>todos os termos de uma vez</strong>, o que só é útil para ver o ritmo sazonal: a entrada de precipitação (rosa) atinge o pico cada verão; os termos de ET (amarelo/laranja) seguem um a dois meses depois.</li>
+<li>Desligue séries na legenda para isolar um termo — p. ex. mantenha <em>Inflow Precipitation Rainfall</em> e <em>Outflow ET Landscape Utilized</em> para ver que em verões secos a ET excede a chuva.</li>
+<li>Para análise use <strong>Download</strong> (uma coluna por termo) ou o <strong>Balance Dashboard</strong>; a secção recolhida abaixo mostra como ficam os totais anuais.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/wa-landuse-share.png" data-title="Repartição da área por uso do solo" data-desc-position="bottom"><img alt="Repartição da área por uso do solo" src="../../../assets/charts/wa-landuse-share.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/realtime-station-a2h012-panel.png" data-title="Figura 3" data-desc-position="bottom"><img alt="Figura 3" src="../../../assets/charts/portal/realtime-station-a2h012-panel.png"></a>
 <br>
-<figcaption>Figura 3: Área da bacia por classe de uso do solo WA+.</figcaption>
+<figcaption>Figura 3: SWAT and Observed Sites — o cartão da estação A2H012FW (Krokodil em Kalkheuwel): estado, último caudal (16,55 m³/s em 2 de set. de 2026) e um botão Advanced Chart. Estações como esta são a verdade de terreno com que as contas são validadas.</figcaption>
 </figure>
 <ul>
-<li><strong>2 % da área consome 8 % da água</strong> — o solo irrigado usa cerca de quatro
-  vezes mais água por hectare do que a pastagem à sua volta, e é essa a lacuna
-  de produtividade que a camada <em>Beneficial Fraction</em> ajuda a localizar.</li>
+<li>O caudal observado nas estações da bacia é o <strong>termo de escoamento</strong> medido, não modelado; onde discorda do escoamento WA+, a conta precisa de ajuste.</li>
 </ul>
+<details class="note">
+<summary>Contexto de longo prazo (gráficos derivados dos mesmos dados da API)</summary>
+<p>Estes não são ecrãs do portal: foram gerados a partir das mesmas séries com <code>tools/use_case_charts.py</code> para mostrar como as séries do portal se comportam ao longo de décadas.</p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/wa-annual-balance.png" data-title="Precipitação, ET total e escoamento por ano, 2003–2024 (km³/ano)." data-desc-position="bottom"><img alt="Precipitação, ET total e escoamento por ano, 2003–2024 (km³/ano)." src="../../../assets/charts/wa-annual-balance.png"></a>
+  <figcaption>Precipitação, ET total e escoamento por ano, 2003–2024 (km³/ano).</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/wa-et-by-landuse.png" data-title="Percentagem da ET da bacia por classe de uso do solo WA+, 2003–2020." data-desc-position="bottom"><img alt="Percentagem da ET da bacia por classe de uso do solo WA+, 2003–2020." src="../../../assets/charts/wa-et-by-landuse.png"></a>
+  <figcaption>Percentagem da ET da bacia por classe de uso do solo WA+, 2003–2020.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/wa-landuse-share.png" data-title="Área da bacia por classe de uso do solo WA+." data-desc-position="bottom"><img alt="Área da bacia por classe de uso do solo WA+." src="../../../assets/charts/wa-landuse-share.png"></a>
+  <figcaption>Área da bacia por classe de uso do solo WA+.</figcaption>
+</figure><p></p>
+</details>
 <h2 id="indicadores-e-o-que-fazer">Indicadores e o que fazer<a class="headerlink" href="#indicadores-e-o-que-fazer" title="Permanent link">¶</a></h2>
 <table>
 <thead>

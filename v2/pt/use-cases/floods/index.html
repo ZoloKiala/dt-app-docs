@@ -1896,53 +1896,61 @@ cheia, onde atingirão os rios o pico, e quem e o que está exposto</strong> —
     exposição, rescaldo) e <strong>Share / Print</strong> para o relatório de situação.</li>
 </ol>
 <h2 id="interpretar-os-graficos">Interpretar os gráficos<a class="headerlink" href="#interpretar-os-graficos" title="Permanent link">¶</a></h2>
-<p><em>Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
-inglês.</em></p>
+<p>As figuras abaixo são os gráficos do próprio portal, capturados no painel <strong>Feature Information</strong> (clique num elemento) e no painel <strong>Charts</strong> que abre com o botão <strong>Expand</strong>. Todos os gráficos de estações, barragens e locais seguem o mesmo padrão: um cartão-resumo, um gráfico de pré-visualização, <strong>Expand</strong> para ampliar, <strong>Download</strong> para o CSV. Os gráficos estão em inglês.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/floods-glofas-forecast.png" data-title="Perspetiva de caudal em Beit Bridge" data-desc-position="bottom"><img alt="Perspetiva de caudal em Beit Bridge" src="../../../assets/charts/floods-glofas-forecast.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/glofas-gauge-a7h004-panel.png" data-title="Figura 1" data-desc-position="bottom"><img alt="Figura 1" src="../../../assets/charts/portal/glofas-gauge-a7h004-panel.png"></a>
 <br>
-<figcaption>Figura 1: O que o gráfico GloFAS Discharge Forecast mostra para o Limpopo em Beit Bridge na época seca — caudal recente e previsão a 30 dias contra os limiares percentílicos da estação. Compare com a Figura 2 para ver quão longe está de uma cheia.</figcaption>
+<figcaption>Figura 1: Feature Information da estação A7H004, rio Limpopo em Beit Bridge (GloFAS Discharge Forecast – Verified Gauges). O cartão dá as previsões a 24 h, 72 h e 30 dias, o estado do caudal, o canal SWAT associado e a corrida do modelo; a pré-visualização mostra o ano corrente.</figcaption>
 </figure>
 <ul>
-<li>As <strong>linhas ponteadas são os limiares da própria estação</strong> — p90, p95 e p99
-  do seu caudal diário de longo prazo. Variam de estação para estação: um valor
-  <em>Extreme</em> num afluente do Steelpoort seria <em>Normal</em> em Beit Bridge.</li>
-<li>A <strong>previsão abre em leque com o horizonte</strong>: os valores a 1–3 dias são
-  fiáveis, os de 10–30 dias indicam tendência. Leia a <em>posição da linha laranja
-  em relação aos limiares</em>, não o valor exato.</li>
-<li>Uma previsão que sobe de p90 para p95 em corridas sucessivas é o sinal que
-  importa; um pico isolado que desaparece no dia seguinte é ruído.</li>
+<li><strong>Leia primeiro os três números</strong>: 24,6 → 34,4 → 24,0 m³/s significa uma pequena subida esta semana e depois recessão — estado <em>Moderate</em>, sem alerta. Na época das chuvas o mesmo cartão pode ler 500 → 1 500 → 900.</li>
+<li><strong>Model run</strong> é a data a citar num relatório de situação; <strong>Linked SWAT</strong> (cha0215) é o canal a abrir na SWAT Extraction Tool.</li>
+<li>A pré-visualização mostra o caudal diário deste ano: os dois picos perto de 1 500 m³/s (fevereiro e fim de março de 2026) são os pulsos da época das chuvas que formam o histórico de máximos anuais.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/floods-annual-maxima.png" data-title="Pico anual de caudal em Beit Bridge 1979-2026" data-desc-position="bottom"><img alt="Pico anual de caudal em Beit Bridge 1979-2026" src="../../../assets/charts/floods-annual-maxima.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/glofas-gauge-a7h004-chart.png" data-title="Figura 2" data-desc-position="bottom"><img alt="Figura 2" src="../../../assets/charts/portal/glofas-gauge-a7h004-chart.png"></a>
 <br>
-<figcaption>Figura 2: Pico anual de caudal em Beit Bridge segundo a reanálise GloFAS. A cheia de 2000 (7 070 m³/s) continua a ser a referência; 2013 e 2025 ficaram a menos de 30 % dela.</figcaption>
+<figcaption>Figura 2: A mesma estação após Expand — o painel Charts com o registo GloFAS completo desde 1979. Cada cor é um horizonte de previsão; a série laranja é a reanálise.</figcaption>
 </figure>
 <ul>
-<li>A maioria dos anos atinge o pico <strong>entre p95 e p99</strong> (laranja) — um caudal
-  alto na época das chuvas em Beit Bridge é normal e não significa cheia a
-  jusante.</li>
-<li>Os <strong>anos a vermelho</strong> são os que se recordam: 1981, 1996, 2000, 2013, 2017,
-  2021, 2025. Um pico previsto acima de ~2 500 m³/s coloca um evento nessa
-  classe.</li>
-<li>A camada <strong>MODIS Flood Frequency (2001–2024)</strong> é a versão espacial deste
-  gráfico: os píxeis inundados em 2013 e 2025 mostram as frequências mais
-  elevadas na planície do Baixo Limpopo.</li>
+<li>O painel mostra <strong>todas as previsões arquivadas e a reanálise</strong> num só eixo: as cheias de 2000 (≈7 000 m³/s), 2013 e 2025 (≈5 000 m³/s) destacam-se de imediato.</li>
+<li>Passe o cursor sobre um ponto para ler valor e data; arraste para ampliar uma estação; <strong>Download</strong> dá o CSV com uma coluna por horizonte.</li>
+<li>Compare os picos previstos do ano corrente (margem direita) com esses máximos históricos para avaliar a severidade — uma previsão de 2 500 m³/s em Beit Bridge é um evento entre os dez maiores.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/floods-basin-status.png" data-title="Classificação do estado dos caudais na bacia" data-desc-position="bottom"><img alt="Classificação do estado dos caudais na bacia" src="../../../assets/charts/floods-basin-status.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/glofas-swat-cha0978-panel.png" data-title="Figura 3" data-desc-position="bottom"><img alt="Figura 3" src="../../../assets/charts/portal/glofas-swat-cha0978-panel.png"></a>
 <br>
-<figcaption>Figura 3: Como os 876 pontos de previsão são classificados num dado dia. É a legenda por trás das camadas Reporting Points e Flood Summary.</figcaption>
+<figcaption>Figura 3: O mesmo modelo de cartão para um canal SWAT (GloFAS Discharge Forecast – SWAT Channels), aqui cha0978 no Crocodile. A geometria do canal (ordem, área drenada, largura, profundidade) ajuda a avaliar se um caudal previsto galgará as margens.</figcaption>
 </figure>
 <ul>
-<li>Mesmo na <strong>época seca</strong>, 7 % dos pontos leem <em>Extreme</em>. Em setembro trata-se
-  quase sempre de descargas de barragens ou de trovoadas isoladas em pequenos
-  afluentes — verifique o caudal em m³/s antes de reagir. Na época das chuvas a
-  mesma classe significa uma onda de cheia real.</li>
-<li>Os pontos são <strong>canais SWAT (1 436) mais estações verificadas (363)</strong>; as
-  estações são a âncora — confie mais na previsão de um canal quando a estação
-  vizinha concorda.</li>
+<li>Os pontos de canal preenchem os vazios entre estações: 1 436 canais contra 363 estações. Um <strong>canal com 8,6 m de profundidade e 696 m de largura</strong> transporta 19 m³/s sem consequências; um afluente de primeira ordem não.</li>
+<li><strong>30D forecast 2,4 m³/s</strong> contra 19 m³/s hoje mostra a recessão da época seca — a previsão é de descida do caudal.</li>
 </ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/rainfall-forecast-ingwizi-panel.png" data-title="Figura 4" data-desc-position="bottom"><img alt="Figura 4" src="../../../assets/charts/portal/rainfall-forecast-ingwizi-panel.png"></a>
+<br>
+<figcaption>Figura 4: Cartão da estação de Rainfall Monitoring and Forecast (s20592s27943e, canal cha0036, alto Shashe): últimos 7 e 30 dias, dias húmidos, previsão a 7 dias e última chuva, com a pré-visualização da chuva diária.</figcaption>
+</figure>
+<ul>
+<li>É a <strong>camada-gatilho</strong> do fluxo de trabalho de cheias: quando a <em>previsão a 7 dias</em> salta para dezenas de milímetros sobre canais de cabeceira, abra os pontos GloFAS a jusante.</li>
+<li>Expand mostra a chuva diária desde 2020 com a previsão a verde — os aglomerados da época das chuvas (dez.–fev.) são onde nascem os picos de cheia.</li>
+</ul>
+<details class="note">
+<summary>Contexto de longo prazo (gráficos derivados dos mesmos dados da API)</summary>
+<p>Estes não são ecrãs do portal: foram gerados a partir das mesmas séries com <code>tools/use_case_charts.py</code> para mostrar como as séries do portal se comportam ao longo de décadas.</p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/floods-annual-maxima.png" data-title="Pico anual de caudal em Beit Bridge 1979–2026 com os limiares p95/p99 da estação." data-desc-position="bottom"><img alt="Pico anual de caudal em Beit Bridge 1979–2026 com os limiares p95/p99 da estação." src="../../../assets/charts/floods-annual-maxima.png"></a>
+  <figcaption>Pico anual de caudal em Beit Bridge 1979–2026 com os limiares p95/p99 da estação.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/floods-glofas-forecast.png" data-title="A perspetiva atual a 30 dias em Beit Bridge contra os limiares da estação." data-desc-position="bottom"><img alt="A perspetiva atual a 30 dias em Beit Bridge contra os limiares da estação." src="../../../assets/charts/floods-glofas-forecast.png"></a>
+  <figcaption>A perspetiva atual a 30 dias em Beit Bridge contra os limiares da estação.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/floods-basin-status.png" data-title="Como os 876 pontos de previsão foram classificados em 13 de setembro de 2026." data-desc-position="bottom"><img alt="Como os 876 pontos de previsão foram classificados em 13 de setembro de 2026." src="../../../assets/charts/floods-basin-status.png"></a>
+  <figcaption>Como os 876 pontos de previsão foram classificados em 13 de setembro de 2026.</figcaption>
+</figure><p></p>
+</details>
 <h2 id="indicadores-e-o-que-fazer">Indicadores e o que fazer<a class="headerlink" href="#indicadores-e-o-que-fazer" title="Permanent link">¶</a></h2>
 <table>
 <thead>

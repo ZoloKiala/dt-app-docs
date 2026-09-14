@@ -1775,47 +1775,59 @@ meteorológica (chuva), depois stress do solo e da vegetação, depois hidrológ
    convincente.</li>
 </ol>
 <h2 id="interpretar-os-graficos">Interpretar os gráficos<a class="headerlink" href="#interpretar-os-graficos" title="Permanent link">¶</a></h2>
-<p><em>Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
-inglês.</em></p>
+<p>As figuras abaixo são os gráficos do próprio portal, capturados no painel <strong>Feature Information</strong> (clique num elemento) e no painel <strong>Charts</strong> que abre com o botão <strong>Expand</strong>. Todos os gráficos de estações, barragens e locais seguem o mesmo padrão: um cartão-resumo, um gráfico de pré-visualização, <strong>Expand</strong> para ampliar, <strong>Download</strong> para o CSV. Os gráficos estão em inglês.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/droughts-rainfall-anomaly.png" data-title="Anomalia mensal de precipitação em Ingwizi" data-desc-position="bottom"><img alt="Anomalia mensal de precipitação em Ingwizi" src="../../../assets/charts/droughts-rainfall-anomaly.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/rainfall-anomaly-ingwizi-panel.png" data-title="Figura 1" data-desc-position="bottom"><img alt="Figura 1" src="../../../assets/charts/portal/rainfall-anomaly-ingwizi-panel.png"></a>
 <br>
-<figcaption>Figura 1: O gráfico por trás da camada Rainfall Anomalies, para a estação de Ingwizi no alto Shashe (Zimbabué). Laranja = abaixo da média mensal, azul = acima.</figcaption>
+<figcaption>Figura 1: Cartão de Rainfall Anomalies para o canal cha0036 (Ingwizi, alto Shashe): total observado do mês corrente, média climatológica, anomalia em mm e %, a sua classe, mais os últimos 7 dias e a previsão a 7 dias, com a pré-visualização mensal.</figcaption>
 </figure>
 <ul>
-<li>Meses laranja isolados são meteorologia. <strong>Meses laranja consecutivos ao longo
-  de uma época das chuvas</strong> (nov.–mar.) são seca: 2002–03, 2005, 2012, 2015–16 e
-  2023–24 mostram todos este padrão.</li>
-<li>Os grandes picos azuis (fev. 2017, jan. 2021) são estações alimentadas por
-  ciclones; terminam depressa a seca meteorológica, mas albufeiras e aquíferos
-  demoram mais a recuperar.</li>
+<li><strong>Cuidado com anomalias percentuais na época seca</strong>: 0,4 mm observados contra uma média de 0,1 mm lê-se <em>+300 %, Very wet</em> — sem significado em agosto. Avalie a classe nos <strong>meses da época das chuvas (nov.–mar.)</strong>, ou leia a anomalia em mm.</li>
+<li>A pré-visualização mostra os totais mensais desde 2001; a forma de cada pico de verão (alto e estreito, ou baixo e achatado) é o primeiro sinal visual de uma estação boa ou falhada.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/droughts-annual-rainfall.png" data-title="Precipitação anual em Ingwizi 2001-2025" data-desc-position="bottom"><img alt="Precipitação anual em Ingwizi 2001-2025" src="../../../assets/charts/droughts-annual-rainfall.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/rainfall-anomaly-ingwizi-chart.png" data-title="Figura 2" data-desc-position="bottom"><img alt="Figura 2" src="../../../assets/charts/portal/rainfall-anomaly-ingwizi-chart.png"></a>
 <br>
-<figcaption>Figura 2: Totais anuais contra a média de 606 mm. Os anos a laranja ficaram abaixo de 75 % da média.</figcaption>
+<figcaption>Figura 2: O gráfico expandido — Total Monthly Rain (laranja) e Anomaly (verde), 2001–2026.</figcaption>
 </figure>
 <ul>
-<li><strong>Dois anos secos seguidos</strong> (2002–03, 2015–16, 2023–24) são o que esvazia as
-  albufeiras; um único ano falhado é normalmente absorvido pelo armazenamento.</li>
-<li>O registo vai de 271 mm (2002) a 954 mm — uma amplitude de 3,5×. Planear
-  apenas com a média é planear para um ano que raramente acontece.</li>
+<li>Sequências de <strong>verde abaixo de zero ao longo de todo um verão</strong> são o sinal de seca meteorológica: 2002–03, 2005, 2012, 2015–16 e 2023–24 mostram-no.</li>
+<li>Os grandes picos positivos (fev. 2017, jan. 2021) terminam a seca meteorológica num mês; rios, barragens e furos demoram uma estação ou mais a acompanhar.</li>
+<li><strong>Download</strong> do CSV permite calcular um total móvel de 3 ou 12 meses para um índice tipo SPI da estação corrente (as camadas SPEI terminam em 2021).</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/droughts-spi.png" data-title="SPI-3 e SPI-12 em Ingwizi" data-desc-position="bottom"><img alt="SPI-3 e SPI-12 em Ingwizi" src="../../../assets/charts/droughts-spi.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/rainfall-forecast-ingwizi-chart.png" data-title="Figura 3" data-desc-position="bottom"><img alt="Figura 3" src="../../../assets/charts/portal/rainfall-forecast-ingwizi-chart.png"></a>
 <br>
-<figcaption>Figura 3: Índice de Precipitação Padronizado a 3 e 12 meses — como ler as camadas de perigo de seca SPEI. As faixas sombreadas marcam seca moderada (−1), severa (−1,5) e extrema (−2).</figcaption>
+<figcaption>Figura 3: Rainfall Monitoring and Forecast, expandido — chuva diária desde 2020 (laranja) com a previsão a 7 dias (verde) na mesma estação.</figcaption>
 </figure>
 <ul>
-<li>O <strong>SPI-3</strong> oscila todos os anos porque acompanha a estação; use-o para
-  detetar uma <em>estação falhada</em> em tempo real (valores de jan.–mar. abaixo de −1).</li>
-<li>O <strong>SPI-12</strong> é mais suave e mostra <em>défices plurianuais</em>: o episódio de 2023–24
-  atingiu o nível severo (−1,5) e durou ~18 meses. É esta a escala que importa
-  para albufeiras, furos e caudais ecológicos.</li>
-<li>As camadas <strong>Drought Hazard – SPEI</strong> do catálogo são a versão espacial para
-  2010–2021; o gráfico acima mostra o mesmo índice num ponto, prolongado até
-  hoje.</li>
+<li>Os dados diários mostram a <strong>duração dos períodos secos</strong> dentro de uma estação, que os totais mensais escondem: o verão de 2023/24 tem poucos e pequenos eventos em comparação com 2020/21.</li>
+<li>Os pontos de previsão na margem direita são a perspetiva subsazonal da estação; uma cauda verde plana em novembro significa início tardio.</li>
 </ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/eflow-croc-panel.png" data-title="Figura 4" data-desc-position="bottom"><img alt="Figura 4" src="../../../assets/charts/portal/eflow-croc-panel.png"></a>
+<br>
+<figcaption>Figura 4: Cartão do local de E-flow Monitoring and Forecasting (CROC-A24J-ROOIB) — a verificação de seca hidrológica. A pré-visualização mostra o caudal modelado desde 2001; o cartão identifica o troço e o local.</figcaption>
+</figure>
+<ul>
+<li>Quando os índices de chuva e de vegetação concordam na seca, esta é a confirmação: caudais sobre ou abaixo da linha de requisito em <strong>Expand</strong> (ver <a href="../eflows/">Caudais ecológicos</a>).</li>
+</ul>
+<details class="note">
+<summary>Contexto de longo prazo (gráficos derivados dos mesmos dados da API)</summary>
+<p>Estes não são ecrãs do portal: foram gerados a partir das mesmas séries com <code>tools/use_case_charts.py</code> para mostrar como as séries do portal se comportam ao longo de décadas.</p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/droughts-rainfall-anomaly.png" data-title="Anomalia mensal de precipitação em Ingwizi como barras +/−." data-desc-position="bottom"><img alt="Anomalia mensal de precipitação em Ingwizi como barras +/−." src="../../../assets/charts/droughts-rainfall-anomaly.png"></a>
+  <figcaption>Anomalia mensal de precipitação em Ingwizi como barras +/−.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/droughts-annual-rainfall.png" data-title="Totais anuais contra a média de 606 mm; anos laranja abaixo de 75 % da média." data-desc-position="bottom"><img alt="Totais anuais contra a média de 606 mm; anos laranja abaixo de 75 % da média." src="../../../assets/charts/droughts-annual-rainfall.png"></a>
+  <figcaption>Totais anuais contra a média de 606 mm; anos laranja abaixo de 75 % da média.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/droughts-spi.png" data-title="SPI-3 e SPI-12 na mesma estação — como ler as camadas de perigo SPEI." data-desc-position="bottom"><img alt="SPI-3 e SPI-12 na mesma estação — como ler as camadas de perigo SPEI." src="../../../assets/charts/droughts-spi.png"></a>
+  <figcaption>SPI-3 e SPI-12 na mesma estação — como ler as camadas de perigo SPEI.</figcaption>
+</figure><p></p>
+</details>
 <h2 id="indicadores-e-o-que-fazer">Indicadores e o que fazer<a class="headerlink" href="#indicadores-e-o-que-fazer" title="Permanent link">¶</a></h2>
 <table>
 <thead>

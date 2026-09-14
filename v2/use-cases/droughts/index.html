@@ -1772,45 +1772,59 @@ meteorological (rain), then soil and vegetation stress, then hydrological
    briefing.</li>
 </ol>
 <h2 id="reading-the-charts">Reading the charts<a class="headerlink" href="#reading-the-charts" title="Permanent link">¶</a></h2>
+<p>The figures below are the portal's own charts, captured from the <strong>Feature Information</strong> panel (click a feature) and from the <strong>Charts</strong> dock that opens with the panel's <strong>Expand</strong> button. Every station, dam and site chart in the portal follows the same pattern: a summary card, a preview chart, <strong>Expand</strong> to enlarge, <strong>Download</strong> for the CSV.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-rainfall-anomaly.png" data-title="Monthly rainfall anomaly at Ingwizi" data-desc-position="bottom"><img alt="Monthly rainfall anomaly at Ingwizi" src="../../assets/charts/droughts-rainfall-anomaly.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/rainfall-anomaly-ingwizi-panel.png" data-title="Figure 1" data-desc-position="bottom"><img alt="Figure 1" src="../../assets/charts/portal/rainfall-anomaly-ingwizi-panel.png"></a>
 <br>
-<figcaption>Figure 1: The chart behind the Rainfall Anomalies layer, for the Ingwizi station on the upper Shashe (Zimbabwe). Orange = below the monthly mean, blue = above.</figcaption>
+<figcaption>Figure 1: Rainfall Anomalies card for channel cha0036 (Ingwizi, upper Shashe): the current month's observed total, the climatological mean, the anomaly in mm and %, its class, plus the last 7 days and 7-day forecast, with the monthly preview chart.</figcaption>
 </figure>
 <ul>
-<li>Isolated orange months are weather. <strong>Consecutive orange months across a wet
-  season</strong> (Nov–Mar) are drought: 2002–03, 2005, 2012, 2015–16 and 2023–24 all
-  show this pattern.</li>
-<li>Large blue spikes (Feb 2017, Jan 2021) are cyclone-fed seasons; they end
-  meteorological drought quickly but reservoirs and groundwater take longer to
-  recover.</li>
+<li><strong>Beware percentage anomalies in the dry season</strong>: 0.4 mm observed against a 0.1 mm mean reads <em>+300 %, Very wet</em> — meaningless in August. Judge the class in the <strong>wet-season months (Nov–Mar)</strong>, or read the mm anomaly.</li>
+<li>The preview chart shows monthly totals since 2001; the shape of each summer peak (tall and narrow, or low and flat) is the first visual sign of a good or failed season.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-annual-rainfall.png" data-title="Annual rainfall at Ingwizi 2001-2025" data-desc-position="bottom"><img alt="Annual rainfall at Ingwizi 2001-2025" src="../../assets/charts/droughts-annual-rainfall.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/rainfall-anomaly-ingwizi-chart.png" data-title="Figure 2" data-desc-position="bottom"><img alt="Figure 2" src="../../assets/charts/portal/rainfall-anomaly-ingwizi-chart.png"></a>
 <br>
-<figcaption>Figure 2: Annual totals against the 606 mm mean. Orange years fell below 75 % of the mean.</figcaption>
+<figcaption>Figure 2: The expanded chart — Total Monthly Rain (orange) and Anomaly (green), 2001–2026.</figcaption>
 </figure>
 <ul>
-<li><strong>Two dry years in a row</strong> (2002–03, 2015–16, 2023–24) are what empty
-  reservoirs; a single failed year is usually absorbed by storage.</li>
-<li>The record runs from 271 mm (2002) to 954 mm — a 3.5× range. Planning on the
-  mean alone is planning for a year that rarely happens.</li>
+<li>Runs of <strong>green below zero through a whole summer</strong> are the meteorological-drought signal: 2002–03, 2005, 2012, 2015–16 and 2023–24 all show it.</li>
+<li>The large positive spikes (Feb 2017, Jan 2021) end meteorological drought in one month; rivers, dams and boreholes take a season or more to follow.</li>
+<li><strong>Download</strong> the CSV to compute a 3- or 12-month running total yourself if you need an SPI-like index for the current season (the SPEI layers stop in 2021).</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-spi.png" data-title="SPI-3 and SPI-12 at Ingwizi" data-desc-position="bottom"><img alt="SPI-3 and SPI-12 at Ingwizi" src="../../assets/charts/droughts-spi.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/rainfall-forecast-ingwizi-chart.png" data-title="Figure 3" data-desc-position="bottom"><img alt="Figure 3" src="../../assets/charts/portal/rainfall-forecast-ingwizi-chart.png"></a>
 <br>
-<figcaption>Figure 3: Standardised Precipitation Index at 3- and 12-month scales — how to read the SPEI drought-hazard layers. Shaded bands mark moderate (−1), severe (−1.5) and extreme (−2) drought.</figcaption>
+<figcaption>Figure 3: Rainfall Monitoring and Forecast, expanded — daily rainfall since 2020 (orange) with the 7-day forecast (green) at the same station.</figcaption>
 </figure>
 <ul>
-<li><strong>SPI-3</strong> oscillates every year because it tracks the season; use it to
-  detect a <em>failed season</em> in real time (Jan–Mar values below −1).</li>
-<li><strong>SPI-12</strong> is smoother and shows <em>multi-year deficits</em>: the 2023–24 episode
-  reached severe (−1.5) and lasted ~18 months. This is the scale that matters
-  for reservoirs, boreholes and e-flows.</li>
-<li>The <strong>Drought Hazard – SPEI</strong> layers in the catalogue are the spatial version
-  for 2010–2021; the chart above is what the same index looks like at one
-  point, extended to today.</li>
+<li>Daily data show <strong>dry-spell length</strong> inside a season, which monthly totals hide: the 2023/24 summer has few and small events compared with 2020/21.</li>
+<li>The forecast points at the right edge are the sub-seasonal outlook for the station; a flat green tail in November means a late onset.</li>
 </ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/eflow-croc-panel.png" data-title="Figure 4" data-desc-position="bottom"><img alt="Figure 4" src="../../assets/charts/portal/eflow-croc-panel.png"></a>
+<br>
+<figcaption>Figure 4: E-flow Monitoring and Forecasting site card (CROC-A24J-ROOIB) — the hydrological-drought check. The preview shows modelled flow since 2001; the card names the reach and site.</figcaption>
+</figure>
+<ul>
+<li>When rainfall and vegetation indices agree on drought, this is the confirmation: flows sitting on or below the requirement line in <strong>Expand</strong> (see <a href="../eflows/">Environmental flows</a>).</li>
+</ul>
+<details class="note">
+<summary>Longer-term context (charts derived from the same API data)</summary>
+<p>These are not portal screens: they were rendered from the same series with <code>tools/use_case_charts.py</code> to show what the portal's series look like over decades.</p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-rainfall-anomaly.png" data-title="Monthly rainfall anomaly at Ingwizi as +/- bars." data-desc-position="bottom"><img alt="Monthly rainfall anomaly at Ingwizi as +/- bars." src="../../assets/charts/droughts-rainfall-anomaly.png"></a>
+  <figcaption>Monthly rainfall anomaly at Ingwizi as ± bars.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-annual-rainfall.png" data-title="Annual totals against the 606 mm mean; orange years below 75 % of the mean." data-desc-position="bottom"><img alt="Annual totals against the 606 mm mean; orange years below 75 % of the mean." src="../../assets/charts/droughts-annual-rainfall.png"></a>
+  <figcaption>Annual totals against the 606 mm mean; orange years below 75 % of the mean.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-spi.png" data-title="SPI-3 and SPI-12 at the same station — how to read the SPEI hazard layers." data-desc-position="bottom"><img alt="SPI-3 and SPI-12 at the same station — how to read the SPEI hazard layers." src="../../assets/charts/droughts-spi.png"></a>
+  <figcaption>SPI-3 and SPI-12 at the same station — how to read the SPEI hazard layers.</figcaption>
+</figure><p></p>
+</details>
 <h2 id="indicators-and-what-to-do">Indicators and what to do<a class="headerlink" href="#indicators-and-what-to-do" title="Permanent link">¶</a></h2>
 <table>
 <thead>

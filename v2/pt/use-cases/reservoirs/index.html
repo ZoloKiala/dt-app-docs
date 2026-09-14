@@ -1822,53 +1822,60 @@ confiança; leia-os no painel de informação antes de citar um número.</p>
 <li>Capture uma cena por albufeira como <strong>Story</strong> para a reunião de operações.</li>
 </ol>
 <h2 id="interpretar-os-graficos">Interpretar os gráficos<a class="headerlink" href="#interpretar-os-graficos" title="Permanent link">¶</a></h2>
-<p><em>Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
-inglês.</em></p>
+<p>As figuras abaixo são os gráficos do próprio portal, capturados no painel <strong>Feature Information</strong> (clique num elemento) e no painel <strong>Charts</strong> que abre com o botão <strong>Expand</strong>. Todos os gráficos de estações, barragens e locais seguem o mesmo padrão: um cartão-resumo, um gráfico de pré-visualização, <strong>Expand</strong> para ampliar, <strong>Download</strong> para o CSV. Os gráficos estão em inglês.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/reservoirs-massingir-storage.png" data-title="Histórico e previsão de armazenamento de Massingir" data-desc-position="bottom"><img alt="Histórico e previsão de armazenamento de Massingir" src="../../../assets/charts/reservoirs-massingir-storage.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/dam-massingir-panel.png" data-title="Figura 1" data-desc-position="bottom"><img alt="Figura 1" src="../../../assets/charts/portal/dam-massingir-panel.png"></a>
 <br>
-<figcaption>Figura 1: O gráfico que obtém ao clicar na barragem de Massingir — armazenamento estimado desde 2002, pontos observados e previsão por conjunto até ao fim da época seca.</figcaption>
+<figcaption>Figura 1: Dams &amp; Reservoirs Basin Level Estimates — o cartão de Massingir: nível atual 90,2 %, último volume estimado 2 038 Mm³, estado Full, capacidade 2 260 Mm³, altura da barragem, área da albufeira, bacia, ano de construção, volume médio e mín./máx., o modelo de estimativa (altimetry_level) e o seu R² (0,9974), com a pré-visualização do armazenamento.</figcaption>
 </figure>
 <ul>
-<li>Massingir passou de <strong>4 % (2003, 2005) para 110 % (2008)</strong> — a maior albufeira
-  da bacia pode esvaziar e reencher em poucas estações; um esvaziamento de 20
-  meses (2002–06) é o pior caso histórico.</li>
-<li>Desde 2021 tem oscilado entre <strong>60 e 105 %</strong>, e a previsão mediana leva-a a
-  <strong>~73 % em novembro de 2026</strong> — confortável, mas o limite inferior do leque
-  (~70 %) é o que um início de estação seco daria.</li>
-<li>Os pontos azuis são as <strong>observações com que a estimativa é calibrada</strong>; onde
-  a linha corre sem pontos (2010–13, 2016–19) a estimativa é interpolada e deve
-  ser lida como tendência, não como valor.</li>
+<li><strong>Modelo e R²</strong> são a verificação de confiança: <em>altimetry_level</em> com R² 0,997 é Nível 1; uma barragem <em>capacity_fraction</em> sem R² é uma estimativa de Nível 3 (± 20 %).</li>
+<li><strong>Mín. / máx. 83,9 – 2 485 Mm³</strong> enquadra o histórico: a barragem já esteve praticamente vazia (2003, 2005) e acima do pleno armazenamento (2008).</li>
+<li><strong>Expand ▾</strong> oferece quatro séries — Estimated Volume, Observed Volume, % Capacity, Area; <strong>Download this Table</strong> dá o CSV.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/reservoirs-by-country.png" data-title="Armazenamento por país" data-desc-position="bottom"><img alt="Armazenamento por país" src="../../../assets/charts/reservoirs-by-country.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/dam-massingir-chart.png" data-title="Figura 2" data-desc-position="bottom"><img alt="Figura 2" src="../../../assets/charts/portal/dam-massingir-chart.png"></a>
 <br>
-<figcaption>Figura 2: Capacidade e armazenamento atual das barragens monitorizadas por país. As percentagens são ponderadas pelo volume.</figcaption>
+<figcaption>Figura 2: Massingir após Expand → Estimated Volume: volume (Mm³, eixo esquerdo) e % da capacidade (segundo eixo) desde 2002, com os pontos observados sobrepostos.</figcaption>
 </figure>
 <ul>
-<li><strong>A África do Sul detém 43 % da capacidade monitorizada</strong> (3 620 Mm³ em 147
-  barragens); <strong>as 4 barragens de Moçambique</strong> detêm 29 %, quase tudo Massingir.</li>
-<li>As barragens do Zimbabué são as <strong>mais baixas, a 75 %</strong>, e maioritariamente
-  estimativas de baixa confiança — verifique com os boletins da ZINWA antes de
-  agir.</li>
-<li>Uma média nacional esconde barragens individuais: os 82 % da África do Sul
-  incluem Middle Letaba a 10 % e Eerste Poort a 49 %.</li>
+<li>Onde a estimativa (azul) e as observações (laranja) coincidem o modelo está calibrado; os segmentos retos (2010–13, 2016–19) são <strong>lacunas sem observações</strong> — leia-os apenas como tendência.</li>
+<li>O dente de serra anual desde 2021 é o ciclo de operação: enche até 100–105 % em março, baixa até ~65–75 % em novembro para a irrigação de Chókwè.</li>
 </ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/reservoirs-loskop-seasonal.png" data-title="Perfil sazonal de armazenamento de Loskop" data-desc-position="bottom"><img alt="Perfil sazonal de armazenamento de Loskop" src="../../../assets/charts/reservoirs-loskop-seasonal.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/reservoir-area-massingir-chart.png" data-title="Figura 3" data-desc-position="bottom"><img alt="Figura 3" src="../../../assets/charts/portal/reservoir-area-massingir-chart.png"></a>
 <br>
-<figcaption>Figura 3: Armazenamento da barragem de Loskop por mês do calendário em todos os anos — a "faixa normal" contra a qual uma leitura atual é avaliada.</figcaption>
+<figcaption>Figura 3: Reservoir Levels – Water Area Timeseries para a barragem de Massingir, expandido: área de água por satélite (ha, azul) com volume observado (Mm³) e fração de capacidade observada onde existe registo de estação.</figcaption>
 </figure>
 <ul>
-<li>O ciclo normal: <strong>cheia em fev.–mai., baixada para ~85–90 % em out.–nov.</strong> à
-  medida que as quotas de irrigação são usadas, reenchida pelas chuvas de verão.</li>
-<li>Uma leitura <strong>abaixo da faixa interquartil do seu mês</strong> é o aviso precoce;
-  abaixo do envelope mín.–máx. (como em 2016, quando Loskop chegou a 42 %) é uma
-  emergência de abastecimento.</li>
-<li>Compare o ponto atual no gráfico do portal com esta faixa e não com o mês
-  anterior: uma queda de 100 % para 92 % em outubro é normal; a mesma queda em
-  abril não é.</li>
+<li>A <strong>série de área de água continua depois de terminar o registo da estação (2019)</strong> — é assim que o portal monitoriza barragens sem telemetria: área por satélite, convertida em volume pela curva calibrada.</li>
+<li>Área e volume movem-se juntos mas não proporcionalmente (uma albufeira plana perde área depressa a níveis baixos); essa não-linearidade é a curva área–capacidade que o modelo de Nível 1 codifica.</li>
 </ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/portal/dam-loskop-chart.png" data-title="Figura 4" data-desc-position="bottom"><img alt="Figura 4" src="../../../assets/charts/portal/dam-loskop-chart.png"></a>
+<br>
+<figcaption>Figura 4: Barragem de Loskop (Olifants), Expand → Estimated Volume, 2016–2026 (Mm³ e %).</figcaption>
+</figure>
+<ul>
+<li>Destacam-se três esvaziamentos: <strong>2016 (até ~150 Mm³, 42 %)</strong>, 2019 (~250 Mm³) e fim de 2024 (~250 Mm³) — cada um o fim de uma época seca antes do reenchimento de verão.</li>
+<li>O patamar plano a ~350–365 Mm³ é o pleno armazenamento; valores acima são períodos de descarga de superfície. É este o gráfico a ler contra a faixa sazonal na secção recolhida abaixo.</li>
+</ul>
+<details class="note">
+<summary>Contexto de longo prazo (gráficos derivados dos mesmos dados da API)</summary>
+<p>Estes não são ecrãs do portal: foram gerados a partir das mesmas séries com <code>tools/use_case_charts.py</code> para mostrar como as séries do portal se comportam ao longo de décadas.</p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/reservoirs-massingir-storage.png" data-title="Armazenamento de Massingir em % da capacidade desde 2002 com a previsão por conjunto até novembro de 2026." data-desc-position="bottom"><img alt="Armazenamento de Massingir em % da capacidade desde 2002 com a previsão por conjunto até novembro de 2026." src="../../../assets/charts/reservoirs-massingir-storage.png"></a>
+  <figcaption>Armazenamento de Massingir em % da capacidade desde 2002 com a previsão por conjunto até novembro de 2026.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/reservoirs-by-country.png" data-title="Capacidade e armazenamento atual das barragens monitorizadas por país." data-desc-position="bottom"><img alt="Capacidade e armazenamento atual das barragens monitorizadas por país." src="../../../assets/charts/reservoirs-by-country.png"></a>
+  <figcaption>Capacidade e armazenamento atual das barragens monitorizadas por país.</figcaption>
+</figure><p></p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../assets/charts/reservoirs-loskop-seasonal.png" data-title="Armazenamento de Loskop por mês do calendário em todos os anos — a faixa normal." data-desc-position="bottom"><img alt="Armazenamento de Loskop por mês do calendário em todos os anos — a faixa normal." src="../../../assets/charts/reservoirs-loskop-seasonal.png"></a>
+  <figcaption>Armazenamento de Loskop por mês do calendário em todos os anos — a faixa normal.</figcaption>
+</figure><p></p>
+</details>
 <h2 id="indicadores-e-o-que-fazer">Indicadores e o que fazer<a class="headerlink" href="#indicadores-e-o-que-fazer" title="Permanent link">¶</a></h2>
 <table>
 <thead>
