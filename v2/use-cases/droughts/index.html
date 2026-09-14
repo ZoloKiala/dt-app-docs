@@ -962,6 +962,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-the-workflow-fits-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the workflow fits together
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-you-will-use" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -984,10 +995,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reading-the-result" class="md-nav__link">
+  <a href="#reading-the-charts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reading the result
+        Reading the charts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indicators-and-what-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicators and what to do
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example-assessing-the-202324-season-in-retrospect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — assessing the 2023/24 season in retrospect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#briefing-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Briefing checklist
       
     </span>
   </a>
@@ -1452,6 +1496,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-the-workflow-fits-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the workflow fits together
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-you-will-use" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1474,10 +1529,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reading-the-result" class="md-nav__link">
+  <a href="#reading-the-charts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reading the result
+        Reading the charts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indicators-and-what-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicators and what to do
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example-assessing-the-202324-season-in-retrospect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — assessing the 2023/24 season in retrospect
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#briefing-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Briefing checklist
       
     </span>
   </a>
@@ -1531,6 +1619,58 @@ years, which sectors are at risk, and what the coming season looks like</strong>
 <p>Drought builds in stages, and the catalogue is organised the same way:
 meteorological (rain), then soil and vegetation stress, then hydrological
 (rivers and groundwater), then sectoral risk.</p>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Decision</th>
+<th>Cadence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extension services and farmer organisations</td>
+<td>Planting advice, drought-tolerant seed, livestock destocking</td>
+<td>Monthly through the season</td>
+</tr>
+<tr>
+<td>Water utilities and municipalities</td>
+<td>Restrictions, borehole rotation, tanker planning</td>
+<td>Monthly; weekly in a declared drought</td>
+</tr>
+<tr>
+<td>Basin committees / LIMCOM</td>
+<td>Declare drought status, trigger cross-border allocation rules</td>
+<td>Seasonal (Oct, Jan, Apr)</td>
+</tr>
+<tr>
+<td>Food-security and humanitarian analysts (IPC, WFP)</td>
+<td>Target assistance by district</td>
+<td>Seasonal</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition abstract">
+<p class="admonition-title">At a glance — indicator thresholds used in the portal</p>
+<ul>
+<li><strong>VCI &lt; 35</strong> — vegetation in potential drought stress; crop-failure risk (from the <em>Vegetation Condition Index</em> description).</li>
+<li><strong>SPI / SPEI &lt; −1</strong> — moderate drought; <strong>&lt; −1.5</strong> severe; <strong>&lt; −2</strong> extreme.</li>
+<li><strong>Annual rainfall &lt; 75 % of the long-term mean</strong> — a failed year. At the Ingwizi station (upper Shashe) the mean is 606 mm; 2002 recorded 271 mm.</li>
+<li><strong>E-flow Alert Level 3–5</strong> — the river has crossed into hydrological drought (see <a href="../eflows/">Environmental flows</a>).</li>
+</ul>
+</div>
+<h2 id="how-the-workflow-fits-together">How the workflow fits together<a class="headerlink" href="#how-the-workflow-fits-together" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Vegetation&lt;br/&gt;VCI · NDVI Anomaly DEA] --&gt; B{VCI &lt; 35 over&lt;br/&gt;cropland?}
+    B -- no --&gt; Z[Monitor monthly]
+    B -- yes --&gt; C[Rainfall cause&lt;br/&gt;CHIRPS · Rainfall Anomalies · SPEI 3-month]
+    C --&gt; D[Soil&lt;br/&gt;SMAP Root Zone Soil Moisture]
+    D --&gt; E[Rivers &amp; groundwater&lt;br/&gt;Eflow Warnings · Groundwater Drought Risk]
+    E --&gt; F[Sectoral risk&lt;br/&gt;Drought Risk – Agriculture / Water Sector]
+    F --&gt; G[Outlook&lt;br/&gt;Rainfall Anomaly Forecast · Seasonal Forecast 7-month]
+    G --&gt; H{Dry outlook on&lt;br/&gt;existing deficit?}
+    H -- yes --&gt; I[Early action:&lt;br/&gt;declare, restrict, assist]
+    H -- no --&gt; Z</code></pre>
 <h2 id="data-you-will-use">Data you will use<a class="headerlink" href="#data-you-will-use" title="Permanent link">¶</a></h2>
 <table>
 <thead>
@@ -1538,6 +1678,7 @@ meteorological (rain), then soil and vegetation stress, then hydrological
 <th>Stage</th>
 <th>Dataset</th>
 <th>Where in the catalogue</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
@@ -1545,46 +1686,55 @@ meteorological (rain), then soil and vegetation stress, then hydrological
 <td>Rain deficit</td>
 <td><strong>CHIRPS Historical Rainfall</strong> · <strong>Number of Rainy Days</strong> · <strong>Rainfall Anomalies</strong></td>
 <td>Drought Monitoring &amp; Risk Assessment → Meteorological Drought</td>
+<td>CHIRPS: ~5 km, 1981–present; anomaly circles are clickable (chart)</td>
 </tr>
 <tr>
 <td>Rain deficit (indices)</td>
 <td><strong>Drought Hazard – SPEI 3-month / 6-month / 12-month (2010–2021)</strong></td>
 <td>→ Meteorological Drought</td>
+<td>Climatology baseline, not live</td>
 </tr>
 <tr>
 <td>Soil</td>
 <td><strong>SMAP Surface Soil Moisture (L4, Daily)</strong> · <strong>SMAP Root Zone Soil Moisture (L4, Daily)</strong> · <strong>SMAP-Sentinel High-Res Soil Moisture (1 km)</strong></td>
 <td>→ Soil Moisture</td>
+<td>L4 is ~9 km daily; 1 km product is sharper but less frequent</td>
 </tr>
 <tr>
 <td>Vegetation</td>
 <td><strong>The Vegetation Condition Index (VCI)</strong> · <strong>MODIS NDVI 16-Day Composite</strong> · <strong>VIIRS NDVI 8-Day Composite</strong> · <strong>NDVI Anomaly (DEA)</strong></td>
 <td>→ Vegetation &amp; Crop Stress</td>
+<td>VCI 0–100, normalised against history; updated monthly</td>
 </tr>
 <tr>
 <td>Water stress</td>
 <td><strong>Evaporative Stress Index Africa</strong></td>
 <td>→ Evaporative Stress &amp; Water Use</td>
+<td>Ratio of actual to potential ET</td>
 </tr>
 <tr>
 <td>Rivers</td>
 <td><strong>E-flow Monitoring and Forecasting</strong> · <strong>Eflow Alert Levels</strong> · <strong>Eflow Warnings</strong></td>
 <td>→ Hydrological Drought &amp; E-flows</td>
+<td>31 sites, alert levels 1–5</td>
 </tr>
 <tr>
 <td>Groundwater</td>
 <td><strong>Groundwater Drought Risk (Updated)</strong> · <strong>Groundwater Level Points</strong></td>
 <td>Water Resources → Groundwater</td>
+<td>Lags surface drought by months</td>
 </tr>
 <tr>
 <td>Risk by sector</td>
 <td><strong>Drought Risk – Agriculture / Food &amp; Nutrition / Water Sector (3, 6, 12-month)</strong></td>
 <td>→ Sectoral Drought Risk</td>
+<td>Hazard × exposure × vulnerability</td>
 </tr>
 <tr>
 <td>Outlook</td>
 <td><strong>Limpopo Rainfall Anomaly Forecast</strong> · <strong>Limpopo Temperature Anomaly Forecast</strong> · <strong>Seasonal Forecast Anomaly (7-month)</strong> · <strong>Sub-Seasonal Outlook (5–6 weeks)</strong></td>
 <td>Natural Basin Characteristic → Climate; Flood Monitoring → Seasonal &amp; Sub-Seasonal</td>
+<td>Probabilistic anomalies</td>
 </tr>
 </tbody>
 </table>
@@ -1594,20 +1744,24 @@ meteorological (rain), then soil and vegetation stress, then hydrological
    <code>VCI</code> → add <strong>The Vegetation Condition Index (VCI)</strong>. Use the timeline to
    compare this month with the same month in previous years; VCI is already
    normalised against history, so low values mean <em>worse than usual</em>, not just
-   <em>dry season</em>.</li>
+   <em>dry season</em>. Values <strong>below 35</strong> over cropland are the trigger.</li>
 <li><strong>Confirm with NDVI Anomaly (DEA)</strong> (add it, use <strong>Compare</strong> against VCI).
    Agreement between two independent vegetation products is a robust drought
-   signal.</li>
+   signal; disagreement usually means harvest, fire or clearing.</li>
 <li><strong>Check the cause — rainfall.</strong> Add <strong>CHIRPS Historical Rainfall</strong> and step
    the timeline back through the season; add <strong>Rainfall Anomalies</strong> and click a
-   station circle for its chart. Then add <strong>Drought Hazard – SPEI 3-month</strong> for
-   the standardised deficit.</li>
+   station circle for its chart (Figure 1). Then add <strong>Drought Hazard – SPEI
+   3-month</strong> for the standardised deficit.</li>
 <li><strong>Check the soil.</strong> Add <strong>SMAP Root Zone Soil Moisture (L4, Daily)</strong>. Root-zone
-   deficit, not just surface dryness, is what limits crops.</li>
+   deficit, not just surface dryness, is what limits crops; surface moisture
+   recovers with one shower, root-zone moisture does not.</li>
 <li><strong>Check the rivers.</strong> Add <strong>Eflow Warnings</strong> and <strong>Eflow Alert Levels</strong>, then
    <strong>E-flow Monitoring and Forecasting</strong> and click a site for its chart. Rivers
    below environmental-flow levels mark the transition to hydrological drought
    (see <a href="../eflows/">Environmental flows</a>).</li>
+<li><strong>Check storage.</strong> Add <strong>Dams &amp; Reservoirs Basin Level Estimates</strong>: dams
+   marked <em>Low</em> or <em>Critical</em> (Middle Letaba was at 10.5 % in July 2026) show
+   where supply is already constrained (see <a href="../reservoirs/">Reservoir monitoring</a>).</li>
 <li><strong>Translate to risk.</strong> Add <strong>Drought Risk – Agriculture (3-month)</strong> and
    <strong>Drought Risk – Water Sector (3-month)</strong> with <strong>Population</strong> underneath to
    see where stressed conditions meet people.</li>
@@ -1617,28 +1771,152 @@ meteorological (rain), then soil and vegetation stress, then hydrological
 <li>Save the sequence as a <strong>Story</strong> — one scene per stage makes a compelling
    briefing.</li>
 </ol>
-<h2 id="reading-the-result">Reading the result<a class="headerlink" href="#reading-the-result" title="Permanent link">¶</a></h2>
+<h2 id="reading-the-charts">Reading the charts<a class="headerlink" href="#reading-the-charts" title="Permanent link">¶</a></h2>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-rainfall-anomaly.png" data-title="Monthly rainfall anomaly at Ingwizi" data-desc-position="bottom"><img alt="Monthly rainfall anomaly at Ingwizi" src="../../assets/charts/droughts-rainfall-anomaly.png"></a>
+<br>
+<figcaption>Figure 1: The chart behind the Rainfall Anomalies layer, for the Ingwizi station on the upper Shashe (Zimbabwe). Orange = below the monthly mean, blue = above.</figcaption>
+</figure>
 <ul>
-<li><strong>Convergence matters.</strong> One index can mislead; VCI + NDVI anomaly + SPEI +
-  soil moisture all pointing the same way is a drought.</li>
-<li>Use the <strong>3-, 6- and 12-month</strong> SPEI and risk layers together: 3-month
-  captures a failed season, 12-month a multi-year deficit that hits reservoirs
-  and groundwater.</li>
-<li>Groundwater drought <strong>lags</strong> surface drought by months; rising risk in the
-  groundwater layers signals a long recovery even after rain returns.</li>
+<li>Isolated orange months are weather. <strong>Consecutive orange months across a wet
+  season</strong> (Nov–Mar) are drought: 2002–03, 2005, 2012, 2015–16 and 2023–24 all
+  show this pattern.</li>
+<li>Large blue spikes (Feb 2017, Jan 2021) are cyclone-fed seasons; they end
+  meteorological drought quickly but reservoirs and groundwater take longer to
+  recover.</li>
+</ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-annual-rainfall.png" data-title="Annual rainfall at Ingwizi 2001-2025" data-desc-position="bottom"><img alt="Annual rainfall at Ingwizi 2001-2025" src="../../assets/charts/droughts-annual-rainfall.png"></a>
+<br>
+<figcaption>Figure 2: Annual totals against the 606 mm mean. Orange years fell below 75 % of the mean.</figcaption>
+</figure>
+<ul>
+<li><strong>Two dry years in a row</strong> (2002–03, 2015–16, 2023–24) are what empty
+  reservoirs; a single failed year is usually absorbed by storage.</li>
+<li>The record runs from 271 mm (2002) to 954 mm — a 3.5× range. Planning on the
+  mean alone is planning for a year that rarely happens.</li>
+</ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/droughts-spi.png" data-title="SPI-3 and SPI-12 at Ingwizi" data-desc-position="bottom"><img alt="SPI-3 and SPI-12 at Ingwizi" src="../../assets/charts/droughts-spi.png"></a>
+<br>
+<figcaption>Figure 3: Standardised Precipitation Index at 3- and 12-month scales — how to read the SPEI drought-hazard layers. Shaded bands mark moderate (−1), severe (−1.5) and extreme (−2) drought.</figcaption>
+</figure>
+<ul>
+<li><strong>SPI-3</strong> oscillates every year because it tracks the season; use it to
+  detect a <em>failed season</em> in real time (Jan–Mar values below −1).</li>
+<li><strong>SPI-12</strong> is smoother and shows <em>multi-year deficits</em>: the 2023–24 episode
+  reached severe (−1.5) and lasted ~18 months. This is the scale that matters
+  for reservoirs, boreholes and e-flows.</li>
+<li>The <strong>Drought Hazard – SPEI</strong> layers in the catalogue are the spatial version
+  for 2010–2021; the chart above is what the same index looks like at one
+  point, extended to today.</li>
+</ul>
+<h2 id="indicators-and-what-to-do">Indicators and what to do<a class="headerlink" href="#indicators-and-what-to-do" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Indicator</th>
+<th>Threshold</th>
+<th>Typical action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meteorological</td>
+<td>SPI-3 / SPEI-3</td>
+<td>&lt; −1.0 during Dec–Feb</td>
+<td>Advisory to farmers; review planting windows</td>
+</tr>
+<tr>
+<td>Meteorological</td>
+<td>Annual rainfall</td>
+<td>&lt; 75 % of mean</td>
+<td>Prepare drought declaration</td>
+</tr>
+<tr>
+<td>Agricultural</td>
+<td>VCI</td>
+<td>&lt; 35 over cropland at peak season (Feb–Mar)</td>
+<td>Crop-failure warning; input / feed support</td>
+</tr>
+<tr>
+<td>Agricultural</td>
+<td>SMAP root-zone moisture</td>
+<td>Below seasonal norm for &gt; 4 weeks</td>
+<td>Irrigation scheduling advice; livestock water points</td>
+</tr>
+<tr>
+<td>Hydrological</td>
+<td>E-flow Alert Level</td>
+<td>Level 3+ at multiple sites</td>
+<td>Abstraction limits; reservoir release rules</td>
+</tr>
+<tr>
+<td>Hydrological</td>
+<td>Reservoir storage</td>
+<td>&lt; 25 % (<em>Low</em>), &lt; 10 % (<em>Critical</em>)</td>
+<td>Water restrictions; emergency supply</td>
+</tr>
+<tr>
+<td>Groundwater</td>
+<td>Groundwater Drought Risk</td>
+<td><em>High</em> class expanding</td>
+<td>Borehole monitoring; deepen / rotate boreholes</td>
+</tr>
+<tr>
+<td>Outlook</td>
+<td>Seasonal Forecast Anomaly</td>
+<td>Dry tercile &gt; 40 % probability with existing deficit</td>
+<td>Early action financing; pre-position assistance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example-assessing-the-202324-season-in-retrospect">Worked example — assessing the 2023/24 season in retrospect<a class="headerlink" href="#worked-example-assessing-the-202324-season-in-retrospect" title="Permanent link">¶</a></h2>
+<ol>
+<li>Add <strong>The Vegetation Condition Index (VCI)</strong> and set the timeline to
+   <strong>March 2024</strong>. Large areas of southern Zimbabwe and Limpopo Province sit
+   below 35 — peak-season stress.</li>
+<li>Add <strong>Rainfall Anomalies</strong>, click the Ingwizi circle: the chart (Figure 1)
+   shows Nov 2023–Feb 2024 all orange — a failed season. Figure 3's SPI-12 has
+   crossed −1.5 (severe).</li>
+<li>Add <strong>SMAP Root Zone Soil Moisture (L4, Daily)</strong> for February 2024 — the
+   root zone confirms the rainfall deficit reached the crop.</li>
+<li>Add <strong>Eflow Alert Levels</strong>: dry-season 2024 sites on the Shashe, Mzingwane
+   and Sand rivers show Level 4–5.</li>
+<li>Add <strong>Drought Risk – Agriculture (6-month)</strong>: risk concentrates where the
+   stressed VCI overlaps communal farming areas. That map, captured as a
+   <strong>Story</strong>, is the briefing.</li>
+<li>Add <strong>Limpopo Rainfall Anomaly Forecast</strong> for the <em>next</em> season (2024/25): a
+   wet anomaly — and Figure 2 confirms 2025 came in well above the mean, with
+   the Beit Bridge flood of February 2025 (see <a href="../floods/">Floods</a>).</li>
+</ol>
+<h2 id="briefing-checklist">Briefing checklist<a class="headerlink" href="#briefing-checklist" title="Permanent link">¶</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Current VCI class over the main cropping areas, with month and year</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Rainfall deficit: seasonal total vs mean, and SPI/SPEI value at 3 and 12 months</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Root-zone soil moisture relative to the seasonal norm</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> E-flow alert levels and reservoir storage class per sub-basin</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Sectoral risk classes (agriculture, water, food &amp; nutrition) by district</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Seasonal outlook and its confidence</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Story link reproducing the scenes</li>
 </ul>
 <h2 id="limits-to-keep-in-mind">Limits to keep in mind<a class="headerlink" href="#limits-to-keep-in-mind" title="Permanent link">¶</a></h2>
 <ul>
 <li><strong>SPEI hazard layers cover 2010–2021</strong> — a climatology baseline, not a live
-  index. Use CHIRPS and the anomaly forecasts for the current season.</li>
+  index. Use CHIRPS, the Rainfall Anomalies charts and the anomaly forecasts
+  for the current season.</li>
 <li>NDVI/VCI respond to <strong>any</strong> vegetation change (harvest, fire, land clearing),
   not only drought — cross-check with rainfall.</li>
-<li>SMAP is coarse (the 1 km SMAP-Sentinel product is sharper but less frequent).</li>
+<li>SMAP is coarse (the 1 km SMAP-Sentinel product is sharper but less frequent);
+  it saturates in wetlands and irrigated fields.</li>
 <li>Seasonal forecasts are <strong>probabilistic anomalies</strong>; read them as odds, not
   predictions.</li>
+<li>Station charts (rainfall anomaly, e-flow) need a <strong>signed-in session</strong>.</li>
 </ul>
 <h2 id="related">Related<a class="headerlink" href="#related" title="Permanent link">¶</a></h2>
-<p><a href="../eflows/">Environmental flows</a> · <a href="../irrigation/">Irrigation water use</a> ·
+<p><a href="../eflows/">Environmental flows</a> · <a href="../reservoirs/">Reservoir monitoring</a> ·
+<a href="../irrigation/">Irrigation water use</a> ·
 <a href="../../guide/workbench/#time-series">Workbench — time series</a></p>
 
 

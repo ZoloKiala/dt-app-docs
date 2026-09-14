@@ -906,6 +906,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-the-workflow-fits-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the workflow fits together
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-you-will-use" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -928,10 +939,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reading-the-result" class="md-nav__link">
+  <a href="#reading-the-charts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reading the result
+        Reading the charts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indicators-and-what-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicators and what to do
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example-sizing-a-schemes-seasonal-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — sizing a scheme's seasonal use
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seasonal-report-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seasonal-report checklist
       
     </span>
   </a>
@@ -1452,6 +1496,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-the-workflow-fits-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the workflow fits together
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-you-will-use" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1474,10 +1529,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reading-the-result" class="md-nav__link">
+  <a href="#reading-the-charts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reading the result
+        Reading the charts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indicators-and-what-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicators and what to do
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example-sizing-a-schemes-seasonal-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — sizing a scheme's seasonal use
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seasonal-report-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seasonal-report checklist
       
     </span>
   </a>
@@ -1528,6 +1616,58 @@
 <p>A water-resources planner or scheme manager wants to know <strong>where irrigated
 land is, whether it is growing, and how much water it consumes</strong> over a season —
 without waiting for licence returns or field surveys.</p>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Decision</th>
+<th>Cadence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Catchment / water management agencies (DWS, ARA-Sul, ZINWA, WUC)</td>
+<td>Licence compliance, detection of unregistered irrigation, allocation caps</td>
+<td>Seasonal (post-harvest)</td>
+</tr>
+<tr>
+<td>Irrigation boards and scheme managers</td>
+<td>Quota use, scheduling, efficiency benchmarks between blocks</td>
+<td>Monthly in season</td>
+</tr>
+<tr>
+<td>Dam operators</td>
+<td>Release planning against downstream irrigation demand</td>
+<td>Weekly (dry season)</td>
+</tr>
+<tr>
+<td>LIMCOM / water-accounting analysts</td>
+<td>Sectoral consumption for the basin account</td>
+<td>Annual</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition abstract">
+<p class="admonition-title">At a glance</p>
+<ul>
+<li><strong>Irrigated Mapping</strong> classifies irrigated cropland at <strong>20 m</strong> from Sentinel-2, as a time series — the layer to watch for expansion.</li>
+<li>Major schemes (designed → currently irrigated): <strong>Lower Limpopo 70,000 → 45,000 ha</strong>, <strong>Chókwè 30,000 → 22,000 ha</strong>, <strong>Loskop 27,000 → 19,000 ha</strong>, <strong>Tuli Block 15,000 → 12,000 ha</strong>, <strong>Groot Letaba 10,000 → 8,000 ha</strong>.</li>
+<li><strong>Managed (irrigated) land is 2 % of the basin but ~8 % of its evapotranspiration</strong>; its ET peaks in February and stays at 15–20 % of peak through the rainless winter — water that must come from dams, rivers and boreholes.</li>
+<li><strong>Loskop Dam</strong>, which supplies the largest South African scheme, has averaged 96 % full since 2017; its one supply crisis was 2016 (42 %).</li>
+</ul>
+</div>
+<h2 id="how-the-workflow-fits-together">How the workflow fits together<a class="headerlink" href="#how-the-workflow-fits-together" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Irrigated Mapping&lt;br/&gt;timeline: year vs year] --&gt; B{Irrigation outside&lt;br/&gt;Irrigation Areas LIMIS?}
+    B -- yes --&gt; C[Flag unregistered blocks]
+    B -- no --&gt; D[Blue ET Africa vs Green ET Africa&lt;br/&gt;Compare]
+    C --&gt; D
+    D --&gt; E[Quantify a scheme&lt;br/&gt;Water Use Time-series Polygon]
+    E --&gt; F[Efficiency&lt;br/&gt;Beneficial Fraction · ET Fraction]
+    F --&gt; G{Supply secure?&lt;br/&gt;Dams &amp; Reservoirs Basin Level Estimates}
+    G -- no --&gt; H[Quota cut · scheduling advice]
+    G -- yes --&gt; I[Seasonal report · Story]
+    H --&gt; I</code></pre>
 <h2 id="data-you-will-use">Data you will use<a class="headerlink" href="#data-you-will-use" title="Permanent link">¶</a></h2>
 <table>
 <thead>
@@ -1541,7 +1681,7 @@ without waiting for licence returns or field surveys.</p>
 <tr>
 <td><strong>Irrigated Mapping</strong></td>
 <td>Natural Basin Characteristic → Land Cover and Land Use</td>
-<td>Satellite-derived irrigated areas, as a time series</td>
+<td>Satellite-derived irrigated areas (20 m, Sentinel-2), as a time series</td>
 </tr>
 <tr>
 <td><strong>Irrigation Areas (LIMIS)</strong></td>
@@ -1551,7 +1691,7 @@ without waiting for licence returns or field surveys.</p>
 <tr>
 <td><strong>Water Use Time-series (Irrigated Areas) (Polygon)</strong></td>
 <td>Water Use Monitoring and Analysis</td>
-<td>An analysis process: choose an area and get its water-use time series</td>
+<td>An analysis process: choose an area and get its monthly water-use time series (m³) from irrigated-area masks × WaPOR ET</td>
 </tr>
 <tr>
 <td><strong>WaPOR Downscaled</strong> · <strong>ETa Monthly Limpopo</strong></td>
@@ -1564,14 +1704,24 @@ without waiting for licence returns or field surveys.</p>
 <td>Splits consumption into irrigation-supplied (<em>blue</em>) and rain-fed (<em>green</em>) water</td>
 </tr>
 <tr>
-<td><strong>Beneficial Fraction Africa</strong> · <strong>ET Fraction Africa</strong></td>
+<td><strong>Beneficial Fraction Africa</strong> · <strong>ET Fraction Africa</strong> · <strong>Evaporative Stress Index Africa</strong></td>
 <td>same group</td>
-<td>How much of the water consumed does useful work (crop growth)</td>
+<td>How much of the water consumed does useful work (crop growth), and crop stress</td>
 </tr>
 <tr>
-<td><strong>Land Use</strong> · <strong>Land Use (LIMIS)</strong></td>
-<td>Natural Basin Characteristic → Land Cover and Land Use</td>
-<td>Context: cropland vs. natural vegetation vs. settlements</td>
+<td><strong>Land Use</strong> · <strong>Land Use (LIMIS)</strong> · <strong>MODIS NDVI 16-Day Composite</strong></td>
+<td>Natural Basin Characteristic → Land Cover and Land Use / Vegetation</td>
+<td>Context: cropland vs. natural vegetation; crop vigour through the season</td>
+</tr>
+<tr>
+<td><strong>Dams &amp; Reservoirs Basin Level Estimates</strong> · <strong>Dam locations</strong></td>
+<td>Water Resources → Reservoirs and Storage</td>
+<td>Supply security for dam-fed schemes</td>
+</tr>
+<tr>
+<td><strong>Groundwater Zones (LIMIS)</strong> · <strong>Groundwater Level Points</strong></td>
+<td>Water Resources → Groundwater</td>
+<td>Supply for borehole-fed irrigation</td>
 </tr>
 </tbody>
 </table>
@@ -1581,30 +1731,160 @@ without waiting for licence returns or field surveys.</p>
    The layer is time-varying, so a timeline appears beneath the map.</li>
 <li>Use <strong>Ideal Zoom</strong> on the Workbench card to frame the layer, then use the
    timeline arrows to step between dates. Irrigated fields stand out as sharp,
-   regular shapes that stay green through the dry season.</li>
+   regular shapes (centre-pivot circles in the Tuli Block and Loskop; canal
+   blocks at Chókwè) that stay green through the dry season.</li>
 <li>Add <strong>Irrigation Areas (LIMIS)</strong> and compare: irrigation detected <em>outside</em>
-   the registered schemes is a first signal of unlicensed or expanding use.</li>
+   the registered schemes is a first signal of unlicensed or expanding use.
+   Along the Limpopo main stem between Botswana and South Africa, riverside
+   pivots outside the LIMIS polygons are common.</li>
 <li>Add <strong>Blue ET Africa</strong>. In the Workbench, lower its <strong>opacity</strong> to ~60% so the
    fields remain visible underneath. Bright blue-ET over a field means it is
    drawing on irrigation water, not rain.</li>
 <li>Use <strong>Compare</strong> (<a href="../../guide/map-tools/#compare">Map Tools</a>) to put <strong>Blue ET</strong>
-   on the left and <strong>Green ET</strong> on the right for the same month — the contrast
-   separates irrigated from rain-fed agriculture at a glance.</li>
+   on the left and <strong>Green ET</strong> on the right for the same month — in <strong>August</strong>
+   the contrast is starkest: green ET is near zero everywhere, blue ET marks
+   every irrigated block.</li>
 <li>To quantify a scheme: open <strong>Water Use Time-series (Irrigated Areas)
    (Polygon)</strong> from <em>Water Use Monitoring and Analysis</em>, select or draw the area
-   of interest and run it. The result is a time series of water use for that
-   polygon that you can read directly or download.</li>
+   of interest (or the LIMIS scheme polygon) and run it. The result is a monthly
+   time series of water use in m³ for that polygon that you can read directly or
+   download.</li>
+<li>Add <strong>Beneficial Fraction Africa</strong> over the same scheme: blocks with high
+   blue ET but a low beneficial fraction are losing water to bare-soil
+   evaporation — candidates for scheduling or mulching advice.</li>
+<li>Add <strong>Dams &amp; Reservoirs Basin Level Estimates</strong> and click the supplying dam
+   (Loskop, Tzaneen, Middle Letaba, Massingir/Macarretane) to check whether the
+   season's demand can be met (Figure 3).</li>
 <li><strong>Story → Capture Scene</strong> for the before/after dates, and <strong>Share / Print</strong>
    the link.</li>
 </ol>
-<h2 id="reading-the-result">Reading the result<a class="headerlink" href="#reading-the-result" title="Permanent link">¶</a></h2>
+<h2 id="reading-the-charts">Reading the charts<a class="headerlink" href="#reading-the-charts" title="Permanent link">¶</a></h2>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/irrigation-schemes.png" data-title="Irrigation schemes: designed vs irrigated area" data-desc-position="bottom"><img alt="Irrigation schemes: designed vs irrigated area" src="../../assets/charts/irrigation-schemes.png"></a>
+<br>
+<figcaption>Figure 1: The basin's major schemes — command area versus currently irrigated area, with utilisation and main crop.</figcaption>
+</figure>
 <ul>
-<li><strong>Growth in irrigated extent</strong> between years is the headline indicator; use the
-  timeline on <em>Irrigated Mapping</em> and capture a scene per year.</li>
-<li><strong>Blue ET ≫ Green ET</strong> over a field confirms irrigation dependence and gives a
-  consumption estimate in mm — multiply by area for volume.</li>
-<li>A low <strong>Beneficial Fraction</strong> over an irrigated block points to water lost to
-  soil evaporation rather than crop growth — a candidate for efficiency work.</li>
+<li><strong>Utilisation runs 50–80 %</strong>: the difference between designed and irrigated
+  area is rehabilitation potential — or, in a dry year, the area that will be
+  cut first.</li>
+<li>The Mozambican lowland schemes (<strong>Lower Limpopo and Chókwè, ~67,000 ha
+  irrigated</strong>) depend on the Limpopo main stem and Massingir releases; every
+  upstream decision reaches them.</li>
+<li>Rice at Chókwè and the Lower Limpopo is the basin's most water-intensive
+  crop; citrus and horticulture (Groot Letaba, Tuli Block) have the highest
+  value per m³.</li>
+</ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/irrigation-managed-et.png" data-title="Managed-land ET against the rainfall calendar" data-desc-position="bottom"><img alt="Managed-land ET against the rainfall calendar" src="../../assets/charts/irrigation-managed-et.png"></a>
+<br>
+<figcaption>Figure 2: Mean monthly evapotranspiration from managed (irrigated) land compared with the basin rainfall calendar, WA+ accounts 2003–2021. The dashed line is the part supplied by withdrawals (blue ET).</figcaption>
+</figure>
+<ul>
+<li>Irrigated ET <strong>peaks in February</strong> with the summer crop and drops to ~15 % of
+  peak in June–August — but rainfall drops to ~3 %. <strong>Winter irrigation is
+  almost entirely blue water</strong>, drawn from storage.</li>
+<li>The blue-ET line is <strong>flat through the year</strong>: withdrawals are steady, so
+  irrigation demand on dams does not fall in winter even though total crop ET
+  does — this is why reservoir drawdown is linear from May to November
+  (see <a href="../reservoirs/">Reservoir monitoring</a>, Figure 3).</li>
+<li>Read the portal's <strong>Water Use Time-series</strong> result against this shape: a
+  scheme whose winter use is a larger fraction of its summer use is growing
+  winter wheat or vegetables — and drawing proportionally more from the dam.</li>
+</ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/irrigation-loskop-supply.png" data-title="Loskop Dam storage by year" data-desc-position="bottom"><img alt="Loskop Dam storage by year" src="../../assets/charts/irrigation-loskop-supply.png"></a>
+<br>
+<figcaption>Figure 3: Annual storage of Loskop Dam, which supplies the Loskop Irrigation Scheme (27,000 ha command area).</figcaption>
+</figure>
+<ul>
+<li>Since 2017 the dam has <strong>started every irrigation season effectively full</strong>;
+  the 2016 crisis (minimum 42 %) followed the 2015 rainfall failure shown in
+  <a href="../droughts/">Droughts</a>, Figure 2.</li>
+<li>The year-to-year <strong>minimum</strong> (bottom of the whisker) is the supply-security
+  indicator: a minimum below 50 % means quotas were, or should have been, cut.</li>
+</ul>
+<h2 id="indicators-and-what-to-do">Indicators and what to do<a class="headerlink" href="#indicators-and-what-to-do" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Where</th>
+<th>Threshold</th>
+<th>Typical action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Irrigated extent change</td>
+<td><em>Irrigated Mapping</em> timeline, year vs year</td>
+<td>&gt; 5 % growth in a sub-basin</td>
+<td>Reconcile against licences</td>
+</tr>
+<tr>
+<td>Irrigation outside registered areas</td>
+<td><em>Irrigated Mapping</em> vs <em>Irrigation Areas (LIMIS)</em></td>
+<td>Any persistent block &gt; 2 seasons</td>
+<td>Inspection / licensing</td>
+</tr>
+<tr>
+<td>Blue ET over cropland</td>
+<td><em>Blue ET Africa</em> (Aug)</td>
+<td>High where no scheme is registered</td>
+<td>As above</td>
+</tr>
+<tr>
+<td>Scheme consumption</td>
+<td><em>Water Use Time-series (Polygon)</em></td>
+<td>Above allocation (m³/season)</td>
+<td>Quota enforcement</td>
+</tr>
+<tr>
+<td>Beneficial fraction</td>
+<td><em>Beneficial Fraction Africa</em></td>
+<td>Low over irrigated blocks</td>
+<td>Efficiency programme</td>
+</tr>
+<tr>
+<td>Supply dam storage</td>
+<td><em>Basin Level Estimates</em> at 1 October</td>
+<td>&lt; 60 %</td>
+<td>Reduce allocation for the season</td>
+</tr>
+<tr>
+<td>Crop stress</td>
+<td><em>Evaporative Stress Index Africa</em> · <em>MODIS NDVI</em></td>
+<td>Stress over irrigated blocks in season</td>
+<td>Water not reaching the field: check delivery losses</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example-sizing-a-schemes-seasonal-use">Worked example — sizing a scheme's seasonal use<a class="headerlink" href="#worked-example-sizing-a-schemes-seasonal-use" title="Permanent link">¶</a></h2>
+<ol>
+<li>Add <strong>Irrigation Areas (LIMIS)</strong> and zoom to the <strong>Loskop Irrigation Scheme</strong>
+   on the Olifants below Loskop Dam.</li>
+<li>Add <strong>Irrigated Mapping</strong>; step the timeline from an early to a recent year.
+   Compare irrigated pixels inside and outside the LIMIS boundary — pivots
+   along the Olifants downstream of the scheme are the growth.</li>
+<li>Run <strong>Water Use Time-series (Irrigated Areas) (Polygon)</strong> on the scheme
+   boundary for the last two hydrological years. Read the monthly m³; sum
+   Oct–Sep for the seasonal total and note the winter share (Figure 2's shape).</li>
+<li>Add <strong>Blue ET Africa</strong> and <strong>Beneficial Fraction Africa</strong> for February: the
+   blocks with high blue ET and low beneficial fraction are the ones to visit.</li>
+<li>Click <strong>Loskop</strong> in <strong>Dams &amp; Reservoirs Basin Level Estimates</strong>: 104 % on
+   10 September 2026, forecast still above 90 % in November — the coming
+   season's allocation is secure. Repeat for <strong>Middle Letaba</strong> (10.5 %): that
+   scheme's 2,500 ha cannot be fully supplied this season.</li>
+<li>Capture the scheme map, the water-use chart and both dams as a <strong>Story</strong>.</li>
+</ol>
+<h2 id="seasonal-report-checklist">Seasonal-report checklist<a class="headerlink" href="#seasonal-report-checklist" title="Permanent link">¶</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Irrigated area this season vs last (ha), inside and outside registered schemes</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Seasonal water use per scheme (m³) from the polygon time-series, with winter share</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Blue vs green ET map for the peak month and for August</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Beneficial-fraction hotspots for efficiency follow-up</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Supply-dam storage at season start and forecast at season end</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Story link</li>
 </ul>
 <h2 id="limits-to-keep-in-mind">Limits to keep in mind<a class="headerlink" href="#limits-to-keep-in-mind" title="Permanent link">¶</a></h2>
 <ul>
@@ -1612,12 +1892,17 @@ without waiting for licence returns or field surveys.</p>
   (WaPOR downscaled, Africa-wide ET layers); use them for patterns and trends,
   and validate volumes against metered abstractions where they exist.</li>
 <li><strong>Irrigated Mapping</strong> is classified from imagery; cloud cover in the wet season
-  can reduce confidence for individual dates — look at several.</li>
+  can reduce confidence for individual dates — look at several. Irrigated
+  pasture and orchards under netting can be under-detected.</li>
 <li>The polygon <strong>Water Use Time-series</strong> runs a server-side process; large areas
-  take longer, and it needs a signed-in session.</li>
+  take longer, and it needs a signed-in session. It returns <em>consumption</em> (ET),
+  not <em>abstraction</em> — conveyance losses are extra.</li>
+<li>Scheme metadata (command area, irrigated area) are compiled from national
+  sources and gazettes; treat them as indicative.</li>
 </ul>
 <h2 id="related">Related<a class="headerlink" href="#related" title="Permanent link">¶</a></h2>
-<p><a href="../water-accounting/">Water accounting</a> · <a href="../droughts/">Droughts</a> ·
+<p><a href="../water-accounting/">Water accounting</a> · <a href="../reservoirs/">Reservoir monitoring</a> ·
+<a href="../droughts/">Droughts</a> ·
 <a href="../../guide/workbench/#time-series">Workbench — time series</a></p>
 
 
