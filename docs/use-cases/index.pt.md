@@ -44,11 +44,25 @@ possa encontrar com **Search the catalogue**.
 
 | Secção | O que lhe dá |
 | --- | --- |
-| **A pergunta** | Quem pergunta, e a decisão que precisa de tomar |
+| **A pergunta** | Quem pergunta, a decisão que precisa de tomar e com que frequência consulta |
+| **Em resumo** | Os números-chave da bacia hoje, obtidos da API de dados do portal |
+| **Como se encadeia o fluxo de trabalho** | Um diagrama dos conjuntos de dados e dos pontos de decisão |
 | **Dados a utilizar** | Os conjuntos de dados exatos, onde estão, e o que cada um indica |
 | **Percurso** | Passos numerados, com os nomes dos botões do portal |
-| **Interpretar o resultado** | O que procurar no mapa e nos gráficos |
+| **Interpretar os gráficos** | Gráficos reais construídos a partir das mesmas séries que o portal mostra ao clicar numa estação ou barragem, e o que procurar |
+| **Indicadores e o que fazer** | Limiares e a ação que normalmente desencadeiam |
+| **Exemplo prático** | O fluxo de trabalho aplicado a uma situação real, com os números |
+| **Lista de verificação** | O que um relatório desta análise deve conter |
 | **Limites a ter em conta** | Latência, pressupostos dos modelos e cobertura — para não sobreinterpretar os dados |
+
+!!! info "Sobre os gráficos"
+    Os gráficos destas páginas são gerados a partir de respostas em tempo real
+    da API dos Gémeos Digitais do IWMI (`api.digitaltwins.iwmi.org`) — o mesmo
+    serviço que desenha os gráficos de informação do elemento no portal. Cada
+    gráfico indica a fonte e a data de referência; os rótulos estão em inglês.
+    Os diagramas de fluxo e as tabelas de indicadores são orientações, não
+    regras operacionais oficiais; confirme os limiares com os procedimentos da
+    sua instituição.
 
 !!! tip "Guarde a sua análise como uma história"
     Quando tiver uma vista que responde à sua pergunta, use **Story → Capture

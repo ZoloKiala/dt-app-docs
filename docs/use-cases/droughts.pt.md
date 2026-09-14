@@ -6,83 +6,193 @@ title: Secas
 
 ## A pergunta
 
-Um técnico de extensão agrícola, uma entidade gestora de abastecimento ou uma
-comissão de bacia quer saber **se se está a instalar uma seca, quão severa é
-face a anos anteriores, que setores estão em risco e como se apresenta a
-próxima estação**.
+Um extensionista agrícola, uma entidade de abastecimento de água ou um comité
+de bacia quer saber **se uma seca se está a instalar, quão severa é em
+comparação com anos anteriores, que setores estão em risco e como se perspetiva
+a próxima estação**.
 
-A seca constrói-se por fases, e o catálogo está organizado da mesma forma:
+A seca instala-se por fases, e o catálogo está organizado da mesma forma:
 meteorológica (chuva), depois stress do solo e da vegetação, depois hidrológica
 (rios e águas subterrâneas), depois risco setorial.
 
+| Quem | Decisão | Frequência |
+| --- | --- | --- |
+| Serviços de extensão e organizações de agricultores | Recomendações de sementeira, sementes tolerantes à seca, redução do efetivo pecuário | Mensal ao longo da estação |
+| Entidades de abastecimento e municípios | Restrições, rotação de furos, planeamento de autotanques | Mensal; semanal em seca declarada |
+| Comités de bacia / LIMCOM | Declarar estado de seca, acionar regras de repartição transfronteiriça | Sazonal (out., jan., abr.) |
+| Analistas de segurança alimentar e humanitários (IPC, PMA) | Direcionar a assistência por distrito | Sazonal |
+
+!!! abstract "Em resumo — limiares de indicadores usados no portal"
+    - **VCI < 35** — vegetação em potencial stress de seca; risco de perda de colheitas (da descrição do *Vegetation Condition Index*).
+    - **SPI / SPEI < −1** — seca moderada; **< −1,5** severa; **< −2** extrema.
+    - **Precipitação anual < 75 % da média de longo prazo** — um ano falhado. Na estação de Ingwizi (alto Shashe) a média é 606 mm; 2002 registou 271 mm.
+    - **Nível de alerta de caudal ecológico 3–5** — o rio entrou em seca hidrológica (ver [Caudais ecológicos](eflows.md)).
+
+## Como se encadeia o fluxo de trabalho
+
+```mermaid
+flowchart TD
+    A[Vegetação<br/>VCI · NDVI Anomaly DEA] --> B{VCI < 35 sobre<br/>áreas agrícolas?}
+    B -- não --> Z[Monitorizar mensalmente]
+    B -- sim --> C[Causa: chuva<br/>CHIRPS · Rainfall Anomalies · SPEI 3-month]
+    C --> D[Solo<br/>SMAP Root Zone Soil Moisture]
+    D --> E[Rios e águas subterrâneas<br/>Eflow Warnings · Groundwater Drought Risk]
+    E --> F[Risco setorial<br/>Drought Risk – Agriculture / Water Sector]
+    F --> G[Perspetiva<br/>Rainfall Anomaly Forecast · Seasonal Forecast 7-month]
+    G --> H{Perspetiva seca sobre<br/>défice existente?}
+    H -- sim --> I[Ação precoce:<br/>declarar, restringir, assistir]
+    H -- não --> Z
+```
+
 ## Dados a utilizar
 
-| Fase | Conjunto de dados | Onde no catálogo |
-| --- | --- | --- |
-| Défice de chuva | **CHIRPS Historical Rainfall** · **Number of Rainy Days** · **Rainfall Anomalies** | Drought Monitoring & Risk Assessment → Meteorological Drought |
-| Défice de chuva (índices) | **Drought Hazard – SPEI 3-month / 6-month / 12-month (2010–2021)** | → Meteorological Drought |
-| Solo | **SMAP Surface Soil Moisture (L4, Daily)** · **SMAP Root Zone Soil Moisture (L4, Daily)** · **SMAP-Sentinel High-Res Soil Moisture (1 km)** | → Soil Moisture |
-| Vegetação | **The Vegetation Condition Index (VCI)** · **MODIS NDVI 16-Day Composite** · **VIIRS NDVI 8-Day Composite** · **NDVI Anomaly (DEA)** | → Vegetation & Crop Stress |
-| Stress hídrico | **Evaporative Stress Index Africa** | → Evaporative Stress & Water Use |
-| Rios | **E-flow Monitoring and Forecasting** · **Eflow Alert Levels** · **Eflow Warnings** | → Hydrological Drought & E-flows |
-| Águas subterrâneas | **Groundwater Drought Risk (Updated)** · **Groundwater Level Points** | Water Resources → Groundwater |
-| Risco por setor | **Drought Risk – Agriculture / Food & Nutrition / Water Sector (3, 6, 12-month)** | → Sectoral Drought Risk |
-| Perspetiva | **Limpopo Rainfall Anomaly Forecast** · **Limpopo Temperature Anomaly Forecast** · **Seasonal Forecast Anomaly (7-month)** · **Sub-Seasonal Outlook (5–6 weeks)** | Natural Basin Characteristic → Climate; Flood Monitoring → Seasonal & Sub-Seasonal |
+| Fase | Conjunto de dados | Onde no catálogo | Notas |
+| --- | --- | --- | --- |
+| Défice de chuva | **CHIRPS Historical Rainfall** · **Number of Rainy Days** · **Rainfall Anomalies** | Drought Monitoring & Risk Assessment → Meteorological Drought | CHIRPS: ~5 km, 1981–presente; os círculos de anomalia são clicáveis (gráfico) |
+| Défice de chuva (índices) | **Drought Hazard – SPEI 3-month / 6-month / 12-month (2010–2021)** | → Meteorological Drought | Referência climatológica, não em tempo real |
+| Solo | **SMAP Surface Soil Moisture (L4, Daily)** · **SMAP Root Zone Soil Moisture (L4, Daily)** · **SMAP-Sentinel High-Res Soil Moisture (1 km)** | → Soil Moisture | L4 é ~9 km diário; o produto de 1 km é mais fino mas menos frequente |
+| Vegetação | **The Vegetation Condition Index (VCI)** · **MODIS NDVI 16-Day Composite** · **VIIRS NDVI 8-Day Composite** · **NDVI Anomaly (DEA)** | → Vegetation & Crop Stress | VCI 0–100, normalizado pelo histórico; atualização mensal |
+| Stress hídrico | **Evaporative Stress Index Africa** | → Evaporative Stress & Water Use | Razão entre ET real e potencial |
+| Rios | **E-flow Monitoring and Forecasting** · **Eflow Alert Levels** · **Eflow Warnings** | → Hydrological Drought & E-flows | 31 locais, níveis de alerta 1–5 |
+| Águas subterrâneas | **Groundwater Drought Risk (Updated)** · **Groundwater Level Points** | Water Resources → Groundwater | Atrasa meses em relação à seca superficial |
+| Risco por setor | **Drought Risk – Agriculture / Food & Nutrition / Water Sector (3, 6, 12-month)** | → Sectoral Drought Risk | Perigo × exposição × vulnerabilidade |
+| Perspetiva | **Limpopo Rainfall Anomaly Forecast** · **Limpopo Temperature Anomaly Forecast** · **Seasonal Forecast Anomaly (7-month)** · **Sub-Seasonal Outlook (5–6 weeks)** | Natural Basin Characteristic → Climate; Flood Monitoring → Seasonal & Sub-Seasonal | Anomalias probabilísticas |
 
 ## Percurso
 
 1. **Comece pela vegetação — o sinal mais visível.** Explore data → pesquise
    `VCI` → adicione **The Vegetation Condition Index (VCI)**. Use a linha
    temporal para comparar este mês com o mesmo mês de anos anteriores; o VCI já
-   está normalizado face ao histórico, pelo que valores baixos significam *pior
-   do que o habitual*, e não apenas *estação seca*.
-2. **Confirme com NDVI Anomaly (DEA)** (adicione e use **Compare** face ao VCI).
-   A concordância entre dois produtos de vegetação independentes é um sinal de
-   seca robusto.
+   está normalizado pelo histórico, pelo que valores baixos significam *pior do
+   que o habitual*, não apenas *época seca*. Valores **abaixo de 35** sobre áreas
+   agrícolas são o gatilho.
+2. **Confirme com NDVI Anomaly (DEA)** (adicione e use **Compare** contra o VCI).
+   A concordância entre dois produtos independentes é um sinal robusto de seca;
+   a discordância costuma significar colheita, fogo ou desmatação.
 3. **Verifique a causa — a chuva.** Adicione **CHIRPS Historical Rainfall** e
-   recue na linha temporal ao longo da estação; adicione **Rainfall Anomalies** e
-   clique num círculo de estação para o gráfico. Depois adicione **Drought
-   Hazard – SPEI 3-month** para o défice normalizado.
-4. **Verifique o solo.** Adicione **SMAP Root Zone Soil Moisture (L4, Daily)**. O
-   défice na zona radicular, e não apenas a secura superficial, é o que limita
-   as culturas.
+   recue na linha temporal ao longo da estação; adicione **Rainfall Anomalies**
+   e clique num círculo de estação para o gráfico (Figura 1). Depois adicione
+   **Drought Hazard – SPEI 3-month** para o défice padronizado.
+4. **Verifique o solo.** Adicione **SMAP Root Zone Soil Moisture (L4, Daily)**.
+   É o défice na zona radicular, não apenas a secura superficial, que limita as
+   culturas; a humidade superficial recupera com um aguaceiro, a radicular não.
 5. **Verifique os rios.** Adicione **Eflow Warnings** e **Eflow Alert Levels**,
    depois **E-flow Monitoring and Forecasting** e clique num local para o
    gráfico. Rios abaixo dos caudais ecológicos marcam a transição para seca
    hidrológica (ver [Caudais ecológicos](eflows.md)).
-6. **Traduza em risco.** Adicione **Drought Risk – Agriculture (3-month)** e
+6. **Verifique o armazenamento.** Adicione **Dams & Reservoirs Basin Level
+   Estimates**: barragens marcadas *Low* ou *Critical* (Middle Letaba estava a
+   10,5 % em julho de 2026) mostram onde o abastecimento já está condicionado
+   (ver [Monitorização de albufeiras](reservoirs.md)).
+7. **Traduza em risco.** Adicione **Drought Risk – Agriculture (3-month)** e
    **Drought Risk – Water Sector (3-month)** com **Population** por baixo para
    ver onde as condições de stress encontram as pessoas.
-7. **Olhe em frente.** Adicione **Limpopo Rainfall Anomaly Forecast** e o
+8. **Olhe em frente.** Adicione **Limpopo Rainfall Anomaly Forecast** e
    **Seasonal Forecast Anomaly (7-month)**: uma perspetiva seca sobre um défice
-   já instalado é o gatilho para ação antecipada.
-8. Guarde a sequência como **Story** — uma cena por fase faz um briefing
+   já existente é o gatilho para a ação precoce.
+9. Guarde a sequência como **Story** — uma cena por fase faz um briefing
    convincente.
 
-## Interpretar o resultado
+## Interpretar os gráficos
 
-- **A convergência conta.** Um índice isolado pode enganar; VCI + anomalia NDVI
-  + SPEI + humidade do solo a apontar na mesma direção é uma seca.
-- Use as camadas SPEI e de risco a **3, 6 e 12 meses** em conjunto: 3 meses
-  captura uma estação falhada, 12 meses um défice plurianual que atinge
-  albufeiras e aquíferos.
-- A seca das águas subterrâneas **atrasa-se** meses face à seca superficial; um
-  risco crescente nas camadas de aquíferos indica uma recuperação longa mesmo
-  depois de a chuva regressar.
+*Os gráficos são gerados a partir da API de dados do portal; os rótulos estão em
+inglês.*
+
+<figure markdown="span">
+  ![Anomalia mensal de precipitação em Ingwizi](../assets/charts/droughts-rainfall-anomaly.png)
+  <figcaption>Figura 1: O gráfico por trás da camada Rainfall Anomalies, para a estação de Ingwizi no alto Shashe (Zimbabué). Laranja = abaixo da média mensal, azul = acima.</figcaption>
+</figure>
+
+- Meses laranja isolados são meteorologia. **Meses laranja consecutivos ao longo
+  de uma época das chuvas** (nov.–mar.) são seca: 2002–03, 2005, 2012, 2015–16 e
+  2023–24 mostram todos este padrão.
+- Os grandes picos azuis (fev. 2017, jan. 2021) são estações alimentadas por
+  ciclones; terminam depressa a seca meteorológica, mas albufeiras e aquíferos
+  demoram mais a recuperar.
+
+<figure markdown="span">
+  ![Precipitação anual em Ingwizi 2001-2025](../assets/charts/droughts-annual-rainfall.png)
+  <figcaption>Figura 2: Totais anuais contra a média de 606 mm. Os anos a laranja ficaram abaixo de 75 % da média.</figcaption>
+</figure>
+
+- **Dois anos secos seguidos** (2002–03, 2015–16, 2023–24) são o que esvazia as
+  albufeiras; um único ano falhado é normalmente absorvido pelo armazenamento.
+- O registo vai de 271 mm (2002) a 954 mm — uma amplitude de 3,5×. Planear
+  apenas com a média é planear para um ano que raramente acontece.
+
+<figure markdown="span">
+  ![SPI-3 e SPI-12 em Ingwizi](../assets/charts/droughts-spi.png)
+  <figcaption>Figura 3: Índice de Precipitação Padronizado a 3 e 12 meses — como ler as camadas de perigo de seca SPEI. As faixas sombreadas marcam seca moderada (−1), severa (−1,5) e extrema (−2).</figcaption>
+</figure>
+
+- O **SPI-3** oscila todos os anos porque acompanha a estação; use-o para
+  detetar uma *estação falhada* em tempo real (valores de jan.–mar. abaixo de −1).
+- O **SPI-12** é mais suave e mostra *défices plurianuais*: o episódio de 2023–24
+  atingiu o nível severo (−1,5) e durou ~18 meses. É esta a escala que importa
+  para albufeiras, furos e caudais ecológicos.
+- As camadas **Drought Hazard – SPEI** do catálogo são a versão espacial para
+  2010–2021; o gráfico acima mostra o mesmo índice num ponto, prolongado até
+  hoje.
+
+## Indicadores e o que fazer
+
+| Fase | Indicador | Limiar | Ação típica |
+| --- | --- | --- | --- |
+| Meteorológica | SPI-3 / SPEI-3 | < −1,0 em dez.–fev. | Aviso aos agricultores; rever janelas de sementeira |
+| Meteorológica | Precipitação anual | < 75 % da média | Preparar declaração de seca |
+| Agrícola | VCI | < 35 sobre áreas agrícolas no pico da estação (fev.–mar.) | Aviso de perda de colheitas; apoio em insumos / forragem |
+| Agrícola | Humidade radicular SMAP | Abaixo do normal sazonal por > 4 semanas | Aconselhamento de rega; pontos de água para o gado |
+| Hidrológica | Nível de alerta de caudal ecológico | Nível 3+ em vários locais | Limites à captação; regras de descarga das albufeiras |
+| Hidrológica | Armazenamento nas albufeiras | < 25 % (*Low*), < 10 % (*Critical*) | Restrições; abastecimento de emergência |
+| Águas subterrâneas | Groundwater Drought Risk | Classe *High* em expansão | Monitorizar furos; aprofundar / rodar furos |
+| Perspetiva | Seasonal Forecast Anomaly | Tercil seco > 40 % de probabilidade com défice existente | Financiamento de ação precoce; pré-posicionar assistência |
+
+## Exemplo prático — avaliar a estação 2023/24 em retrospetiva
+
+1. Adicione **The Vegetation Condition Index (VCI)** e coloque a linha temporal
+   em **março de 2024**. Grandes áreas do sul do Zimbabué e da província do
+   Limpopo estão abaixo de 35 — stress no pico da estação.
+2. Adicione **Rainfall Anomalies**, clique no círculo de Ingwizi: o gráfico
+   (Figura 1) mostra nov. 2023–fev. 2024 todos a laranja — uma estação falhada.
+   O SPI-12 da Figura 3 cruzou −1,5 (severo).
+3. Adicione **SMAP Root Zone Soil Moisture (L4, Daily)** para fevereiro de 2024
+   — a zona radicular confirma que o défice de chuva chegou às culturas.
+4. Adicione **Eflow Alert Levels**: na época seca de 2024, locais no Shashe,
+   Mzingwane e Sand mostram Nível 4–5.
+5. Adicione **Drought Risk – Agriculture (6-month)**: o risco concentra-se onde o
+   VCI em stress se sobrepõe às áreas de agricultura comunal. Esse mapa,
+   capturado como **Story**, é o briefing.
+6. Adicione **Limpopo Rainfall Anomaly Forecast** para a estação *seguinte*
+   (2024/25): anomalia húmida — e a Figura 2 confirma que 2025 ficou bem acima
+   da média, com a cheia de Beit Bridge em fevereiro de 2025 (ver
+   [Cheias](floods.md)).
+
+## Lista de verificação do briefing
+
+- [ ] Classe VCI atual sobre as principais áreas agrícolas, com mês e ano
+- [ ] Défice de chuva: total sazonal vs média, e valor SPI/SPEI a 3 e 12 meses
+- [ ] Humidade radicular em relação ao normal sazonal
+- [ ] Níveis de alerta de caudal ecológico e classe de armazenamento por sub-bacia
+- [ ] Classes de risco setorial (agricultura, água, alimentação e nutrição) por distrito
+- [ ] Perspetiva sazonal e a sua confiança
+- [ ] Ligação da Story que reproduz as cenas
 
 ## Limites a ter em conta
 
-- As camadas de perigo **SPEI cobrem 2010–2021** — uma climatologia de
-  referência, não um índice em tempo real. Use o CHIRPS e as previsões de
-  anomalia para a estação atual.
+- **As camadas de perigo SPEI cobrem 2010–2021** — uma referência
+  climatológica, não um índice em tempo real. Use o CHIRPS, os gráficos de
+  Rainfall Anomalies e as previsões de anomalia para a estação atual.
 - NDVI/VCI respondem a **qualquer** alteração da vegetação (colheita, fogo,
   desmatação), não só à seca — cruze com a precipitação.
-- O SMAP é grosseiro (o produto SMAP-Sentinel a 1 km é mais fino mas menos
-  frequente).
+- O SMAP é grosseiro (o produto SMAP-Sentinel de 1 km é mais fino mas menos
+  frequente); satura em zonas húmidas e campos irrigados.
 - As previsões sazonais são **anomalias probabilísticas**; leia-as como
   probabilidades, não como previsões determinísticas.
+- Os gráficos de estação (anomalia de chuva, caudal ecológico) exigem **sessão
+  iniciada**.
 
-## Relacionados
+## Relacionado
 
-[Caudais ecológicos](eflows.md) · [Uso de água na irrigação](irrigation.md) ·
-[Área de Trabalho — séries temporais](../guide/workbench.md#series-temporais)
+[Caudais ecológicos](eflows.md) · [Monitorização de albufeiras](reservoirs.md) ·
+[Uso de água na irrigação](irrigation.md) ·
+[Área de trabalho — séries temporais](../guide/workbench.md#series-temporais)

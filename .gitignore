@@ -12,3 +12,4 @@ dt-app/
 # Cloned upstream API source (iwmihq/dt-api) - not part of the docs.
 dt-api/
 
+tools/.cache/

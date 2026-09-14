@@ -218,3 +218,18 @@ admonitions (`!!! note`), definition lists, `attr_list`/`md_in_html` (used for
 `<figure>` blocks and grid cards), tables, and `pymdownx.keys` for keyboard
 keys. Add a new page by creating the Markdown file under `docs/` and listing it
 in the `nav:` section of `mkdocs.yml`.
+
+## Use-case charts
+
+The charts on the Use Cases pages (`docs/assets/charts/*.png`) are rendered from
+live responses of the IWMI Digital Twins API by `tools/use_case_charts.py`
+(matplotlib + pandas). Raw responses are cached in `tools/.cache/` (git-ignored).
+
+```bash
+pip install matplotlib pandas
+python tools/use_case_charts.py            # render from cache, downloading what is missing
+python tools/use_case_charts.py --refresh  # re-download everything and re-render
+```
+
+Re-run before a release so the "as of" dates in the chart subtitles stay current,
+then update any numbers quoted in the pages' "At a glance" boxes.

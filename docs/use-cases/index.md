@@ -44,11 +44,24 @@ written exactly as they appear in **Explore data**, so you can find them with
 
 | Section | What it gives you |
 | --- | --- |
-| **The question** | Who is asking, and the decision they need to make |
+| **The question** | Who is asking, the decision they need to make, and how often they look |
+| **At a glance** | The headline numbers for the basin today, taken from the portal's own data API |
+| **How the workflow fits together** | A flow diagram of the datasets and decision points |
 | **Data you will use** | The exact catalogue datasets, where they live, and what each one tells you |
 | **Walkthrough** | Numbered steps using the portal's own button labels |
-| **Reading the result** | What to look for on the map and in the charts |
+| **Reading the charts** | Real charts built from the same series the portal shows when you click a station or dam, with what to look for |
+| **Indicators and what to do** | Thresholds and the action they normally trigger |
+| **Worked example** | The workflow applied to a real situation, with the numbers |
+| **Checklist** | What a report from this analysis should contain |
 | **Limits to keep in mind** | Latency, model assumptions and coverage caveats — so you don't over-read the data |
+
+!!! info "About the charts"
+    The charts on these pages are rendered from live responses of the IWMI
+    Digital Twins API (`api.digitaltwins.iwmi.org`) — the same service that
+    draws the feature-info charts in the portal. Each chart states its source and
+    its "as of" date. Workflow diagrams and indicator tables are guidance, not
+    official operating rules; check thresholds against your institution's
+    procedures.
 
 !!! tip "Save your analysis as a Story"
     Once you have a view that answers your question, use **Story → Capture
