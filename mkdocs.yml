@@ -3,7 +3,7 @@ site_description: >-
   User guide and technical documentation for the TerriaJS WebGIS portal
   showcasing the Digital Twin (DT) of the Limpopo River Basin.
 site_author: International Water Management Institute (IWMI)
-site_url: https://iwmihq.github.io/dt-app-docs/
+site_url: https://zolokiala.github.io/dt-app-docs/
 copyright: Copyright &copy; International Water Management Institute (IWMI)
 
 docs_dir: docs
