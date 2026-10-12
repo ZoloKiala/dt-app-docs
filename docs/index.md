@@ -81,7 +81,7 @@ platforms such as Digital Earth Africa (DE Africa) and NationalMap.
 | My Data | Add local files or web services without uploading them |
 | Stories | Capture scenes into a narrative you can share |
 | Share & print | Shareable URLs, PNG export and printable views |
-| AI chatbot (Water Copilot) | Ask questions about the basin and get guided answers |
+| [AI chatbot (Water Copilot)](guide/water-copilot.md) | Ask questions about the basin and get guided answers |
 | SWAT Extraction Tool | Query modelled flows for a channel over a date range |
 
 !!! note "New in v2"

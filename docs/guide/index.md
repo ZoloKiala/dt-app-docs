@@ -17,6 +17,7 @@ feature, in roughly the order you meet them.
 | [Map Tools](map-tools.md) | View controls, compare, pedestrian mode, measuring, settings |
 | [Stories & Sharing](sharing.md) | Building narratives and sharing or printing the map |
 | [Help & Support](help-support.md) | Tours, guides, related maps, feedback and version info |
+| [Water Copilot](water-copilot.md) | Opening the AI assistant, what it can answer and how to ask |
 
 !!! tip "Two ways to learn the interface"
     The portal ships with a built-in guided **Take the Tour** walkthrough and a

@@ -11,11 +11,14 @@ set -euo pipefail
 #    then run this script.
 
 # 2) Materialise gh-pages into public/ (Windows-safe: no symlinks).
+#    tar fails to create the `latest` symlink on Windows; that's expected, so we
+#    tolerate it here and recreate `latest` as a real copy below.
 rm -rf public && mkdir -p public
-git archive gh-pages | tar -x -C public
+git archive gh-pages | tar -x -C public || true
 # `latest` is a mike symlink to the default version; copy it for static hosting.
-default_ver=$(python -c "import json;d=json.load(open('public/versions.json'));import sys;print(next((v['version'] for v in d if 'latest' in v.get('aliases',[])), d[0]['version']))")
-[ -d "public/latest" ] || cp -r "public/$default_ver" public/latest
+rm -rf public/latest
+default_ver=$(python -c "import json;d=json.load(open('public/versions.json'));print(next((v['version'] for v in d if 'latest' in v.get('aliases',[])), d[0]['version']))")
+cp -r "public/$default_ver" public/latest
 
 # 3) Deploy.
 railway up --service dt-limpopo-docs --detach

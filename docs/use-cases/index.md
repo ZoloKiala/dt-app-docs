@@ -38,6 +38,10 @@ written exactly as they appear in **Explore data**, so you can find them with
 
     Where does the basin's water come from, and where does it go?
 
+-   :material-weather-cloudy-alert: **[El Niño season preparedness](el-nino-preparedness.md)**
+
+    Can a seasonal climate signal become a water-management decision with lead time? A national department's test.
+
 </div>
 
 ## How each use case is written

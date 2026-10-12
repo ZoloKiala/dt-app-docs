@@ -138,3 +138,25 @@ Terms and acronyms used across this documentation.
 **3D Point Cloud**
 : High-resolution drone-collected elevation data, available for the Oliphants
   River and the Crocodile River System (Upper and Lower).
+
+**Water Copilot**
+: The portal's AI assistant, opened from the chatbot icon at the bottom right
+  of the map. It answers questions about the basin by running the Digital
+  Twin's data services and returns charts, tables and download links. See
+  [Water Copilot](../guide/water-copilot.md).
+
+**Evapotranspiration (ET)**
+: Water returned to the atmosphere from soil evaporation and plant
+  transpiration together. In an irrigated area it is the closest satellite
+  measure of water actually consumed by crops, and is not the same as water
+  abstracted from a river or canal.
+
+**WaPOR**
+: FAO's Water Productivity Open-access Portal, a satellite-based dataset of
+  evapotranspiration and related variables for Africa, published every dekad
+  at 300 m (Level 1) and 100 m (Level 2), with 20 m (Level 3) at selected
+  irrigation sites.
+
+**Dekad**
+: A ten-day period. WaPOR publishes three per month, starting on the 1st, 11th
+  and 21st; the third runs to the end of the month.

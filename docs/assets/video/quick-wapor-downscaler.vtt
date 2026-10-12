@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.800 --> 00:00:09.468
+This clip shows the WaPOR twenty metre downscaler, over the Chokwe irrigation scheme in the lower Limpopo.
+
+00:00:10.294 --> 00:00:14.013
+Open the data catalogue with Explore data.
+
+00:00:14.671 --> 00:00:19.860
+The analysis tools sit under Water Use Monitoring and Analysis.
+
+00:00:20.523 --> 00:00:32.751
+Open the twenty metre downscaler. It sharpens WaPOR evapotranspiration from three hundred metres to twenty, so individual fields become readable.
+
+00:00:33.409 --> 00:00:41.922
+Choose the dekad, the ten day period you want. Every dekad WaPOR publishes is listed.
+
+00:00:42.591 --> 00:00:51.014
+Then the model. The ensemble is the most accurate; we use CatBoost here because it is the fastest.
+
+00:00:51.683 --> 00:01:04.610
+Click Polygon, then click each corner of your area. Click the first corner again to close the shape, and press Done. Keep it under twenty square kilometres.
+
+00:01:10.727 --> 00:01:18.660
+Run the analysis. The work happens on the server, so the map stays usable while it runs.
+
+00:01:19.329 --> 00:01:30.452
+The twenty metre field lands on the map, clipped to the area you drew. Irrigated blocks that three hundred metre pixels blur together now stand apart.
+
+00:01:31.113 --> 00:01:39.691
+Terria draws your input polygon over the result. Switch the result off and the twenty metre field reads clearly.
+
+00:01:40.350 --> 00:01:52.627
+The legend reads in millimetres per dekad. The native three hundred metre layer sits underneath on the same colour scale, so switching the top layer off compares the two directly.
+
+00:01:53.287 --> 00:02:02.960
+The panel reports bias, error and correlation against that coarse input, and links the twenty metre GeoTIFF for download.
+
+00:02:03.619 --> 00:02:11.637
+That is the downscaler. The time-series tool beside it runs the same area across a whole season.

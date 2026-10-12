@@ -148,3 +148,25 @@ interface do portal são apresentados em inglês, tal como surgem no ecrã.
 **Nuvem de pontos 3D** (*3D Point Cloud*)
 : Dados de elevação de alta resolução recolhidos por drone, disponíveis para o
   Rio Oliphants e para o Sistema do Rio Crocodile (Superior e Inferior).
+
+**Water Copilot**
+: O assistente de IA do portal, aberto a partir do ícone de chatbot no canto
+  inferior direito do mapa. Responde a perguntas sobre a bacia executando os
+  serviços de dados do Digital Twin e devolve gráficos, tabelas e ligações de
+  descarga. Ver [Assistente Water Copilot](../guide/water-copilot.md).
+
+**Evapotranspiração (ET)**
+: Água devolvida à atmosfera pela evaporação do solo e pela transpiração das
+  plantas em conjunto. Numa área irrigada é a medida por satélite mais próxima
+  da água efetivamente consumida pelas culturas, e não é o mesmo que a água
+  captada de um rio ou canal.
+
+**WaPOR**
+: O portal de acesso aberto à produtividade da água da FAO, um conjunto de
+  dados de satélite de evapotranspiração e variáveis relacionadas para África,
+  publicado em cada decêndio a 300 m (Nível 1) e 100 m (Nível 2), com 20 m
+  (Nível 3) em regadios selecionados.
+
+**Decêndio (dekad)**
+: Um período de dez dias. O WaPOR publica três por mês, com início nos dias 1,
+  11 e 21; o terceiro prolonga-se até ao fim do mês.

@@ -22,6 +22,7 @@ funcionalidade, aproximadamente pela ordem em que as encontra.
 | [Ferramentas do Mapa](map-tools.md) | Controlos de vista, comparação, modo peão, medição e definições |
 | [Histórias e Partilha](sharing.md) | Construir narrativas e partilhar ou imprimir o mapa |
 | [Ajuda e Apoio](help-support.md) | Visitas guiadas, guias, mapas relacionados, comentários e versão |
+| [Assistente Water Copilot](water-copilot.md) | Abrir o assistente de IA, o que pode responder e como perguntar |
 
 !!! tip "Duas formas de aprender a interface"
     O portal inclui uma visita guiada interativa — **Take the Tour** (*Fazer a

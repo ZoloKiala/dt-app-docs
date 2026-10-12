@@ -102,7 +102,8 @@ distance between two or more points on the map.
     **Open Chatbot** (bottom-right of the map) launches **Water Copilot**, an
     AI assistant. Ask questions about the basin and its data in plain language
     and get guided answers and navigation help. The assistant opens in a panel
-    beside the map.
+    beside the map. See [Water Copilot](water-copilot.md) for what it can
+    answer and how to ask.
 
 ## SWAT Extraction Tool
 

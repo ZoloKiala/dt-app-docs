@@ -24,7 +24,14 @@ trabalho, mapas de base e partilha. A narração e as legendas estão em inglês
 O portal v2 tem acesso controlado: ao abrir
 [limpopo.digitaltwins.iwmi.org](https://limpopo.digitaltwins.iwmi.org/) é
 encaminhado para a página **Digital Twin Applications Single Sign-On** antes de
-o mapa carregar. Pode iniciar sessão de três formas:
+o mapa carregar.
+
+<figure markdown="span">
+  ![A página Digital Twin Applications Single Sign-On, com campos para email e palavra-passe, botões Google e Microsoft, e uma ligação Register](../assets/v2/v2-sign-in.png)
+  <figcaption>Figura 1: A página de início de sessão único que protege o portal.</figcaption>
+</figure>
+
+Pode iniciar sessão de três formas:
 
 - **Email e palavra-passe** — introduza as credenciais e clique em **Sign In**
   (marque **Remember me** para se manter com sessão iniciada; use
@@ -32,11 +39,32 @@ o mapa carregar. Pode iniciar sessão de três formas:
 - **Iniciar sessão com o Google** — use a sua conta Google.
 - **Iniciar sessão com a Microsoft** — use a sua conta Microsoft.
 
-Os novos utilizadores podem **Register** (*Registar*) na ligação no fundo da
-página de início de sessão.
-
 Após iniciar sessão, a barra superior mostra **Account** (*Conta*) e
 **Log out** (*Terminar sessão*); use **Account** para gerir o seu perfil.
+
+### Registar uma nova conta
+
+Se ainda não tiver conta, clique em **Register** (*Registar*) no fundo da
+página de início de sessão.
+
+<figure markdown="span">
+  ![O formulário de registo, com campos para nome próprio e apelido, email, palavra-passe e confirmação, uma lista de finalidade de utilização e organização](../assets/v2/v2-register.png)
+  <figcaption>Figura 2: O formulário de registo. Todos os campos são obrigatórios.</figcaption>
+</figure>
+
+Todos os campos são obrigatórios:
+
+| Campo | Notas |
+| --- | --- |
+| **First name**, **Last name** (*Nome próprio, Apelido*) | O seu nome tal como aparecerá no perfil. |
+| **Email** | Passa a ser o seu nome de utilizador; use um endereço onde receba correio. |
+| **Password**, **Confirm password** (*Palavra-passe, Confirmar*) | Têm de coincidir. Use o ícone do olho para ver o que escreveu. |
+| **Usage Purpose** (*Finalidade*) | Escolha entre Water Resource Management, Research, Irrigation Planning, Agricultural Use, Public Utility Monitoring ou Other. |
+| **Organization** (*Organização*) | A instituição onde trabalha. |
+
+Clique em **Register** para submeter, ou em **« Back to Login** para voltar à
+página de início de sessão. As contas são analisadas pela equipa geoespacial do
+IWMI, pelo que o acesso pode não ser imediato.
 
 !!! info "Precisa de acesso?"
     Se não conseguir iniciar sessão ou registar-se, contacte a equipa
@@ -50,7 +78,7 @@ No primeiro carregamento, o portal mostra um painel de boas-vindas
 
 <figure markdown="span">
   ![O painel de boas-vindas da v2 sobre a bacia do Limpopo](../assets/v2/v2-welcome.png)
-  <figcaption>Figura 1: O painel de boas-vindas &ldquo;Let's get you started&rdquo;.</figcaption>
+  <figcaption>Figura 3: O painel de boas-vindas &ldquo;Let's get you started&rdquo;.</figcaption>
 </figure>
 
 Oferece três formas de entrar:
@@ -73,7 +101,7 @@ para ir diretamente para o mapa. Segue-se uma pequena dica a apontar para
 
 <figure markdown="span">
   ![A interface principal do portal](../assets/v2/v2-main-map.png)
-  <figcaption>Figura 2: A interface principal — a área de trabalho e os controlos de dados à esquerda, o globo 3D ao centro, as ferramentas do mapa à direita e a barra de conta e ferramentas no topo.</figcaption>
+  <figcaption>Figura 4: A interface principal — a área de trabalho e os controlos de dados à esquerda, o globo 3D ao centro, as ferramentas do mapa à direita e a barra de conta e ferramentas no topo.</figcaption>
 </figure>
 
 A interface tem quatro zonas:

@@ -103,7 +103,9 @@ distância entre dois ou mais pontos do mapa.
     **Open Chatbot** (canto inferior direito do mapa) abre o **Water Copilot**,
     um assistente de IA. Faça perguntas sobre a bacia e os seus dados em
     linguagem natural e obtenha respostas guiadas e ajuda na navegação. O
-    assistente abre num painel ao lado do mapa.
+    assistente abre num painel ao lado do mapa. Ver
+    [Assistente Water Copilot](water-copilot.md) para saber o que pode
+    responder e como perguntar.
 
 ## Ferramenta de extração SWAT
 

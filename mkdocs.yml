@@ -134,6 +134,7 @@ plugins:
             Map Tools: Ferramentas do Mapa
             Stories & Sharing: Histórias e Partilha
             Help & Support: Ajuda e Apoio
+            Water Copilot: Assistente Water Copilot
             Use Cases: Casos de Uso
             Irrigation water use: Uso de água na irrigação
             Floods: Cheias
@@ -141,6 +142,7 @@ plugins:
             Environmental flows: Caudais ecológicos
             Reservoir monitoring: Monitorização de albufeiras
             Water accounting: Contabilidade da água
+            El Niño season preparedness: Preparação para a época de El Niño
             Project: Projeto
             Technical Implementation: Implementação Técnica
             Development Process: Processo de Desenvolvimento
@@ -188,6 +190,7 @@ nav:
       - Map Tools: guide/map-tools.md
       - Stories & Sharing: guide/sharing.md
       - Help & Support: guide/help-support.md
+      - Water Copilot: guide/water-copilot.md
   - Use Cases:
       - use-cases/index.md
       - Irrigation water use: use-cases/irrigation.md
@@ -196,6 +199,7 @@ nav:
       - Environmental flows: use-cases/eflows.md
       - Reservoir monitoring: use-cases/reservoirs.md
       - Water accounting: use-cases/water-accounting.md
+      - El Niño season preparedness: use-cases/el-nino-preparedness.md
   - Project:
       - project/index.md
       - Technical Implementation: project/architecture.md

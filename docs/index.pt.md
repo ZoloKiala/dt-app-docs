@@ -89,7 +89,7 @@ como a Digital Earth Africa (DE Africa) e o NationalMap.
 | Os Meus Dados (*My Data*) | Adicione ficheiros locais ou serviços web sem os carregar para a nuvem |
 | Histórias (*Stories*) | Capture cenas para construir uma narrativa que pode partilhar |
 | Partilhar e imprimir | Ligações partilháveis, exportação PNG e vistas para impressão |
-| Assistente de IA (Water Copilot) | Faça perguntas sobre a bacia e obtenha respostas guiadas |
+| [Assistente de IA (Water Copilot)](guide/water-copilot.md) | Faça perguntas sobre a bacia e obtenha respostas guiadas |
 | Ferramenta de extração SWAT | Consulte caudais modelados para um canal num intervalo de datas |
 
 !!! note "Novo na v2"

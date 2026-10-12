@@ -38,6 +38,10 @@ possa encontrar com **Search the catalogue**.
 
     De onde vem a água da bacia, e para onde vai?
 
+-   :material-weather-cloudy-alert: **[Preparação para a época de El Niño](el-nino-preparedness.md)**
+
+    Pode um sinal climático sazonal tornar-se uma decisão de gestão da água com antecedência? O teste de um departamento nacional.
+
 </div>
 
 ## Como cada caso de uso está organizado

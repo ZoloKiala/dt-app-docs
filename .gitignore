@@ -13,3 +13,14 @@ dt-app/
 dt-api/
 
 tools/.cache/
+
+# Cloned WaterCopilot plugin source (iwmihq/dt-watercopilot-plugins) - not part of the docs.
+dt-watercopilot-plugins/
+dt-watercopilot-app/
+dt-watercopilot-gateway/
+dt-app-limpopo-prod/
+
+# Source material and local build output, not part of the docs.
+*.pptx
+*.docx
+public/

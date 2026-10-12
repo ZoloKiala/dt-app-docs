@@ -42,7 +42,9 @@ instalação v2 em produção):
   **Data Sources & Providers**. Ver [Temas dos Dados](../guide/datasets.md).
 - **Duas novas ferramentas.** Um assistente de IA **Water Copilot** e uma
   **SWAT Extraction Tool** (consulta caudais modelados para um canal num
-  intervalo de datas) — ver [Ferramentas do Mapa](../guide/map-tools.md).
+  intervalo de datas) — ver
+  [Assistente Water Copilot](../guide/water-copilot.md) e
+  [Ferramentas do Mapa](../guide/map-tools.md).
 - **Mais mapas de base.** O conjunto de mapas de base inclui agora
   **OpenStreetMap**, **Esri World Imagery**, **Esri Topographic**,
   **OpenTopoMap**, **Natural Earth II**, a família Bing, além de **Dark Matter**

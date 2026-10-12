@@ -41,6 +41,7 @@ v2 deployment):
   **Data Sources & Providers**. See [Dataset Themes](../guide/datasets.md).
 - **Two new tools.** A **Water Copilot** AI chatbot and a **SWAT Extraction
   Tool** (query modelled flows for a channel over a date range) — see
+  [Water Copilot](../guide/water-copilot.md) and
   [Map Tools](../guide/map-tools.md).
 - **More basemaps.** The Map Settings basemap set now includes
   **OpenStreetMap**, **Esri World Imagery**, **Esri Topographic**,
