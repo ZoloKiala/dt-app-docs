@@ -1,0 +1,2099 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="User guide and technical documentation for the TerriaJS WebGIS portal showcasing the Digital Twin (DT) of the Limpopo River Basin.">
+      
+      
+        <meta name="author" content="International Water Management Institute (IWMI)">
+      
+      
+        <link rel="canonical" href="https://iwmihq.github.io/dt-app-docs/v2/use-cases/el-nino-preparedness/">
+      
+      
+        <link rel="prev" href="../water-accounting/">
+      
+      
+        <link rel="next" href="../../project/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../pt/use-cases/el-nino-preparedness/" hreflang="pt">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>El Niño season preparedness - Limpopo Digital Twin Portal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#el-nino-season-preparedness" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Limpopo Digital Twin Portal" class="md-header__button md-logo" aria-label="Limpopo Digital Twin Portal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Limpopo Digital Twin Portal
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              El Niño season preparedness
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../pt/use-cases/el-nino-preparedness/" hreflang="pt" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard="" data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guide/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Use Cases
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Limpopo Digital Twin Portal" class="md-nav__button md-logo" aria-label="Limpopo Digital Twin Portal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>
+
+    </a>
+    Limpopo Digital Twin Portal
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../guide/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/data-catalogue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Catalogue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dataset Themes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/my-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/workbench/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workbench
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/map-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stories &amp; Sharing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/help-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help &amp; Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/water-copilot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Water Copilot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use Cases
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Use Cases
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../irrigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Irrigation water use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../floods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Floods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../droughts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Droughts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environmental flows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reservoirs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reservoir monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../water-accounting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Water accounting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    El Niño season preparedness
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    El Niño season preparedness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#the-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The question
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-workflow-fits-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the workflow fits together
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-you-will-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data you will use
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#walkthrough" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Walkthrough
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-charts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading the charts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indicators-and-what-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicators and what to do
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example-the-october-2026-test-at-a5h003" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — the October 2026 test at A5H003
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#briefing-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Briefing checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limits-to-keep-in-mind" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limits to keep in mind
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../project/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Implementation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment &amp; Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/release-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#the-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The question
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-workflow-fits-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the workflow fits together
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-you-will-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data you will use
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#walkthrough" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Walkthrough
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-charts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading the charts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indicators-and-what-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicators and what to do
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example-the-october-2026-test-at-a5h003" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example — the October 2026 test at A5H003
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#briefing-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Briefing checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limits-to-keep-in-mind" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limits to keep in mind
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="el-nino-season-preparedness">El Niño season preparedness<a class="headerlink" href="#el-nino-season-preparedness" title="Permanent link">¶</a></h1>
+<p>A national water department wants to turn a <strong>seasonal climate signal into a
+water-resources decision</strong>. This page follows the application case that the
+Department of Water and Sanitation (DWS) of Botswana prepared for IWMI in
+October 2026, when it tested the portal as a water manager, not as a climate
+viewer, ahead of the 2026/27 El Niño season.</p>
+<h2 id="the-question">The question<a class="headerlink" href="#the-question" title="Permanent link">¶</a></h2>
+<p>El Niño says <em>pay attention</em>, but not where, when or how water resources will
+respond. Rainfall, soil moisture and river-flow forecasts say whether the
+climate concern is becoming a water-resources problem. The useful endpoint is
+<strong>lead time</strong>: time to verify, communicate, review allocations and prepare.</p>
+<p>The test question was therefore: <em>can the portal support that whole chain,
+from climate signal to management action, for one country during one season?</em></p>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Decision</th>
+<th>Cadence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>National water department (DWS Botswana)</td>
+<td>Verification, communication, allocation review, preparedness</td>
+<td>Weekly situation brief through the season</td>
+</tr>
+<tr>
+<td>Dam and water-supply operators</td>
+<td>Hold or release storage; supply restrictions</td>
+<td>Each forecast run during a watch</td>
+</tr>
+<tr>
+<td>Basin committee / LIMCOM</td>
+<td>Cross-border allocation and early-warning coordination</td>
+<td>Seasonal (Oct, Jan, Apr)</td>
+</tr>
+<tr>
+<td>Disaster-management authorities</td>
+<td>Pre-positioning for short-duration high-flow events</td>
+<td>When a gauge crosses a threshold</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition abstract">
+<p class="admonition-title">At a glance — what the October 2026 test found</p>
+<ul>
+<li>The strongest drought workflow is <strong>rainfall → root-zone soil moisture</strong>: did rainfall depart from normal, and did that reach the catchment?</li>
+<li>A seasonal drought concern can <strong>coexist with a short-duration high-flow event</strong>. Gauge A5H003 (Limpopo at the Botswana border) forecast 90.5 m³/s at 72 h, above its P90 minor threshold of 71.05 m³/s, while the 30-day outlook was back to normal.</li>
+<li>The portal's practical contribution is <strong>lead time</strong>: multiple forecast horizons against station thresholds, in one basin view that crosses national boundaries.</li>
+<li>Keep <strong>both</strong> watches open all season: drought (deficits, soil moisture, low flow, storage) and high flow (short-term forecasts).</li>
+</ul>
+</div>
+<h2 id="how-the-workflow-fits-together">How the workflow fits together<a class="headerlink" href="#how-the-workflow-fits-together" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[1 · Rainfall&lt;br/&gt;CHIRPS · Rainfall Anomalies] --&gt; AQ{Is the seasonal&lt;br/&gt;signal appearing?}
+    AQ -- no --&gt; Z[Routine weekly brief]
+    AQ -- yes --&gt; B[2 · Soil moisture&lt;br/&gt;SMAP Root Zone Soil Moisture]
+    B --&gt; BQ{Is catchment stress&lt;br/&gt;developing?}
+    BQ -- yes --&gt; C[3 · River flow&lt;br/&gt;GloFAS Verified Gauges · Eflow Alert Levels]
+    BQ -- no --&gt; Z
+    C --&gt; D[4 · Forecast&lt;br/&gt;alert level per lead time vs P90 / P95 / P99]
+    D --&gt; E[5 · Action&lt;br/&gt;verify · communicate · allocate · prepare]</code></pre>
+<p>The test used only what was visible in the live portal. Where a layer did not
+render or a value could not be verified, that was recorded as a user-experience
+finding rather than filled with assumptions (see <a href="#limits-to-keep-in-mind">Limits</a>).</p>
+<h2 id="data-you-will-use">Data you will use<a class="headerlink" href="#data-you-will-use" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Dataset</th>
+<th>Where in the catalogue</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rainfall</td>
+<td><strong>CHIRPS Historical Rainfall</strong> (display variable <em>Rain Status</em>) · <strong>Rainfall Anomalies</strong></td>
+<td>Drought Monitoring &amp; Risk Assessment → Meteorological Drought</td>
+<td>Station circles; anomalies against the 1991–2020 normal, clickable for a chart</td>
+</tr>
+<tr>
+<td>Soil</td>
+<td><strong>SMAP Root Zone Soil Moisture (L4, Daily)</strong></td>
+<td>→ Soil Moisture</td>
+<td>~9 km, daily; the root zone is what crops and catchments feel</td>
+</tr>
+<tr>
+<td>River flow and forecast</td>
+<td><strong>GloFAS Discharge Forecast – Verified Gauges</strong> (display variable <em>Forecast 720h M3s</em>)</td>
+<td>Flood Monitoring → Discharge Forecasting (GloFAS)</td>
+<td>Click a gauge for the Flood Intelligence card: 24 h / 72 h / 30-day forecasts, P90 / P95 / P99 thresholds, hydrograph</td>
+</tr>
+<tr>
+<td>Rivers (drought side)</td>
+<td><strong>E-flow Monitoring and Forecasting</strong> · <strong>Eflow Alert Levels</strong></td>
+<td>→ Hydrological Drought &amp; E-flows</td>
+<td>Low-flow confirmation</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td><strong>Dams &amp; Reservoirs Basin Level Estimates</strong></td>
+<td>Water Resources → Reservoirs</td>
+<td>Storage class per dam</td>
+</tr>
+<tr>
+<td>Seasonal outlook</td>
+<td><strong>Limpopo Rainfall Anomaly Forecast</strong> · <strong>Seasonal Forecast Anomaly (7-month)</strong></td>
+<td>Natural Basin Characteristic → Climate</td>
+<td>Probabilistic anomalies</td>
+</tr>
+</tbody>
+</table>
+<h2 id="walkthrough">Walkthrough<a class="headerlink" href="#walkthrough" title="Permanent link">¶</a></h2>
+<ol>
+<li><strong>Is the seasonal signal appearing?</strong> Explore data → search <code>CHIRPS</code> → add
+   <strong>CHIRPS Historical Rainfall</strong> and set the display variable to <strong>Rain
+   Status</strong>; step the timeline through the first months of the season
+   (Figure 1). Then add <strong>Rainfall Anomalies</strong> and click the stations in your
+   area for the departure from the 1991–2020 normal.</li>
+<li><strong>Is catchment stress developing?</strong> Add <strong>SMAP Root Zone Soil Moisture (L4,
+   Daily)</strong> (Figure 2). A rainfall deficit that shows up in the root zone has
+   reached the catchment; one that does not is still a weather story.</li>
+<li><strong>How is the system responding?</strong> Add <strong>GloFAS Discharge Forecast –
+   Verified Gauges</strong>, set the display variable to <strong>Forecast 720h M3s</strong> and
+   click a gauge, for Botswana <strong>A5H003 – Limpopo River @ Botswana</strong>. The card
+   gives the 24 h, 72 h and 30-day forecasts, the alert level of each, and the
+   station's thresholds.</li>
+<li><strong>What may happen next?</strong> Open the <strong>Flood Risk</strong> tab for the alert level at
+   every lead time (Figure 3), then the <strong>Hydrograph</strong> tab for the shape and
+   spread of the forecast (Figure 4). Use the lead time that matches the
+   management question: days for operations, weeks for allocation.</li>
+<li><strong>What should the department do?</strong> Translate the levels into the
+   Green / Amber / Red actions agreed for that gauge (see
+   <a href="#indicators-and-what-to-do">Indicators and what to do</a>).</li>
+<li><strong>Keep the drought watch open.</strong> In the same session add <strong>Eflow Alert
+   Levels</strong> and <strong>Dams &amp; Reservoirs Basin Level Estimates</strong>: low flows and
+   storage pressure are the slow signal behind the fast one.</li>
+<li>Save the sequence as a <strong>Story</strong>: one scene per stage is the weekly brief.</li>
+</ol>
+<h2 id="reading-the-charts">Reading the charts<a class="headerlink" href="#reading-the-charts" title="Permanent link">¶</a></h2>
+<p>The figures below are the portal's own screens from the October 2026 test.</p>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/elnino-chirps-rain-status.png" data-title="Figure 1" data-desc-position="bottom"><img alt="Figure 1" src="../../assets/charts/portal/elnino-chirps-rain-status.png"></a>
+<br>
+<figcaption>Figure 1: CHIRPS Historical Rainfall with the Rain Status variable (light, moderate, trace, heavy) for 1 June 2026, over the basin's station network. Stepping the timeline through Oct–Dec shows whether the season is starting.</figcaption>
+</figure>
+<ul>
+<li>Judge the pattern, not one station: a season that starts <em>light</em> across a
+  whole sub-basin while the normal is <em>moderate</em> is the first El Niño signature.</li>
+</ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/elnino-smap-root-zone.png" data-title="Figure 2" data-desc-position="bottom"><img alt="Figure 2" src="../../assets/charts/portal/elnino-smap-root-zone.png"></a>
+<br>
+<figcaption>Figure 2: SMAP Root Zone Soil Moisture (L4, Daily) for 4 October 2026 with the E-flow Monitoring sites on top. Yellow is dry root zone, green wetter; the red site circles show the e-flow Ecotox score.</figcaption>
+</figure>
+<ul>
+<li>This pairing, rainfall deficit over dry root zone, was the strongest drought
+  workflow in the test: it separates <em>it has not rained</em> from <em>the catchment is
+  under stress</em>.</li>
+</ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/glofas-a5h003-flood-risk.png" data-title="Figure 3" data-desc-position="bottom"><img alt="Figure 3" src="../../assets/charts/portal/glofas-a5h003-flood-risk.png"></a>
+<br>
+<figcaption>Figure 3: GloFAS Flood Intelligence for gauge A5H003, Flood Risk tab. Alert level per lead time: Normal at 24 h (21.8 m³/s), Watch at 48 h, Minor at 72–120 h (peak 104.6 m³/s at 96 h), back to Watch at 168 h and Normal from 240 h. Thresholds: P90 minor 71.05, P95 major 108.87, P99 extreme 235.27 m³/s.</figcaption>
+</figure>
+<ul>
+<li>Read the <strong>path</strong>, not one number: <em>Normal → Watch → Minor (72–120 h) →
+  Watch → Normal</em> is a short-duration episode with a few days of lead time,
+  not a seasonal flood.</li>
+<li>The 96 h peak approaches but stays below the P95 major threshold: a
+  verification-and-prepare situation, not an evacuation one.</li>
+</ul>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/charts/portal/glofas-a5h003-hydrograph.png" data-title="Figure 4" data-desc-position="bottom"><img alt="Figure 4" src="../../assets/charts/portal/glofas-a5h003-hydrograph.png"></a>
+<br>
+<figcaption>Figure 4: The same gauge, Hydrograph tab, April–October 2026: the forecast rise at the right edge with its spread band, the 24 h / 48 h / 72 h lead-time lines, and the flood bands (minor, major, extreme).</figcaption>
+</figure>
+<ul>
+<li>The rise is rapid over the next few days and the spread widens with lead
+  time; the longer lead times return toward normal. Management value: time to
+  verify against the department's own gauges and to prepare.</li>
+</ul>
+<h2 id="indicators-and-what-to-do">Indicators and what to do<a class="headerlink" href="#indicators-and-what-to-do" title="Permanent link">¶</a></h2>
+<p>The portal gives the levels; the department sets the actions. The test
+proposed Botswana-calibrated Green / Amber / Red thresholds per gauge, tied to
+actions. A starting point consistent with the portal's own classes:</p>
+<table>
+<thead>
+<tr>
+<th>Watch</th>
+<th>Indicator</th>
+<th>Level</th>
+<th>Typical action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High flow</td>
+<td>GloFAS gauge forecast</td>
+<td><em>Normal</em> at all lead times</td>
+<td>Routine weekly brief</td>
+</tr>
+<tr>
+<td>High flow</td>
+<td>GloFAS gauge forecast</td>
+<td><em>Watch</em> (above P90 at any lead time)</td>
+<td>Verify with national gauges; alert operators</td>
+</tr>
+<tr>
+<td>High flow</td>
+<td>GloFAS gauge forecast</td>
+<td><em>Minor</em> (P90–P95 within 5 days)</td>
+<td>Communicate downstream; review dam operations</td>
+</tr>
+<tr>
+<td>High flow</td>
+<td>GloFAS gauge forecast</td>
+<td><em>Major</em> or <em>Extreme</em> (above P95 / P99)</td>
+<td>Disaster-management protocol (see <a href="../floods/">Floods</a>)</td>
+</tr>
+<tr>
+<td>Drought</td>
+<td>Rainfall Anomalies</td>
+<td>Below normal for 2+ consecutive months in Nov–Mar</td>
+<td>Allocation review; drought advisory</td>
+</tr>
+<tr>
+<td>Drought</td>
+<td>SMAP root-zone moisture</td>
+<td>Below seasonal norm for &gt; 4 weeks</td>
+<td>Irrigation scheduling advice; livestock water points</td>
+</tr>
+<tr>
+<td>Drought</td>
+<td>Eflow Alert Levels · reservoir class</td>
+<td>Level 3+ or <em>Low</em> storage</td>
+<td>Abstraction limits; supply restrictions (see <a href="../droughts/">Droughts</a>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example-the-october-2026-test-at-a5h003">Worked example — the October 2026 test at A5H003<a class="headerlink" href="#worked-example-the-october-2026-test-at-a5h003" title="Permanent link">¶</a></h2>
+<ol>
+<li>Add <strong>GloFAS Discharge Forecast – Verified Gauges</strong>, display variable
+   <strong>Forecast 720h M3s</strong>, and click <strong>A5H003 – Limpopo River @ Botswana</strong>.
+   The card reads: 24 h <strong>21.8 m³/s</strong> (Normal), 72 h <strong>90.5 m³/s</strong> (Minor),
+   30-day <strong>10.7 m³/s</strong> (Normal).</li>
+<li><strong>Flood Risk</strong> tab (Figure 3): the level climbs through Watch at 48 h to
+   Minor at 72, 96 and 120 h, peaks at 104.6 m³/s, and falls back to Normal by
+   240 h. Against the station's P95 major threshold of 108.87 m³/s this is a
+   short-duration high-flow episode.</li>
+<li><strong>Hydrograph</strong> tab (Figure 4): the rise is steep and the spread band wide,
+   so verify before acting: compare with the department's own readings for
+   the same reach.</li>
+<li>Meanwhile the seasonal picture (Figures 1 and 2) is of a dry start with a
+   drying root zone: the drought watch stays open while the high-flow watch
+   runs its few days.</li>
+<li>The decision: Amber for the reach for 3–5 days (verify, inform operators
+   downstream), with the seasonal drought narrative unchanged. Captured as a
+   Story, that is the week's brief.</li>
+</ol>
+<h2 id="briefing-checklist">Briefing checklist<a class="headerlink" href="#briefing-checklist" title="Permanent link">¶</a></h2>
+<p>The test proposed a <strong>weekly El Niño water-resources situation brief</strong>. Its
+contents, in the order of the workflow:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Rainfall: season-to-date status and anomaly at the national stations</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Root-zone soil moisture relative to the seasonal norm</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Observed and forecast flow at the agreed priority gauges, with alert level per lead time</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Reservoir storage class and groundwater trend</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Risk statement, confidence, and the recommended Green / Amber / Red action</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled=""><span class="task-list-indicator"></span></label> Story link reproducing the scenes</li>
+</ul>
+<h2 id="limits-to-keep-in-mind">Limits to keep in mind<a class="headerlink" href="#limits-to-keep-in-mind" title="Permanent link">¶</a></h2>
+<p>Findings reported by the test, for the portal team as much as for users:</p>
+<ul>
+<li><strong>Observation synchronisation.</strong> The A5H003 card showed a current forecast
+  but a <em>Latest Obs</em> date of 30 March 2002. Treat GloFAS output as a forecast
+  to be verified against national gauges, not as an observation.</li>
+<li><strong>Seasonal layer access.</strong> Some seasonal layers returned tiling or overview
+  errors during the test; if a layer does not render, note it rather than
+  substitute an assumption.</li>
+<li><strong>Forecast verification.</strong> Linking DWS hydrometric data (HYDSTRA / TWMS /
+  LIMIS workflows) to the portal would allow forecast-versus-observed checks
+  at the priority gauges; this is part of the proposed pilot.</li>
+<li>GloFAS thresholds are <strong>percentiles of the station's own record</strong>, not
+  surveyed flood levels (see <a href="../floods/">Floods</a>).</li>
+<li>Gauge, station and site charts need a <strong>signed-in session</strong>.</li>
+</ul>
+<h2 id="related">Related<a class="headerlink" href="#related" title="Permanent link">¶</a></h2>
+<p><a href="../floods/">Floods</a> · <a href="../droughts/">Droughts</a> · <a href="../reservoirs/">Reservoir monitoring</a> ·
+<a href="../eflows/">Environmental flows</a> · <a href="../../guide/sharing/">Stories &amp; Sharing</a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../water-accounting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Water accounting">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Water accounting
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../project/" class="md-footer__link md-footer__link--next" aria-label="Next: Project Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Project Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © International Water Management Institute (IWMI)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:iwmigeospatial@gmail.com" target="_blank" rel="noopener" title="Contact the geospatial team" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.iwmi.cgiar.org/" target="_blank" rel="noopener" title="IWMI website" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
